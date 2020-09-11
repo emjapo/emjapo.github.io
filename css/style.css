@@ -48,6 +48,14 @@ table {
   border-spacing: 0;
 }
 
+.container, article, footer, form, figure, section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px;
+}
+
 body {
   color: #27435E;
 }
@@ -63,6 +71,6 @@ article.numbered {
 article.numbered:before {
   content: counter(my-awesome-counter);
   text-shadow: -14px 14px 0px #27435E;
-  font: 900 9em Montserrat;
+  font: 900 9em Montserrat, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

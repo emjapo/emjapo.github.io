@@ -1,4 +1,4 @@
-@import "reset";
+@import "reset", "grid";
 
 $primaryColor: #27435E;
 $secondaryColor: #A0D2E3;
@@ -15,6 +15,7 @@ body{
 
 header {
     img{
+      
 
     }
     nav{
