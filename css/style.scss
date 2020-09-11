@@ -1,0 +1,35 @@
+@import "reset";
+
+$primaryColor: #27435E;
+$secondaryColor: #A0D2E3;
+$tertiaryColor: #E5F0F4;
+$popColor: #E18D70;
+
+$shadow: -14px 14px 0px #27435E;
+$Big-font: 900 9em Montserrat;
+
+body{
+    color: $primaryColor;
+}
+
+header {
+    img{
+
+    }
+    nav{
+
+    }
+
+}
+
+body {
+  counter-reset: my-awesome-counter;
+}
+article.numbered {
+  counter-increment: my-awesome-counter;
+}
+article.numbered:before {
+  content: counter(my-awesome-counter);
+  text-shadow: $shadow;
+  font: $Big-font;
+}
