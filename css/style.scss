@@ -6,7 +6,8 @@ $tertiaryColor: #E5F0F4;
 $popColor: #E18D70;
 
 $shadow: -14px 14px 0px #27435E;
-$Big-font: 900 9em Montserrat;
+$Big-font: 900 9em Montserrat, sans-serif;
+$body-copy: 400 1.5em Montserrat, sans-serif;
 
 body{
     color: $primaryColor;
