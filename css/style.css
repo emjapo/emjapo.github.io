@@ -48,7 +48,21 @@ table {
   border-spacing: 0;
 }
 
-.container, article, footer, form, figure, section {
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+  grid-gap: 5px;
+}
+
+header, article, section, aside, footer {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 12;
+  grid-column: 2/14;
+}
+
+header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -58,6 +72,37 @@ table {
 
 body {
   color: #27435E;
+}
+
+header img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+header nav ul {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  list-style: none;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+h1 {
+  font: 900 3em Montserrat, sans-serif;
 }
 
 body {
@@ -72,5 +117,27 @@ article.numbered:before {
   content: counter(my-awesome-counter);
   text-shadow: -14px 14px 0px #27435E;
   font: 900 9em Montserrat, sans-serif;
+  color: #E18D70;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (min-width: 320px) {
+  header img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  header nav ul {
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    list-style: none;
+  }
+}

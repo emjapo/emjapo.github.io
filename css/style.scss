@@ -7,6 +7,7 @@ $popColor: #E18D70;
 
 $shadow: -14px 14px 0px #27435E;
 $Big-font: 900 9em Montserrat, sans-serif;
+$header-font: 900 3em Montserrat, sans-serif;
 $body-copy: 400 1.5em Montserrat, sans-serif;
 
 body{
@@ -15,15 +16,33 @@ body{
 
 header {
     img{
-      
-
+      grid-column: 1/3;
     }
     nav{
-
+      ul{
+        height: 10vh;
+        display: flex;
+        width: 25%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 18px;
+        }
+      }
     }
 
 }
 
+
+h1 {
+  font:$header-font;
+}
+
+//list for ideas
 body {
   counter-reset: my-awesome-counter;
 }
@@ -34,4 +53,32 @@ article.numbered:before {
   content: counter(my-awesome-counter);
   text-shadow: $shadow;
   font: $Big-font;
+  color:$popColor;
+}
+
+//tablet styles
+@media (min-width: 320px) {
+  header {
+    img{
+      grid-column: 1/3;
+    }
+    nav{
+      ul{
+        height: 10vh;
+        display: flex;
+        width: 25%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        list-style: none;
+      }
+    }
+
+}
+  
+}
+
+//desktop styles
+@media (min-width: 1024px) {
+
 }

@@ -1,5 +1,24 @@
-.container, article, footer, form, figure, section {
+.container {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-gap: 5px;
+}
+
+header, article, section, aside, footer{
+  grid-column: 2/14;
+}
+header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px;
+}
+
+//tablet styles
+@media (min-width: 320px) {
+  
+}
+
+//desktop styles
+@media (min-width: 1024px) {
+
 }
