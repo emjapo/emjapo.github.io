@@ -4,17 +4,17 @@
   grid-gap: 5px;
 }
 
-header, article, section, aside, footer{
+article, section, aside, footer, form{
   grid-column: 2/14;
 }
-header {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 5px;
-}
+// header {
+//   display: grid;
+//   grid-template-columns: repeat(12, 1fr);
+//   grid-gap: 5px;
+// }
 
 //tablet styles
-@media (min-width: 320px) {
+@media (min-width: 340px) {
   
 }
 
