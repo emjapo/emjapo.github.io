@@ -6,8 +6,20 @@
   grid-gap: 5px;
 }
 
-article, section, aside, footer, form {
+article, section, aside, footer, form, figure {
   -ms-grid-column: 2;
   -ms-grid-column-span: 12;
   grid-column: 2/14;
+}
+
+section, article, aside, footer, form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px;
+}
+
+.intro {
+  grid-column: span 12;
 }

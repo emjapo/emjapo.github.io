@@ -56,15 +56,28 @@ table {
   grid-gap: 5px;
 }
 
-article, section, aside, footer, form {
+article, section, aside, footer, form, figure {
   -ms-grid-column: 2;
   -ms-grid-column-span: 12;
   grid-column: 2/14;
 }
 
+section, article, aside, footer, form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px;
+}
+
+.intro {
+  grid-column: span 12;
+}
+
 body {
   color: #27435E;
   font: 400 1em Montserrat, sans-serif;
+  max-width: 100%;
 }
 
 img {
@@ -75,30 +88,60 @@ header {
   display: block;
 }
 
-header img {
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav img {
   width: 20vw;
-  padding: 5vw;
-  float: left;
-  clear: both;
+  padding: 15px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  list-style: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: auto;
-  list-style: none;
 }
 
 header nav ul a {
   text-decoration: none;
   color: #27435E;
   font-size: 1em;
+  padding-left: 10rem;
+  white-space: nowrap;
+}
+
+.intro {
+  background-color: #E5F0F4;
+  padding: 20px;
+}
+
+.intro h1 {
+  text-align: center;
+}
+
+.intro h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 120.5%;
+  /* or 14px */
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (max-width: 770px) {

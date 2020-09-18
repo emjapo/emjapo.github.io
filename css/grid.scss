@@ -4,15 +4,18 @@
   grid-gap: 5px;
 }
 
-article, section, aside, footer, form{
+article, section, aside, footer, form, figure{
   grid-column: 2/14;
 }
-// header {
-//   display: grid;
-//   grid-template-columns: repeat(12, 1fr);
-//   grid-gap: 5px;
-// }
+ section, article, aside, footer, form {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-gap: 5px;
+ }
 
+ .intro {
+   grid-column: span 12;
+ }
 //tablet styles
 @media (min-width: 340px) {
   
