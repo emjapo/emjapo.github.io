@@ -128,9 +128,39 @@ aside h1 {
   grid-column: 1/13;
 }
 
+section.blue-bean p:nth-child(1) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2/8;
+}
+
+section.blue-bean p:nth-child(4) {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 5;
+  grid-column: 7/12;
+}
+
+section.blue-bean img:nth-child(2) {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 8/13;
+}
+
+section.blue-bean img:nth-child(3) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+}
+
+section.blue-bean div.call-to-action {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3/11;
+}
+
 body {
   color: #27435E;
-  font: 400 1em Montserrat, sans-serif;
+  font: 400 0.75em Montserrat, sans-serif;
   max-width: 100%;
 }
 
@@ -209,11 +239,12 @@ header nav ul a {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 120.5%;
   /* or 14px */
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
 }
 
 section.blue-block {
