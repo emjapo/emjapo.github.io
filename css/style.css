@@ -220,7 +220,7 @@ section.blue-block {
   background-color: #27435E;
   width: 100%;
   color: #ffffff;
-  background: #27435E url("../images/spoon-ends.svg") no-repeat bottom;
+  background: #27435E url("../images/spoon-ends.svg") bottom/90% auto no-repeat;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

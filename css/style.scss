@@ -88,7 +88,7 @@ section.blue-block {
   background-color: $primaryColor;
   width: 100%;
   color:#ffffff;
-  background: $primaryColor url('../images/spoon-ends.svg') no-repeat bottom;
+  background: $primaryColor url('../images/spoon-ends.svg') bottom/90% auto no-repeat;
   height:fit-content;
   padding-top: 10vh;
   padding-bottom: 15vh;
