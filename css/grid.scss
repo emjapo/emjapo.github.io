@@ -7,6 +7,17 @@
 article, section, footer, form, figure{
   grid-column: 2/14;
 }
+
+section.blue-block {
+  grid-column: 1/15;
+  h1 {
+    grid-column: 2/10;
+  }
+  p {
+    grid-column: 4/12;
+  }
+}
+
  section, article, footer, form, .gallery {
    display: grid;
    grid-template-columns: repeat(12, 1fr);
@@ -14,13 +25,17 @@ article, section, footer, form, figure{
  }
 aside {
   display: flex;
+  height: 30vh;
   grid-column: 3/14;
   text-align: right;
   align-content: center;
   margin-left: auto;
   justify-content: space-around;
+  h1, p {
+    margin:auto;
+  }
   h1 {
-    margin:15px;
+    padding-left: 20px;
   }
 }
 

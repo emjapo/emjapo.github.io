@@ -12,6 +12,24 @@ article, section, footer, form, figure {
   grid-column: 2/14;
 }
 
+section.blue-block {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 14;
+  grid-column: 1/15;
+}
+
+section.blue-block h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2/10;
+}
+
+section.blue-block p {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 8;
+  grid-column: 4/12;
+}
+
 section, article, footer, form, .gallery {
   display: -ms-grid;
   display: grid;
@@ -24,6 +42,7 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 30vh;
   -ms-grid-column: 3;
   -ms-grid-column-span: 11;
   grid-column: 3/14;
@@ -35,8 +54,12 @@ aside {
       justify-content: space-around;
 }
 
+aside h1, aside p {
+  margin: auto;
+}
+
 aside h1 {
-  margin: 15px;
+  padding-left: 20px;
 }
 
 .gallery {

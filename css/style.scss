@@ -84,6 +84,24 @@ header {
 
 }
 
+section.blue-block {
+  background-color: $primaryColor;
+  width: 100%;
+  color:#ffffff;
+  background: $primaryColor url('../images/spoon-ends.svg') no-repeat bottom;
+  height:fit-content;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
+  h1 {
+    height: fit-content;
+    margin:20px 0px; 
+  }
+  p {
+    height: fit-content;
+    margin:20px; 
+  }
+}
+
 @media screen and (max-width: 770px) {
   .line {
     width: 30px;
@@ -163,12 +181,6 @@ article.numbered:before {
   color:$popColor;
 }
 
-.blue-block {
-  background-color: $primaryColor;
-  width: 100%;
-  color:#ffffff;
-  padding: 10vw;
-}
 
 //tablet styles
 @media (min-width: 340px) {

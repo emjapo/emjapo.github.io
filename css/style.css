@@ -62,6 +62,24 @@ article, section, footer, form, figure {
   grid-column: 2/14;
 }
 
+section.blue-block {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 14;
+  grid-column: 1/15;
+}
+
+section.blue-block h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2/10;
+}
+
+section.blue-block p {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 8;
+  grid-column: 4/12;
+}
+
 section, article, footer, form, .gallery {
   display: -ms-grid;
   display: grid;
@@ -74,6 +92,7 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 30vh;
   -ms-grid-column: 3;
   -ms-grid-column-span: 11;
   grid-column: 3/14;
@@ -85,8 +104,12 @@ aside {
       justify-content: space-around;
 }
 
+aside h1, aside p {
+  margin: auto;
+}
+
 aside h1 {
-  margin: 15px;
+  padding-left: 20px;
 }
 
 .gallery {
@@ -193,6 +216,32 @@ header nav ul a {
   letter-spacing: 0.1em;
 }
 
+section.blue-block {
+  background-color: #27435E;
+  width: 100%;
+  color: #ffffff;
+  background: #27435E url("../images/spoon-ends.svg") no-repeat bottom;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 10vh;
+  padding-bottom: 15vh;
+}
+
+section.blue-block h1 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px 0px;
+}
+
+section.blue-block p {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px;
+}
+
 @media screen and (max-width: 770px) {
   .line {
     width: 30px;
@@ -272,13 +321,6 @@ article.numbered:before {
   text-shadow: -14px 14px 0px #27435E;
   font: 900 9em Montserrat, sans-serif;
   color: #E18D70;
-}
-
-.blue-block {
-  background-color: #27435E;
-  width: 100%;
-  color: #ffffff;
-  padding: 10vw;
 }
 
 @media (min-width: 1024px) {
