@@ -130,7 +130,6 @@ aside h1 {
 
 section.blue-bean {
   padding-top: 7vh;
-  padding-bottom: 7vh;
 }
 
 section.blue-bean p:nth-child(1) {
@@ -317,16 +316,28 @@ footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 12vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background: url("../images/footer-spoons.svg") bottom/100% auto no-repeat;
 }
 
 footer ul li {
-  width: 40px;
+  width: 55px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 770px) {

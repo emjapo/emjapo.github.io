@@ -132,19 +132,29 @@ a.call-to-action {
 footer {
   ul {
     display: flex;
+    height: 12vh;
     align-items: center;
     justify-content: space-evenly;
+    background: url('../images/footer-spoons.svg') bottom/100% auto no-repeat;;
     li {
-      width: 40px;
+      width: 55px;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      display: flex;
+      align-items: center;
       a {
-        img {
-          
-        }
+      
       }
     }
   }
-
 }
+
+// .footer-text {
+//     position: absolute;
+//     top:25%;
+//   }
 
 @media screen and (max-width: 770px) {
   .line {
