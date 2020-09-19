@@ -3,7 +3,7 @@
   display: grid;
   -ms-grid-columns: (1fr)[14];
       grid-template-columns: repeat(14, 1fr);
-  grid-gap: 5px;
+  grid-gap: 15px;
 }
 
 article, section, footer, form, figure {
@@ -30,7 +30,7 @@ section.blue-block p {
   grid-column: 4/12;
 }
 
-section, article, footer, form, .gallery {
+section, article, form, .gallery {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -78,22 +78,34 @@ aside h1 {
   grid-column: 1/13;
 }
 
+section.blue-bean {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
 section.blue-bean p:nth-child(1) {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
   grid-column: 2/8;
+  margin: 10px;
 }
 
 section.blue-bean p:nth-child(4) {
   -ms-grid-column: 7;
   -ms-grid-column-span: 5;
   grid-column: 7/12;
+  margin: 10px;
 }
 
 section.blue-bean img:nth-child(2) {
   -ms-grid-column: 8;
-  -ms-grid-column-span: 5;
-  grid-column: 8/13;
+  -ms-grid-column-span: 4;
+  grid-column: 8/12;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 section.blue-bean img:nth-child(3) {
@@ -106,4 +118,5 @@ section.blue-bean div.call-to-action {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3/11;
+  margin: 10px;
 }
