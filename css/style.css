@@ -56,13 +56,13 @@ table {
   grid-gap: 5px;
 }
 
-article, section, aside, footer, form, figure {
+article, section, footer, form, figure {
   -ms-grid-column: 2;
   -ms-grid-column-span: 12;
   grid-column: 2/14;
 }
 
-section, article, aside, footer, form {
+section, article, footer, form, .gallery {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -70,12 +70,39 @@ section, article, aside, footer, form {
   grid-gap: 5px;
 }
 
-.intro {
-  grid-column: span 12;
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 11;
+  grid-column: 3/14;
+  text-align: right;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-* {
-  max-width: 100vw;
+aside h1 {
+  margin: 15px;
+}
+
+.gallery {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+}
+
+.gallery a {
+  grid-column: span 4;
+}
+
+.intro {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
 }
 
 body {
@@ -86,6 +113,23 @@ body {
 
 img {
   border-radius: 15px;
+  width: 100%;
+}
+
+figure {
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+figure figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font: 900 1.2em Montserrat, sans-serif;
 }
 
 header {
@@ -131,6 +175,7 @@ header nav ul a {
 .intro {
   background-color: #E5F0F4;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .intro h1 {

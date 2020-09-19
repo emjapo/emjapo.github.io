@@ -10,9 +10,9 @@ $Big-font: 900 9em Montserrat, sans-serif;
 $header-font-desk: 900 3em Montserrat, sans-serif;
 $header-font:900 1.2em Montserrat, sans-serif;
 $body-copy: 400 1em Montserrat, sans-serif;
-* {
-  max-width:100vw;
-}
+// * {
+//   max-width:100vw;
+// }
 body{
     color: $primaryColor;
     font:$body-copy;
@@ -21,7 +21,21 @@ body{
 
 img {
   border-radius: 15px;
- 
+  width:100%;
+}
+
+figure {
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  color:#ffffff;
+  figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: $header-font;
+  }
 }
 
 header {
@@ -53,6 +67,7 @@ header {
 .intro {
   background-color: $tertiaryColor;
   padding: 20px;
+  margin-bottom: 20px;
   h1 {
     text-align: center;
   }
