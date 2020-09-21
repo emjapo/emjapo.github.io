@@ -59,7 +59,6 @@ header {
           text-decoration: none;
           color: $primaryColor;
           font-size: 1em;
-          padding-left: 10rem;
           white-space: nowrap;
         }
       }
@@ -88,6 +87,10 @@ header {
 
 }
 
+body {
+  background: url('../images/fun-tip.svg') 110% 29%/30% no-repeat;
+}
+
 section.blue-block {
   background-color: $primaryColor;
   width: 100%;
@@ -113,7 +116,7 @@ section.blue-bean {
     border-radius: 15px;
     color: #ffffff;
     padding:15px;
-    margin:20px;
+    margin:20px 20px 30px 20px;
     h3{
       margin-bottom: 15px;
     }
@@ -130,14 +133,19 @@ a.call-to-action {
 }
 
 footer {
+  background: url('../images/footer-blob.svg') 50% 20%/128% auto no-repeat;
+  height: 20vh;
   ul {
     display: flex;
-    height: 12vh;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
-    background: url('../images/footer-spoons.svg') bottom/100% auto no-repeat;;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20%;
     li {
-      width: 55px;
+      //padding-top: 6vh;
+      width: 80px;
       text-align: center;
       margin-right: auto;
       margin-left: auto;
@@ -145,10 +153,44 @@ footer {
       display: flex;
       align-items: center;
       a {
-      
+        color: $primaryColor;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
+}
+
+ footer ul.social-media {
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 1%;
+   img{
+     width: 25px;
+   }
+ }
+
+li.call-to-action {
+  a{
+    color: $popColor;
+    border-radius: 5px;
+    border: 2px solid $popColor;
+    padding: 5px;
+  }
+}
+
+footer {
+  li.call-to-action {
+    a {
+      border: none;
+    }
+  }
+}
+
+a.current {
+  border-bottom: 2px solid $primaryColor;
 }
 
 // .footer-text {
@@ -268,6 +310,9 @@ article.numbered:before {
         align-items: center;
         margin-left: auto;
       li {
+        a {
+          padding-left: 10rem;
+        }
         
       }
     }

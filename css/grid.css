@@ -6,7 +6,7 @@
   grid-gap: 15px;
 }
 
-article, section, footer, form, figure {
+article, section, form, figure {
   -ms-grid-column: 2;
   -ms-grid-column-span: 12;
   grid-column: 2/14;
@@ -42,7 +42,7 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 30vh;
+  height: 20vh;
   -ms-grid-column: 3;
   -ms-grid-column-span: 11;
   grid-column: 3/14;
