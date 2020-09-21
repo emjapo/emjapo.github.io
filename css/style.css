@@ -265,8 +265,8 @@ header nav ul a {
   margin-bottom: 10px;
 }
 
-body {
-  background: url("../images/fun-tip.svg") 111% 27%/33% no-repeat;
+body.home {
+  background: url("../images/fun-tip.svg") 111% 27%/33% no-repeat, url("../images/orange-spoon-phone.svg") -59px 2%/100% no-repeat, url("../images/light-blue-spoon.svg") -24% 23%/52% no-repeat, url("../images/light-blue-spoon-up.svg") 132% 7%/59% no-repeat, url("../images/light-blue-blob-phone.svg") 62% 79%/128% no-repeat;
 }
 
 section.blue-block {
