@@ -98,6 +98,10 @@ body.ideas {
   background: url('../images/fun-tip.svg') 120% 33.5%/41% no-repeat, url('../images/blue-blob.svg') 60% 1%/121% no-repeat, url('../images/light-blue-blob-phone.svg') -23% 41%/45% no-repeat, url('../images/dark-blue-spoon.svg') -41% 93%/50% no-repeat, url('../images/orange-blob.svg') 114% 83%/49% no-repeat;
 }
 
+body.form {
+  background: url('../images/orange-spoon-phone.svg') 222% 26%/69% no-repeat, url('../images/light-blue-blob.svg') 50% 27%/162% no-repeat;
+}
+
 section.blue-block {
   background-color: $primaryColor;
   width: 100%;
