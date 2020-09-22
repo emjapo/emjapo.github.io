@@ -15,6 +15,20 @@ $body-copy-desk: 400 1.2em Montserrat, sans-serif;
 $body-copy-actually-desk: 400 1.2em Montserrat, sans-serif;
 $header-font-actually-desk: 900 2.5em Montserrat, sans-serif;
 
+a:hover {
+  color: $popColor;
+}
+a.call-to-action:hover {
+  color: $secondaryColor;
+  border-color: $secondaryColor;
+}
+li.call-to-action 
+{
+  a:hover {
+  color: $secondaryColor;
+  border-color: $secondaryColor;
+  }
+}
 body{
     color: $primaryColor;
     font:$body-copy;
@@ -96,7 +110,7 @@ body.home {
 }
 
 body.ideas {
-  background: url('../images/fun-tip.svg') 120% 33.5%/41% no-repeat, url('../images/blue-blob.svg') 60% 1%/121% no-repeat, url('../images/light-blue-blob-phone.svg') -23% 41%/45% no-repeat, url('../images/dark-blue-spoon.svg') -41% 93%/50% no-repeat, url('../images/orange-blob.svg') 114% 83%/49% no-repeat;
+  background: url('../images/fun-tip.svg') 120% 33.5%/41% no-repeat, url('../images/blue-blob.svg') 187% 1%/102% no-repeat, url('../images/light-blue-blob-phone.svg') -23% 41%/45% no-repeat, url('../images/dark-blue-spoon.svg') -41% 93%/50% no-repeat, url('../images/orange-blob.svg') 114% 83%/49% no-repeat;
 }
 
 body.form {
@@ -204,7 +218,10 @@ footer {
 }
 
 a.current {
-  border-bottom: 2px solid $primaryColor;
+  color: $secondaryColor;
+}
+footer a.current {
+  color: $popColor;
 }
 
 //ideas page

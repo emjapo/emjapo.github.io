@@ -483,6 +483,20 @@ body.form div.container form [for=permission] {
   }
 }
 
+a:hover {
+  color: #E18D70;
+}
+
+a.call-to-action:hover {
+  color: #A0D2E3;
+  border-color: #A0D2E3;
+}
+
+li.call-to-action a:hover {
+  color: #A0D2E3;
+  border-color: #A0D2E3;
+}
+
 body {
   color: #27435E;
   font: 400 0.75em Montserrat, sans-serif;
@@ -581,7 +595,7 @@ body.home {
 }
 
 body.ideas {
-  background: url("../images/fun-tip.svg") 120% 33.5%/41% no-repeat, url("../images/blue-blob.svg") 60% 1%/121% no-repeat, url("../images/light-blue-blob-phone.svg") -23% 41%/45% no-repeat, url("../images/dark-blue-spoon.svg") -41% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 83%/49% no-repeat;
+  background: url("../images/fun-tip.svg") 120% 33.5%/41% no-repeat, url("../images/blue-blob.svg") 187% 1%/102% no-repeat, url("../images/light-blue-blob-phone.svg") -23% 41%/45% no-repeat, url("../images/dark-blue-spoon.svg") -41% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 83%/49% no-repeat;
 }
 
 body.form {
@@ -702,7 +716,11 @@ footer li.call-to-action a {
 }
 
 a.current {
-  border-bottom: 2px solid #27435E;
+  color: #A0D2E3;
+}
+
+footer a.current {
+  color: #E18D70;
 }
 
 .bright-ideas {
