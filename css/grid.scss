@@ -190,7 +190,7 @@ body.form {
     }
   }
   img {
-    grid-column: 2/10;
+    grid-column: 1/10;
   }
   div {
     grid-column: 10/13;
@@ -200,22 +200,32 @@ body.form {
 body.ideas {
   div.container {
     article:nth-child(2), article:nth-child(5){
+      grid-auto-flow: dense;
       img {
-         grid-column: 1/11;
+         grid-column: 10/-1;
       }
-      h1, p, ol {
-        grid-column: 4/13;
+      img:last-child {
+        grid-column: 1/5;
+      }
+      p {
+        grid-column: 4/10;
+      }
+      ol {
+        grid-column: 6/12;
       }
     }
     article:nth-child(4), article:nth-child(6) {
       img:nth-child(2) {
-        grid-column: 2/13;
+        grid-column: 3/11;
       }
       img {
-        grid-column: 4/13;
+        grid-column: 8/13;
       }
-      p, h1 {
-        grid-column: 4/13;
+      p {
+        grid-column: 3/11;
+      }
+      p.shift {
+        grid-column: 3/8;
       }
     }
   }

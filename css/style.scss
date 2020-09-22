@@ -562,7 +562,7 @@ body.home {
 }
 
 body.ideas {
-  background: url('../images/fun-tip.svg') 120% 33.5%/41% no-repeat, url('../images/blue-blob.svg') 60% 1%/121% no-repeat, url('../images/light-blue-blob-phone.svg') -23% 41%/45% no-repeat, url('../images/dark-blue-spoon.svg') -41% 93%/50% no-repeat, url('../images/orange-blob.svg') 114% 83%/49% no-repeat;
+  background: url("../images/fun-tip.svg") 120% 31%/39% no-repeat, url("../images/blue-blob.svg") 65% 2%/120% no-repeat, url("../images/light-blue-blob-phone.svg") 108% 36%/45% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 79%/49% no-repeat
 }
 
 body.form {
@@ -570,8 +570,58 @@ body.form {
 }
 
 // ideas page
+.bright-ideas {
+  h1 {
+    top: -13%;
+    font: $header-font-desk;
+    span {
+      padding-left: 50px;
+      font-size: .8em;
+    }
+  }
+  div {
+    margin-left: 10px;
+     h3 {
+      color: $popColor;
+      font-size: 1.2em;
+    }
+    h2 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      color: $tertiaryColor;
+    }
+  }
+}
 
 
+body.ideas {
+  div.container {
+    article:nth-child(2), article:nth-child(5){
+      h1 {
+        margin: 10px 0px;
+      }
+      p {
+        margin: 30px 5px;
+      }
+    }
+    article:nth-child(4), article:nth-child(6) {
+      h1 {
+        margin: 30px 0px;
+      }
+      p {
+        margin: 30px 5px 0px;
+      }
+    }
+  }
+}
+
+#spoonClacking {
+  position: absolute;
+  top: 216%;
+  left: -23%;
+  width: 381px;
+  height: 272px;
+}
 
 }
 
