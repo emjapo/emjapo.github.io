@@ -368,6 +368,16 @@ body.form div.container form [for=permission] {
     -ms-grid-column-span: 5;
     grid-column: 3/8;
   }
+  body.form div.container form input, body.form div.container form textarea, body.form div.container form label {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
+    grid-column: 2/9;
+  }
+  body.form div.container form [for=permission] {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 6;
+    grid-column: 3/9;
+  }
 }
 
 body {
@@ -520,7 +530,6 @@ a.call-to-action {
   color: #E18D70;
   border: 3px solid #E18D70;
   border-radius: 5px;
-  padding: 4px;
   margin: 4px;
 }
 
@@ -581,7 +590,7 @@ li.call-to-action a {
   color: #E18D70;
   border-radius: 5px;
   border: 2px solid #E18D70;
-  padding: 5px;
+  padding: 14px;
 }
 
 footer li.call-to-action a {
@@ -901,7 +910,7 @@ article.numbered:before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
+    width: 60%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
@@ -970,7 +979,7 @@ article.numbered:before {
     background: url("../images/fun-tip.svg") 120% 31%/39% no-repeat, url("../images/blue-blob.svg") 65% 2%/120% no-repeat, url("../images/light-blue-blob-phone.svg") 108% 36%/45% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 79%/49% no-repeat;
   }
   body.form {
-    background: url("../images/orange-spoon-phone.svg") 222% 26%/69% no-repeat, url("../images/light-blue-blob.svg") 50% 27%/162% no-repeat;
+    background: url("../images/orange-spoon-phone.svg") 210% 27%/69% no-repeat, url("../images/light-blue-blob.svg") 6% 31%/112% no-repeat;
   }
   .bright-ideas h1 {
     top: -13%;
@@ -1010,6 +1019,53 @@ article.numbered:before {
     left: -23%;
     width: 381px;
     height: 272px;
+  }
+  .underlined {
+    border-bottom: 5px solid #A0D2E3;
+  }
+  body.form div.container h1 {
+    margin: 10px;
+  }
+  body.form div.container form {
+    margin: 30px 0px 30px;
+  }
+  body.form div.container form label {
+    margin: 10px;
+  }
+  body.form div.container form input, body.form div.container form textarea {
+    border: 3px solid #27435E;
+    border-radius: 10px;
+  }
+  body.form div.container form input {
+    height: 42px;
+  }
+  body.form div.container form textarea {
+    height: 144px;
+  }
+  body.form div.container form .checkbox {
+    border: 3px solid #27435E;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+  }
+  body.form div.container form #permission:checked ~ .checkbox {
+    background: #E5F0F4;
+  }
+  body.form div.container form [for=permission] {
+    margin: 30px 5px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  body.form div.container form [type=submit] {
+    background: #E18D70;
+    border-radius: 15px;
+    border: none;
+    height: initial;
+    padding: 20px 15px;
+  }
+  body.form div.container form [type=submit]:hover {
+    border: 4px solid #27435E;
   }
 }
 

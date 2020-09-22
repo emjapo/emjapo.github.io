@@ -141,7 +141,6 @@ a.call-to-action {
   color: $popColor;
   border: 3px solid $popColor;
   border-radius: 5px;
-  padding:4px;
   margin:4px;
 }
 
@@ -191,7 +190,7 @@ li.call-to-action {
     color: $popColor;
     border-radius: 5px;
     border: 2px solid $popColor;
-    padding: 5px;
+    padding: 14px;
   }
 }
 
@@ -473,7 +472,7 @@ article.numbered:before {
     nav{
       ul{
         display: flex;
-        width: 50%;
+        width: 60%;
         justify-content: space-around;
         align-items: center;
         margin-left: auto;
@@ -566,7 +565,7 @@ body.ideas {
 }
 
 body.form {
-  background: url('../images/orange-spoon-phone.svg') 222% 26%/69% no-repeat, url('../images/light-blue-blob.svg') 50% 27%/162% no-repeat;
+  background: url("../images/orange-spoon-phone.svg") 210% 27%/69% no-repeat, url("../images/light-blue-blob.svg") 6% 31%/112% no-repeat;
 }
 
 // ideas page
@@ -621,6 +620,60 @@ body.ideas {
   left: -23%;
   width: 381px;
   height: 272px;
+}
+
+.underlined {
+  border-bottom: 5px solid $secondaryColor;
+}
+
+//form
+body.form {
+  div.container {
+    h1 {
+      margin: 10px;
+    }
+    form {
+      margin: 30px 0px 30px;
+      label {
+        margin: 10px;
+      }
+      input, textarea {
+        border: 3px solid #27435E;
+        border-radius: 10px;
+      }
+      input {
+        height: 42px;
+      }
+      textarea {
+        height: 144px;
+      }
+      .checkbox {
+        border: 3px solid #27435E;
+        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+      }
+      #permission:checked ~ .checkbox {
+        background: $tertiaryColor;
+      }
+      [for=permission] {
+        margin: 30px 5px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      [type=submit] {
+        background: #E18D70;
+        border-radius: 15px;
+        border: none;
+        height: initial;
+        padding: 20px 15px;
+      }
+      [type=submit]:hover {
+        border: 4px solid $primaryColor;
+      }
+    }
+  }
 }
 
 }

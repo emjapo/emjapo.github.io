@@ -318,4 +318,14 @@ body.form div.container form [for=permission] {
     -ms-grid-column-span: 5;
     grid-column: 3/8;
   }
+  body.form div.container form input, body.form div.container form textarea, body.form div.container form label {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
+    grid-column: 2/9;
+  }
+  body.form div.container form [for=permission] {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 6;
+    grid-column: 3/9;
+  }
 }

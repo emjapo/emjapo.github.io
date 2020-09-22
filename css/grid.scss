@@ -230,6 +230,19 @@ body.ideas {
     }
   }
 }
+
+body.form {
+  div.container {
+    form {
+      input, textarea, label {
+        grid-column: 2/9;
+      }
+      [for=permission] {
+        grid-column: 3/9;
+      }
+    }
+  }
+}
 }
 
 //desktop styles
