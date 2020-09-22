@@ -394,9 +394,9 @@ body.form div.container form [for=permission] {
     padding-top: 7vh;
   }
   section.blue-bean p:nth-child(1) {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
-    grid-column: 3/8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
     margin: 10px;
   }
   section.blue-bean p:nth-child(4) {
@@ -1174,7 +1174,7 @@ article.numbered:before {
 
 @media (min-width: 1024px) {
   p {
-    font: 400 1.5em Montserrat, sans-serif;
+    font: 400 1.2em Montserrat, sans-serif;
   }
   h1 {
     font: 900 2.5em Montserrat, sans-serif;
@@ -1199,7 +1199,7 @@ article.numbered:before {
   }
   section.blue-bean p {
     padding: 30px;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   section.blue-bean div.call-to-action {
     font-size: 2em;
@@ -1210,16 +1210,15 @@ article.numbered:before {
     margin-bottom: 40px;
   }
   footer ul {
-    font: 400 1.8em Montserrat, sans-serif;
-  }
-  footer ul li {
-    width: 200px;
+    font: 400 1em Montserrat, sans-serif;
+    padding-top: 18% li;
+    padding-top-width: 200px;
   }
   footer ul.social-media li {
     margin-bottom: 60px;
   }
   footer ul.social-media li a img {
-    width: 80px;
+    width: 70px;
   }
   article.numbered:before {
     left: 100px;

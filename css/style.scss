@@ -12,7 +12,7 @@ $header-font:900 1.5em Montserrat, sans-serif;
 $smaller-headers: 400 1em Montserrat, sans-serif;
 $body-copy: 400 .75em Montserrat, sans-serif;
 $body-copy-desk: 400 1.2em Montserrat, sans-serif;
-$body-copy-actually-desk: 400 1.5em Montserrat, sans-serif;
+$body-copy-actually-desk: 400 1.2em Montserrat, sans-serif;
 $header-font-actually-desk: 900 2.5em Montserrat, sans-serif;
 
 body{
@@ -711,7 +711,7 @@ body.form {
     padding-top: 15vh;
     p {
       padding: 30px;
-      font-size: 1.8em;
+      font-size: 1.5em;
     }
     div.call-to-action {
       font-size: 2em;
@@ -725,7 +725,8 @@ body.form {
 
   footer {
     ul {
-      font: 400 1.8em Montserrat, sans-serif;
+      font: 400 1em Montserrat, sans-serif;
+      padding-top: 18%
       li {
         width: 200px;
       }
@@ -735,7 +736,7 @@ body.form {
         margin-bottom: 60px;
         a {
           img {
-            width: 80px;
+            width: 70px;
           }
         }
       }

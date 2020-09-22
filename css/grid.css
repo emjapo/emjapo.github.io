@@ -344,9 +344,9 @@ body.form div.container form [for=permission] {
     padding-top: 7vh;
   }
   section.blue-bean p:nth-child(1) {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
-    grid-column: 3/8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
     margin: 10px;
   }
   section.blue-bean p:nth-child(4) {
