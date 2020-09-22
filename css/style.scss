@@ -7,10 +7,11 @@ $popColor: #E18D70;
 
 $shadow: -14px 14px 0px #27435E;
 $Big-font: 900 9em Montserrat, sans-serif;
-$header-font-desk: 900 3em Montserrat, sans-serif;
+$header-font-desk: 900 2em Montserrat, sans-serif;
 $header-font:900 1.5em Montserrat, sans-serif;
 $smaller-headers: 400 1em Montserrat, sans-serif;
 $body-copy: 400 .75em Montserrat, sans-serif;
+$body-copy-desk: 400 1.2em Montserrat, sans-serif;
 // * {
 //   max-width:100vw;
 // }
@@ -368,7 +369,7 @@ body.form {
 }
 
 // responsive nav
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 750px) {
   .line {
     width: 30px;
     height: 3px;
@@ -461,25 +462,75 @@ article.numbered:before {
 
 
 //tablet styles
-@media (min-width: 340px) {
+@media screen and (min-width: 750px) {
+  body {
+    font: $body-copy-desk;
+  }
+  h1 {
+    font: $header-font-desk;
+  }
   header {
-    img{
-  
-    }
     nav{
       ul{
-        // height: 10vh;
-        // display: flex;
-        // width: 25%;
-        // justify-content: space-around;
-        // align-items: center;
-        // margin-left: auto;
-        // list-style: none;
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+        list-style: none;
+      }
+      img{
+        padding: 30px;
+    }
+    }
+  }
+  footer {
+    height: auto;
+    background: url('../images/footer-blob.svg') 50% 16%/140% auto no-repeat;
+    ul {
+      font: 400 1.5em Montserrat, sans-serif;
+      li {
+        width: 150px;
+        a {
+
+        }
       }
     }
-
-}
+    ul.social-media {
+      li {
+        margin-bottom: 50px;
+        a {
+          img {
+            width: 65px;
+          }
+        }
+      }
+    }
+  }
   
+  div.intro {
+    h1 {
+      font: $header-font-desk;
+    }
+    h2 {
+      font-size: 1.8em;
+      line-height: 120.5%;
+      text-align: center;
+      letter-spacing: 0.2em;
+    }
+    p {
+      padding: 20px;
+    }
+  }
+  div.gallery {
+    a {
+      figure {
+        figcaption {
+          font: $header-font-desk;
+        }
+      }
+    }
+  }
 }
 
 //desktop styles
