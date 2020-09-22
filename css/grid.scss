@@ -18,11 +18,11 @@ section.blue-block {
   }
 }
 
- section, article, form, .gallery {
+section, article, form, .gallery {
    display: grid;
    grid-template-columns: repeat(12, 1fr);
    grid-gap: 5px;
- }
+}
 aside {
   display: flex;
   height: 20vh;
@@ -78,6 +78,48 @@ aside {
     margin:10px;
    }
 }
+
+//ideas page
+.bright-ideas {
+  h1 {
+    grid-column: 2/6;
+    span {
+      grid-column: 3/7;
+    }
+  }
+  img {
+    grid-column: 1/9;
+  }
+  div {
+    grid-column: 9/13;
+  }
+}
+
+body.ideas {
+  div.container {
+    article:nth-child(2), article:nth-child(5){
+      img {
+         grid-column: 1/11;
+      }
+      h1, p, ol {
+        grid-column: 4/13;
+      }
+    }
+    article:nth-child(4), article:nth-child(6) {
+      img:first-child {
+        grid-column: 1/13;
+      }
+      img {
+        grid-column: 4/13;
+      }
+      p, h1 {
+        grid-column: 4/13;
+      }
+    }
+  }
+}
+
+
 //tablet styles
 @media (min-width: 340px) {
   
