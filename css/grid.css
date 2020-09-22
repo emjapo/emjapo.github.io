@@ -61,7 +61,7 @@ aside h1, aside p {
 aside h1 {
   padding-left: 60px;
   padding-right: 15px;
-  padding-bottom: 4px;
+  padding-bottom: 9px;
 }
 
 .gallery {
@@ -158,10 +158,10 @@ body.ideas div.container article:nth-child(2) h1, body.ideas div.container artic
   grid-column: 4/13;
 }
 
-body.ideas div.container article:nth-child(4) img:first-child, body.ideas div.container article:nth-child(6) img:first-child {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 12;
-  grid-column: 1/13;
+body.ideas div.container article:nth-child(4) img:nth-child(2), body.ideas div.container article:nth-child(6) img:nth-child(2) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
 }
 
 body.ideas div.container article:nth-child(4) img, body.ideas div.container article:nth-child(6) img {
