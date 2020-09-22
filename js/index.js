@@ -11,4 +11,4 @@ hamburger.addEventListener("click", () => {
     footerLinks.forEach(flink => {
         flink.classList.toggle("disappear");
     });
-})
+});

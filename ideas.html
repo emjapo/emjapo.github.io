@@ -10,6 +10,32 @@
     </title>
 </head>
 <body class="ideas">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (window.location.hash)
+            scroll(0, 0);
+        // takes care of some browsers issue
+        setTimeout(function () { scroll(0, 0); }, 1);
+
+        $(function () {
+            //your current click function
+            $('.scroll').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top + 'px'
+                }, 1000, 'swing');
+            });
+
+            // if we have anchor on the url (calling from other page)
+            if (window.location.hash) {
+                // smooth scroll to the anchor id
+                $('html,body').animate({
+                    scrollTop: $(window.location.hash).offset().top + 'px'
+                }, 1000, 'swing');
+            }
+        });
+
+    </script>
     <header>
         <nav>
             <img src="images/spoonful-of-sugar-logo.svg">
@@ -58,7 +84,7 @@
                 <p>“You can race your friends while balancing eggs on spoons. It’s harder than you think!”</p>
             </div>
         </article>
-        <article class="numbered">
+        <article class="numbered" id="games">
             <h1>Spoons Card Game</h1>
             <p>Spoons is a fun card game that you can play. All you need is a deck of cards, some spoons, and a few players.</p>
             <p>To set up for the game, you need one less spoon than there are players. Each player will get 4 cards to keep in their
@@ -75,7 +101,7 @@
             <p>Don’t stack the spoons no matter how good of an idea it seems. It is dangerous.</p>
             <h1>Fun Tip</h1>
         </aside>
-        <article class="numbered">
+        <article class="numbered" id="music">
             <h1>Music Instrument</h1>
             <img src="images/playing-spoons.jpg" alt="a hand is holding spoons so that they can be played as an instrument">
             <p>Spoons can be used a a cool instrument too! They make an awesome clanging sound when they hit each other. All you need
@@ -88,7 +114,7 @@
             don’t get it right the first time! It may take some practice.</p>
             <img src="images/spoon-thigh.jpg" alt="a girl is playing the spoons against her thigh">
         </article>
-        <article class="numbered">
+        <article class="numbered" id="crafts">
             <h1>Spoon Friend</h1>
             <p>You might’ve seen Forky from Toy Story 4 and thought, “I bet I can make something like that.” If you did think that, you
             were right. You can make your own toy friend with a spoon.</p>
