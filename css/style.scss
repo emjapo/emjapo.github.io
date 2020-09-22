@@ -12,9 +12,9 @@ $header-font:900 1.5em Montserrat, sans-serif;
 $smaller-headers: 400 1em Montserrat, sans-serif;
 $body-copy: 400 .75em Montserrat, sans-serif;
 $body-copy-desk: 400 1.2em Montserrat, sans-serif;
-// * {
-//   max-width:100vw;
-// }
+$body-copy-actually-desk: 400 1.5em Montserrat, sans-serif;
+$header-font-actually-desk: 900 2.5em Montserrat, sans-serif;
+
 body{
     color: $primaryColor;
     font:$body-copy;
@@ -490,9 +490,6 @@ article.numbered:before {
       font: 400 1.2em Montserrat, sans-serif;
       li {
         width: 150px;
-        a {
-
-        }
       }
     }
     ul.social-media {
@@ -680,20 +677,204 @@ body.form {
 
 //desktop styles
 @media (min-width: 1024px) {
-  nav {
-    height: 20vh;
-    ul {
-      height: 100%;
-       justify-content: space-around;
-        align-items: center;
-        margin-left: auto;
-      li {
-        a {
-          padding-left: 10rem;
+  p {
+    font: $body-copy-actually-desk;
+  }
+  h1 {
+    font: $header-font-actually-desk;
+  }
+  div.gallery {
+    a {
+      figure {
+        figcaption {
+          font: $header-font-actually-desk
         }
-        
+      }
+    }
+  }
+  div.intro {
+    padding: 23px;
+  
+    h1 {
+      font-size: 2.2em;
+    }
+  }
+  div.gallery {
+    a {
+      margin: 10px;
+    }
+  }
+  section.blue-block {
+    padding-bottom: 45vh;
+  }
+  section.blue-bean {
+    padding-top: 15vh;
+    p {
+      padding: 30px;
+      font-size: 1.8em;
+    }
+    div.call-to-action {
+      font-size: 2em;
+      padding: 60px 40px;
+      margin-top: 40px;
+      h3 {
+        margin-bottom: 40px;
       }
     }
   }
 
+  footer {
+    ul {
+      font: 400 1.8em Montserrat, sans-serif;
+      li {
+        width: 200px;
+      }
+    }
+    ul.social-media {
+      li {
+        margin-bottom: 60px;
+        a {
+          img {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  article.numbered:before{
+    left: 100px;
+  
+  }
+
+  body.ideas {
+  div.container {
+    article:nth-child(2), article:nth-child(5){
+      h1 {
+        margin: 20px 0px;
+      }
+      img:last-child {
+      }
+      p {
+        margin: 30px 50px 30px 0px;
+      }
+      ol {
+        margin:20px 60px;
+        font-size: 1.5em;
+      }
+    }
+    article:nth-child(4), article:nth-child(6) {
+      img {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.bright-ideas {
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  h1 {
+    color: $popColor;
+    position: absolute;
+    top: -8%;
+    line-height: .9;
+    font-size: 3em;
+    span {
+      color: $primaryColor;
+      padding-left: 50px;
+      white-space: nowrap;
+    }
+  }
+  div {
+    margin-left: 15px;
+    margin-top: 40px;
+     h3 {
+      color: $popColor;
+      font: $smaller-headers;
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      color: $tertiaryColor;
+    }
+    p {
+      font: $smaller-headers;
+      font-size: 1.8em;
+      color: $tertiaryColor;
+    }
+  }
+}
+#spoonClacking {
+  position: absolute;
+  top: 355%;
+  left: -13%;
+  width: 504px;
+  height: 358px;
+}
+
+//form
+body.form {
+  div.container {
+    h1 {
+      margin: 10px;
+    }
+    form {
+      margin: 30px 0px 30px;
+      label {
+        margin: 20px 10px;
+        font-size: 1.3em;
+      }
+      input, textarea {
+        border: 3px solid #27435E;
+        border-radius: 10px;
+      }
+      input {
+        height: 48px;
+      }
+      textarea {
+        height: 162px;
+      }
+      .checkbox {
+        border: 3px solid #27435E;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+      }
+      #permission:checked ~ .checkbox {
+        background: $tertiaryColor;
+      }
+      [for=permission] {
+        margin: 30px 5px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      [type=submit] {
+        background: #E18D70;
+        border-radius: 15px;
+        border: none;
+        height: initial;
+        padding: 20px 20px;
+      }
+      [type=submit]:hover {
+        border: 4px solid $primaryColor;
+      }
+    }
+  }
+}
+  // backgrounds
+body.home {
+  background: url("../images/fun-tip.svg") 111% 26.5%/28%  no-repeat, url("../images/orange-spoon-phone.svg") -9px 7%/57% no-repeat, url("../images/light-blue-spoon-desk.svg") 42% -4%/33% no-repeat, url("../images/dark-blue-spoon.svg") 102% 6%/38% no-repeat, url("../images/light-blue-blob-phone.svg")  56% 75%/108% no-repeat;
+}
+
+body.ideas {
+  background: url("../images/fun-tip.svg") 111% 34.5%/28% no-repeat, url("../images/blue-blob.svg") 69% 2%/126% no-repeat, url("../images/light-blue-blob-phone.svg") 113% 40%/48% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 109% 82%/52% no-repeat;
+}
+
+body.form {
+  background: url("../images/orange-spoon-phone.svg") 210% 27%/69% no-repeat, url("../images/light-blue-blob.svg") 11% 27%/84% no-repeat;
+}
 }
