@@ -159,7 +159,6 @@ body.form {
   }
   section.blue-bean {
     padding-top: 7vh;
-    //  padding-bottom: 7vh;
     p:nth-child(1){
       grid-column: 2/8;
       margin:10px;
@@ -169,19 +168,58 @@ body.form {
       margin:10px;
     }
     img:nth-child(2) {
-      grid-column: 8/12;
+      grid-column: 8/13;
       justify-content: center;
       margin-top: auto;
       margin-bottom: auto;
     }
     img:nth-child(3) {
-      grid-column: 2/7;
+      grid-column: 1/7;
     }
     div.call-to-action {
-      grid-column: 3/11;
+      grid-column: 4/10;
       margin:10px;
     }
   }
+
+  .bright-ideas {
+  h1 {
+    grid-column: 2/6;
+    span {
+      grid-column: 3/7;
+    }
+  }
+  img {
+    grid-column: 2/10;
+  }
+  div {
+    grid-column: 10/13;
+  }
+}
+
+body.ideas {
+  div.container {
+    article:nth-child(2), article:nth-child(5){
+      img {
+         grid-column: 1/11;
+      }
+      h1, p, ol {
+        grid-column: 4/13;
+      }
+    }
+    article:nth-child(4), article:nth-child(6) {
+      img:nth-child(2) {
+        grid-column: 2/13;
+      }
+      img {
+        grid-column: 4/13;
+      }
+      p, h1 {
+        grid-column: 4/13;
+      }
+    }
+  }
+}
 }
 
 //desktop styles

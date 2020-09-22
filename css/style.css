@@ -288,8 +288,8 @@ body.form div.container form [for=permission] {
   }
   section.blue-bean img:nth-child(2) {
     -ms-grid-column: 8;
-    -ms-grid-column-span: 4;
-    grid-column: 8/12;
+    -ms-grid-column-span: 5;
+    grid-column: 8/13;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -297,15 +297,60 @@ body.form div.container form [for=permission] {
     margin-bottom: auto;
   }
   section.blue-bean img:nth-child(3) {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
-    grid-column: 2/7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
   }
   section.blue-bean div.call-to-action {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 8;
-    grid-column: 3/11;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: 4/10;
     margin: 10px;
+  }
+  .bright-ideas h1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-column: 2/6;
+  }
+  .bright-ideas h1 span {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-column: 3/7;
+  }
+  .bright-ideas img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2/10;
+  }
+  .bright-ideas div {
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 3;
+    grid-column: 10/13;
+  }
+  body.ideas div.container article:nth-child(2) img, body.ideas div.container article:nth-child(5) img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 10;
+    grid-column: 1/11;
+  }
+  body.ideas div.container article:nth-child(2) h1, body.ideas div.container article:nth-child(2) p, body.ideas div.container article:nth-child(2) ol, body.ideas div.container article:nth-child(5) h1, body.ideas div.container article:nth-child(5) p, body.ideas div.container article:nth-child(5) ol {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 9;
+    grid-column: 4/13;
+  }
+  body.ideas div.container article:nth-child(4) img:nth-child(2), body.ideas div.container article:nth-child(6) img:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 11;
+    grid-column: 2/13;
+  }
+  body.ideas div.container article:nth-child(4) img, body.ideas div.container article:nth-child(6) img {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 9;
+    grid-column: 4/13;
+  }
+  body.ideas div.container article:nth-child(4) p, body.ideas div.container article:nth-child(4) h1, body.ideas div.container article:nth-child(6) p, body.ideas div.container article:nth-child(6) h1 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 9;
+    grid-column: 4/13;
   }
 }
 
@@ -857,7 +902,7 @@ article.numbered:before {
     background: url("../images/footer-blob.svg") 50% 16%/140% auto no-repeat;
   }
   footer ul {
-    font: 400 1.5em Montserrat, sans-serif;
+    font: 400 1.2em Montserrat, sans-serif;
   }
   footer ul li {
     width: 150px;
@@ -882,6 +927,34 @@ article.numbered:before {
   }
   div.gallery a figure figcaption {
     font: 900 2em Montserrat, sans-serif;
+  }
+  section.blue-block {
+    padding-bottom: 25vh;
+  }
+  section.blue-block h1 {
+    margin: 20px 0px;
+  }
+  section.blue-block p {
+    font-weight: 900;
+  }
+  section.blue-bean p {
+    padding: 20px;
+  }
+  section.blue-bean div.call-to-action {
+    padding: 30px 30px 40px 30px;
+  }
+  a.call-to-action {
+    padding: 6px;
+    margin: 6px;
+  }
+  body.home {
+    background: url("../images/fun-tip.svg") 124% 27%/41% no-repeat, url("../images/orange-spoon-phone.svg") -152px 6%/81% no-repeat, url("../images/light-blue-spoon-desk.svg") 50% -4%/52% no-repeat, url("../images/dark-blue-spoon.svg") 128% 7%/57% no-repeat, url("../images/light-blue-blob-phone.svg") 56% 78%/120% no-repeat;
+  }
+  body.ideas {
+    background: url("../images/fun-tip.svg") 120% 33.5%/41% no-repeat, url("../images/blue-blob.svg") 60% 1%/121% no-repeat, url("../images/light-blue-blob-phone.svg") -23% 41%/45% no-repeat, url("../images/dark-blue-spoon.svg") -41% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 83%/49% no-repeat;
+  }
+  body.form {
+    background: url("../images/orange-spoon-phone.svg") 222% 26%/69% no-repeat, url("../images/light-blue-blob.svg") 50% 27%/162% no-repeat;
   }
 }
 
