@@ -262,6 +262,73 @@ body.ideas {
   }
 }
 
+//form
+body.form {
+  div.container {
+    h1 {
+      margin: 5px;
+    }
+    form {
+      margin: 30px 0px 90px;
+      label {
+        margin: 5px;
+      }
+      input, textarea {
+        background: linear-gradient(180deg, #E5F0F4 0.59%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        border: 1px solid #27435E;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+      input {
+        height: 32px;
+      }
+      textarea {
+        height: 84px;
+      }
+      #permission {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checkbox {
+        background: #FFFFFF;
+        border: 1px solid #27435E;
+        box-sizing: border-box;
+        box-shadow: inset 0px 14px 34px #E5F0F4;
+        border-radius: 5px;
+        width: 15px;
+        height: 15px;
+        margin: auto;
+      }
+      #permission:checked ~ .checkbox {
+        background: $tertiaryColor;
+      }
+      [for=permission] {
+        margin: 15px 5px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      [type=submit] {
+        background: #E18D70;
+        border-radius: 5px;
+        border: none;
+        height: initial;
+        padding: 15px;
+        color: $primaryColor;
+        font: $header-font;
+      }
+      [type=submit]:hover {
+        border: 1px solid $primaryColor;
+      }
+    }
+  }
+}
+
+.underlined {
+  border-bottom: 2px solid $secondaryColor;
+}
 //animate svg
 #spoonClacking {
   position: absolute;
@@ -337,7 +404,6 @@ body.ideas {
       }
     }
   }
-
   nav > ul.open {
     clip-path: circle(1500px at 110% -20%);
     pointer-events: all;

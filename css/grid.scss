@@ -119,6 +119,28 @@ body.ideas {
   }
 }
 
+body.form {
+  div.container {
+    h1 {
+      grid-column: 1/-1;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    form {
+      input, textarea, label {
+        grid-column: 2/10;
+      }
+      div {
+        grid-column: 2;
+      }
+      [for=permission] {
+        grid-column: 3/10;
+      }
+    }
+  }
+}
+
 
 //tablet styles
 @media (min-width: 340px) {

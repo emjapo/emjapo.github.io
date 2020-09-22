@@ -226,6 +226,30 @@ body.ideas div.container article:nth-child(4) p, body.ideas div.container articl
   grid-column: 4/13;
 }
 
+body.form div.container h1 {
+  grid-column: 1/-1;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.form div.container form input, body.form div.container form textarea, body.form div.container form label {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2/10;
+}
+
+body.form div.container form div {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+body.form div.container form [for=permission] {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-column: 3/10;
+}
+
 body {
   color: #27435E;
   font: 400 0.75em Montserrat, sans-serif;
@@ -505,6 +529,84 @@ body.ideas div.container article:nth-child(4), body.ideas div.container article:
 
 body.ideas div.container article:nth-child(4) p, body.ideas div.container article:nth-child(6) p {
   margin: 5px;
+}
+
+body.form div.container h1 {
+  margin: 5px;
+}
+
+body.form div.container form {
+  margin: 30px 0px 90px;
+}
+
+body.form div.container form label {
+  margin: 5px;
+}
+
+body.form div.container form input, body.form div.container form textarea {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.59%, #E5F0F4), to(rgba(255, 255, 255, 0))), #FFFFFF;
+  background: linear-gradient(180deg, #E5F0F4 0.59%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+  border: 1px solid #27435E;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+body.form div.container form input {
+  height: 32px;
+}
+
+body.form div.container form textarea {
+  height: 84px;
+}
+
+body.form div.container form #permission {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+body.form div.container form .checkbox {
+  background: #FFFFFF;
+  border: 1px solid #27435E;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset 0px 14px 34px #E5F0F4;
+          box-shadow: inset 0px 14px 34px #E5F0F4;
+  border-radius: 5px;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+}
+
+body.form div.container form #permission:checked ~ .checkbox {
+  background: #E5F0F4;
+}
+
+body.form div.container form [for=permission] {
+  margin: 15px 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+body.form div.container form [type=submit] {
+  background: #E18D70;
+  border-radius: 5px;
+  border: none;
+  height: initial;
+  padding: 15px;
+  color: #27435E;
+  font: 900 1.5em Montserrat, sans-serif;
+}
+
+body.form div.container form [type=submit]:hover {
+  border: 1px solid #27435E;
+}
+
+.underlined {
+  border-bottom: 2px solid #A0D2E3;
 }
 
 #spoonClacking {
