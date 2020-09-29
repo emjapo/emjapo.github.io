@@ -1,4 +1,4 @@
-.container {
+.container, aside {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[14];
@@ -43,9 +43,9 @@ aside {
   display: -ms-flexbox;
   display: flex;
   height: 20vh;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 11;
-  grid-column: 3/14;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 14;
+  grid-column: 1/15;
   text-align: right;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -60,12 +60,13 @@ aside h1, aside p {
 
 aside h1 {
   padding-left: 60px;
-  padding-right: 15px;
-  padding-bottom: 9px;
+  padding-right: 53px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 aside p {
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .gallery {
@@ -369,9 +370,6 @@ body.form div.container form [for=permission] {
     margin: 10px;
   }
   aside {
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 8;
-    grid-column: 6/14;
     height: 30vh;
   }
   body.ideas div.container article:nth-child(2), body.ideas div.container article:nth-child(5) {

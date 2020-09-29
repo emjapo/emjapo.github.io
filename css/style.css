@@ -48,7 +48,7 @@ table {
   border-spacing: 0;
 }
 
-.container {
+.container, aside {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[14];
@@ -93,9 +93,9 @@ aside {
   display: -ms-flexbox;
   display: flex;
   height: 20vh;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 11;
-  grid-column: 3/14;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 14;
+  grid-column: 1/15;
   text-align: right;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -110,12 +110,13 @@ aside h1, aside p {
 
 aside h1 {
   padding-left: 60px;
-  padding-right: 15px;
-  padding-bottom: 9px;
+  padding-right: 53px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 aside p {
-  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .gallery {
@@ -419,9 +420,6 @@ body.form div.container form [for=permission] {
     margin: 10px;
   }
   aside {
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 8;
-    grid-column: 6/14;
     height: 30vh;
   }
   body.ideas div.container article:nth-child(2), body.ideas div.container article:nth-child(5) {
@@ -596,15 +594,19 @@ header nav ul a {
 }
 
 body.home {
-  background: url("../images/fun-tip.svg") 120% 26%/41% no-repeat, url("../images/orange-spoon-phone.svg") -59px 2%/100% no-repeat, url("../images/light-blue-spoon.svg") -24% 23%/52% no-repeat, url("../images/light-blue-spoon-up.svg") 132% 7%/59% no-repeat, url("../images/light-blue-blob-phone.svg") 62% 79%/128% no-repeat;
+  background: url("../images/orange-spoon-phone.svg") -59px 2%/100% no-repeat, url("../images/light-blue-spoon.svg") -24% 20%/52% no-repeat, url("../images/light-blue-spoon-up.svg") 132% 7%/59% no-repeat, url("../images/light-blue-blob-phone.svg") 62% 79%/128% no-repeat;
 }
 
 body.ideas {
-  background: url("../images/fun-tip.svg") 120% 33.5%/41% no-repeat, url("../images/blue-blob.svg") 187% 1%/102% no-repeat, url("../images/light-blue-blob-phone.svg") -23% 41%/45% no-repeat, url("../images/dark-blue-spoon.svg") -41% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 83%/49% no-repeat;
+  background: url("../images/blue-blob.svg") 187% 1%/102% no-repeat, url("../images/light-blue-blob-phone.svg") -23% 41%/45% no-repeat, url("../images/dark-blue-spoon.svg") -41% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 83%/49% no-repeat;
 }
 
 body.form {
   background: url("../images/orange-spoon-phone.svg") 222% 26%/69% no-repeat, url("../images/light-blue-blob.svg") 50% 27%/162% no-repeat;
+}
+
+aside {
+  background: url("../images/fun-tip.svg") 115% 50%/41% no-repeat;
 }
 
 section.blue-block {
@@ -721,7 +723,7 @@ footer li.call-to-action a {
 }
 
 a.current {
-  color: #A0D2E3;
+  border-bottom: 2px solid #27435E;
 }
 
 footer a.current {
@@ -1089,6 +1091,15 @@ article.numbered:before {
   section.blue-block p {
     font-weight: 900;
   }
+  aside h1 {
+    padding-left: 60px;
+    padding-right: 95px;
+    padding-bottom: 5px;
+  }
+  aside p {
+    padding-left: 80px;
+    padding-right: 20px;
+  }
   section.blue-bean p {
     padding: 20px;
   }
@@ -1100,10 +1111,10 @@ article.numbered:before {
     margin: 6px;
   }
   body.home {
-    background: url("../images/fun-tip.svg") 124% 27%/41% no-repeat, url("../images/orange-spoon-phone.svg") -152px 6%/81% no-repeat, url("../images/light-blue-spoon-desk.svg") 50% -4%/52% no-repeat, url("../images/dark-blue-spoon.svg") 128% 7%/57% no-repeat, url("../images/light-blue-blob-phone.svg") 56% 78%/120% no-repeat;
+    background: url("../images/orange-spoon-phone.svg") -152px 6%/81% no-repeat, url("../images/light-blue-spoon-desk.svg") 50% -4%/52% no-repeat, url("../images/dark-blue-spoon.svg") 128% 7%/57% no-repeat, url("../images/light-blue-blob-phone.svg") 56% 78%/120% no-repeat;
   }
   body.ideas {
-    background: url("../images/fun-tip.svg") 120% 31%/39% no-repeat, url("../images/blue-blob.svg") 65% 2%/120% no-repeat, url("../images/light-blue-blob-phone.svg") 108% 36%/45% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 79%/49% no-repeat;
+    background: url("../images/blue-blob.svg") 65% 2%/120% no-repeat, url("../images/light-blue-blob-phone.svg") 108% 36%/45% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 79%/49% no-repeat;
   }
   body.form {
     background: url("../images/orange-spoon-phone.svg") 210% 27%/69% no-repeat, url("../images/light-blue-blob.svg") 6% 31%/112% no-repeat;
@@ -1348,11 +1359,22 @@ article.numbered:before {
   body.form div.container form [type=submit]:hover {
     border: 4px solid #27435E;
   }
+  body.ideas aside {
+    background: url("../images/fun-tip.svg") 115% 50%/35% no-repeat;
+  }
+  body.ideas aside h1 {
+    padding-right: 120px;
+  }
+  body.ideas aside p {
+    margin-right: 8%;
+    margin-left: 15%;
+    padding-right: 0;
+  }
   body.home {
-    background: url("../images/fun-tip.svg") 111% 26.5%/28% no-repeat, url("../images/orange-spoon-phone.svg") -9px 7%/57% no-repeat, url("../images/light-blue-spoon-desk.svg") 42% -4%/33% no-repeat, url("../images/dark-blue-spoon.svg") 102% 6%/38% no-repeat, url("../images/light-blue-blob-phone.svg") 56% 75%/108% no-repeat;
+    background: url("../images/orange-spoon-phone.svg") -9px 7%/57% no-repeat, url("../images/light-blue-spoon-desk.svg") 42% -4%/33% no-repeat, url("../images/dark-blue-spoon.svg") 102% 6%/38% no-repeat, url("../images/light-blue-blob-phone.svg") 56% 75%/108% no-repeat;
   }
   body.ideas {
-    background: url("../images/fun-tip.svg") 111% 34.5%/28% no-repeat, url("../images/blue-blob.svg") 69% 2%/126% no-repeat, url("../images/light-blue-blob-phone.svg") 113% 40%/48% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 109% 82%/52% no-repeat;
+    background: url("../images/blue-blob.svg") 69% 2%/126% no-repeat, url("../images/light-blue-blob-phone.svg") 113% 40%/48% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 109% 82%/52% no-repeat;
   }
   body.form {
     background: url("../images/orange-spoon-phone.svg") 210% 27%/69% no-repeat, url("../images/light-blue-blob.svg") 11% 27%/84% no-repeat;

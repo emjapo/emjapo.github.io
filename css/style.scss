@@ -111,17 +111,20 @@ header {
 
 // backgrounds
 body.home {
-  background: url('../images/fun-tip.svg') 120% 26%/41% no-repeat, url("../images/orange-spoon-phone.svg") -59px 2%/100% no-repeat, url('../images/light-blue-spoon.svg') -24% 23%/52% no-repeat, url("../images/light-blue-spoon-up.svg") 132% 7%/59% no-repeat, url('../images/light-blue-blob-phone.svg')  62% 79%/128% no-repeat;
+  background: url("../images/orange-spoon-phone.svg") -59px 2%/100% no-repeat, url('../images/light-blue-spoon.svg') -24% 20%/52% no-repeat, url("../images/light-blue-spoon-up.svg") 132% 7%/59% no-repeat, url('../images/light-blue-blob-phone.svg')  62% 79%/128% no-repeat;
 }
 
 body.ideas {
-  background: url('../images/fun-tip.svg') 120% 33.5%/41% no-repeat, url('../images/blue-blob.svg') 187% 1%/102% no-repeat, url('../images/light-blue-blob-phone.svg') -23% 41%/45% no-repeat, url('../images/dark-blue-spoon.svg') -41% 93%/50% no-repeat, url('../images/orange-blob.svg') 114% 83%/49% no-repeat;
+  background: url('../images/blue-blob.svg') 187% 1%/102% no-repeat, url('../images/light-blue-blob-phone.svg') -23% 41%/45% no-repeat, url('../images/dark-blue-spoon.svg') -41% 93%/50% no-repeat, url('../images/orange-blob.svg') 114% 83%/49% no-repeat;
 }
 
 body.form {
   background: url('../images/orange-spoon-phone.svg') 222% 26%/69% no-repeat, url('../images/light-blue-blob.svg') 50% 27%/162% no-repeat;
 }
 
+aside {
+  background: url('../images/fun-tip.svg') 115% 50%/41% no-repeat;
+}
 section.blue-block {
   background-color: $primaryColor;
   width: 100%;
@@ -223,7 +226,7 @@ footer {
 }
 
 a.current {
-  color: $secondaryColor;
+  border-bottom: 2px solid $primaryColor;
 }
 footer a.current {
   color: $popColor;
@@ -560,7 +563,17 @@ article.numbered:before {
     font-weight: 900;
   }
 }
-
+aside {
+  h1 {
+    padding-left: 60px;
+    padding-right: 95px;
+    padding-bottom: 5px;
+  }
+  p {
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+}
 section.blue-bean {
   p {
     padding: 20px;
@@ -577,11 +590,11 @@ a.call-to-action {
 
 // backgrounds
 body.home {
-  background: url("../images/fun-tip.svg") 124% 27%/41% no-repeat, url("../images/orange-spoon-phone.svg") -152px 6%/81% no-repeat, url("../images/light-blue-spoon-desk.svg") 50% -4%/52% no-repeat, url("../images/dark-blue-spoon.svg") 128% 7%/57% no-repeat, url("../images/light-blue-blob-phone.svg") 56% 78%/120% no-repeat;
+  background: url("../images/orange-spoon-phone.svg") -152px 6%/81% no-repeat, url("../images/light-blue-spoon-desk.svg") 50% -4%/52% no-repeat, url("../images/dark-blue-spoon.svg") 128% 7%/57% no-repeat, url("../images/light-blue-blob-phone.svg") 56% 78%/120% no-repeat;
 }
 
 body.ideas {
-  background: url("../images/fun-tip.svg") 120% 31%/39% no-repeat, url("../images/blue-blob.svg") 65% 2%/120% no-repeat, url("../images/light-blue-blob-phone.svg") 108% 36%/45% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 79%/49% no-repeat
+  background: url("../images/blue-blob.svg") 65% 2%/120% no-repeat, url("../images/light-blue-blob-phone.svg") 108% 36%/45% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 114% 79%/49% no-repeat
 }
 
 body.form {
@@ -889,13 +902,26 @@ body.form {
     }
   }
 }
+
+ body.ideas aside {
+  background: url("../images/fun-tip.svg") 115% 50%/35% no-repeat;
+  h1 {
+    padding-right: 120px;
+  }
+  p {
+    margin-right: 8%;
+    margin-left: 15%;
+    padding-right: 0;
+  }
+}
+
   // backgrounds
 body.home {
-  background: url("../images/fun-tip.svg") 111% 26.5%/28%  no-repeat, url("../images/orange-spoon-phone.svg") -9px 7%/57% no-repeat, url("../images/light-blue-spoon-desk.svg") 42% -4%/33% no-repeat, url("../images/dark-blue-spoon.svg") 102% 6%/38% no-repeat, url("../images/light-blue-blob-phone.svg")  56% 75%/108% no-repeat;
+  background: url("../images/orange-spoon-phone.svg") -9px 7%/57% no-repeat, url("../images/light-blue-spoon-desk.svg") 42% -4%/33% no-repeat, url("../images/dark-blue-spoon.svg") 102% 6%/38% no-repeat, url("../images/light-blue-blob-phone.svg")  56% 75%/108% no-repeat;
 }
 
 body.ideas {
-  background: url("../images/fun-tip.svg") 111% 34.5%/28% no-repeat, url("../images/blue-blob.svg") 69% 2%/126% no-repeat, url("../images/light-blue-blob-phone.svg") 113% 40%/48% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 109% 82%/52% no-repeat;
+  background: url("../images/blue-blob.svg") 69% 2%/126% no-repeat, url("../images/light-blue-blob-phone.svg") 113% 40%/48% no-repeat, url("../images/dark-blue-spoon.svg") -52% 93%/50% no-repeat, url("../images/orange-blob.svg") 109% 82%/52% no-repeat;
 }
 
 body.form {

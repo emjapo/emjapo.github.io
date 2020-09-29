@@ -1,4 +1,4 @@
-.container {
+.container, aside {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-gap: 15px;
@@ -26,21 +26,23 @@ section, article, form, .gallery {
 aside {
   display: flex;
   height: 20vh;
-  grid-column: 3/14;
+  grid-column: 1/15;
   text-align: right;
   align-content: center;
   margin-left: auto;
   justify-content: space-around;
   h1, p {
     margin:auto;
+
   }
   h1 {
     padding-left: 60px;
-    padding-right: 15px;
-    padding-bottom: 9px;
+    padding-right: 53px;
+    padding-bottom: 5px;
+    text-align: center;
   }
   p {
-    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -273,7 +275,6 @@ body.form {
     }
   }
   aside {
-    grid-column: 6/14;
     height: 30vh
   }
 
