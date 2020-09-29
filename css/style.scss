@@ -695,11 +695,6 @@ body.form {
         height: 30px;
         margin: auto;
       }
-      [for=permission] {
-        // margin: 30px 5px;
-        // text-align: center;
-        // vertical-align: middle;
-      }
       [type=submit] {
         background: #E18D70;
         border-radius: 15px;
@@ -795,8 +790,6 @@ body.form {
       h1 {
         margin: 20px 0px;
       }
-      img:last-child {
-      }
       p {
         margin: 30px 50px 30px 0px;
       }
@@ -887,11 +880,6 @@ body.form {
         height: 40px;
         margin: auto;
       }
-      [for=permission] {
-        // margin: 30px 5px;
-        // text-align: center;
-        // vertical-align: middle;
-      }
       [type=submit] {
         background: #E18D70;
         border-radius: 15px;
@@ -920,7 +908,7 @@ body.form {
 
   // backgrounds
 body.home {
-  background: url("../images/orange-spoon-phone.svg") -9px 7%/57% no-repeat, url("../images/light-blue-spoon-desk.svg") 42% -4%/33% no-repeat, url("../images/dark-blue-spoon.svg") 102% 6%/38% no-repeat, url("../images/light-blue-blob-phone.svg")  46% 75%/108% no-repeat;
+  background: url("../images/orange-spoon-phone.svg") -9px 7%/57% no-repeat, url("../images/light-blue-spoon-desk.svg") 42% -4%/33% no-repeat, url("../images/dark-blue-spoon.svg") 102% 6%/38% no-repeat, url("../images/light-blue-blob-phone.svg")  46% 76%/108% no-repeat;
 }
 
 body.ideas {
