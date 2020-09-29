@@ -483,6 +483,11 @@ body.form div.container form [for=permission] {
   }
 }
 
+h2 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
 a:hover {
   color: #E18D70;
 }
