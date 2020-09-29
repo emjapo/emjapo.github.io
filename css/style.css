@@ -249,12 +249,6 @@ body.form div.container form div {
   grid-column: 2;
 }
 
-body.form div.container form [for=permission] {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 7;
-  grid-column: 3/10;
-}
-
 @media screen and (min-width: 750px) {
   .intro {
     -ms-grid-column: 2;
@@ -378,11 +372,6 @@ body.form div.container form [for=permission] {
     -ms-grid-column-span: 7;
     grid-column: 2/9;
   }
-  body.form div.container form [for=permission] {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 6;
-    grid-column: 3/9;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -468,11 +457,6 @@ body.form div.container form [for=permission] {
     -ms-grid-column: 2;
     -ms-grid-column-span: 5;
     grid-column: 2/7;
-  }
-  body.form div.container form [for=permission] {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
-    grid-column: 3/7;
   }
   body.form div.container form [type=submit] {
     -ms-grid-column: 3;
@@ -728,6 +712,7 @@ a.current {
 
 footer a.current {
   color: #E18D70;
+  border-bottom: none;
 }
 
 .bright-ideas {
@@ -802,7 +787,7 @@ body.form div.container form {
 }
 
 body.form div.container form label {
-  margin: 5px;
+  margin: 5px 0px;
 }
 
 body.form div.container form input, body.form div.container form textarea {
@@ -812,6 +797,9 @@ body.form div.container form input, body.form div.container form textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
+  padding: 10px;
+  font: 400 0.75em Montserrat, sans-serif;
+  color: #27435E;
 }
 
 body.form div.container form input {
@@ -820,6 +808,7 @@ body.form div.container form input {
 
 body.form div.container form textarea {
   height: 84px;
+  resize: none;
 }
 
 body.form div.container form #permission {
@@ -844,13 +833,22 @@ body.form div.container form .checkbox {
 }
 
 body.form div.container form #permission:checked ~ .checkbox {
-  background: #E5F0F4;
+  background: #E18D70;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body.form div.container form [for=permission] {
-  margin: 15px 5px;
-  text-align: center;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 8px 0px;
 }
 
 body.form div.container form [type=submit] {
@@ -1168,11 +1166,12 @@ article.numbered:before {
     margin: 30px 0px 30px;
   }
   body.form div.container form label {
-    margin: 10px;
+    margin: 10px 0px;
   }
   body.form div.container form input, body.form div.container form textarea {
     border: 3px solid #27435E;
     border-radius: 10px;
+    font-size: 1em;
   }
   body.form div.container form input {
     height: 42px;
@@ -1186,14 +1185,6 @@ article.numbered:before {
     width: 30px;
     height: 30px;
     margin: auto;
-  }
-  body.form div.container form #permission:checked ~ .checkbox {
-    background: #E5F0F4;
-  }
-  body.form div.container form [for=permission] {
-    margin: 30px 5px;
-    text-align: center;
-    vertical-align: middle;
   }
   body.form div.container form [type=submit] {
     background: #E18D70;
@@ -1227,7 +1218,7 @@ article.numbered:before {
     margin: 10px;
   }
   section.blue-block {
-    padding-bottom: 45vh;
+    padding-bottom: 52vh;
   }
   section.blue-bean {
     padding-top: 15vh;
@@ -1266,7 +1257,7 @@ article.numbered:before {
   }
   body.ideas div.container article:nth-child(2) ol, body.ideas div.container article:nth-child(5) ol {
     margin: 20px 60px;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   body.ideas div.container article:nth-child(4) img, body.ideas div.container article:nth-child(6) img {
     margin: 10px;
@@ -1309,7 +1300,7 @@ article.numbered:before {
   }
   #spoonClacking {
     position: absolute;
-    top: 355%;
+    top: 445%;
     left: -13%;
     width: 504px;
     height: 358px;
@@ -1321,12 +1312,13 @@ article.numbered:before {
     margin: 30px 0px 30px;
   }
   body.form div.container form label {
-    margin: 20px 10px;
+    margin: 20px 0px;
     font-size: 1.3em;
   }
   body.form div.container form input, body.form div.container form textarea {
     border: 3px solid #27435E;
     border-radius: 10px;
+    font-size: 1.2em;
   }
   body.form div.container form input {
     height: 48px;
@@ -1340,14 +1332,6 @@ article.numbered:before {
     width: 40px;
     height: 40px;
     margin: auto;
-  }
-  body.form div.container form #permission:checked ~ .checkbox {
-    background: #E5F0F4;
-  }
-  body.form div.container form [for=permission] {
-    margin: 30px 5px;
-    text-align: center;
-    vertical-align: middle;
   }
   body.form div.container form [type=submit] {
     background: #E18D70;

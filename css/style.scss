@@ -230,6 +230,7 @@ a.current {
 }
 footer a.current {
   color: $popColor;
+  border-bottom: none;
 }
 
 //ideas page
@@ -301,19 +302,23 @@ body.form {
     form {
       margin: 30px 0px 90px;
       label {
-        margin: 5px;
+        margin: 5px 0px;
       }
       input, textarea {
         background: linear-gradient(180deg, #E5F0F4 0.59%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
         border: 1px solid #27435E;
         box-sizing: border-box;
         border-radius: 5px;
+        padding: 10px;
+        font: $body-copy;
+        color: $primaryColor;
       }
       input {
         height: 32px;
       }
       textarea {
         height: 84px;
+        resize: none;
       }
       #permission {
         position: absolute;
@@ -333,12 +338,14 @@ body.form {
         margin: auto;
       }
       #permission:checked ~ .checkbox {
-        background: $tertiaryColor;
+        background: $popColor;
+        box-shadow: none;
       }
       [for=permission] {
-        margin: 15px 5px;
-        text-align: center;
-        vertical-align: middle;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       padding: 8px 0px;
       }
       [type=submit] {
         background: #E18D70;
@@ -668,11 +675,12 @@ body.form {
     form {
       margin: 30px 0px 30px;
       label {
-        margin: 10px;
+        margin: 10px 0px;
       }
       input, textarea {
         border: 3px solid #27435E;
         border-radius: 10px;
+        font-size: 1em;
       }
       input {
         height: 42px;
@@ -687,13 +695,10 @@ body.form {
         height: 30px;
         margin: auto;
       }
-      #permission:checked ~ .checkbox {
-        background: $tertiaryColor;
-      }
       [for=permission] {
-        margin: 30px 5px;
-        text-align: center;
-        vertical-align: middle;
+        // margin: 30px 5px;
+        // text-align: center;
+        // vertical-align: middle;
       }
       [type=submit] {
         background: #E18D70;
@@ -741,7 +746,7 @@ body.form {
     }
   }
   section.blue-block {
-    padding-bottom: 45vh;
+    padding-bottom: 52vh;
   }
   section.blue-bean {
     padding-top: 15vh;
@@ -797,7 +802,7 @@ body.form {
       }
       ol {
         margin:20px 60px;
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
     }
     article:nth-child(4), article:nth-child(6) {
@@ -846,7 +851,7 @@ body.form {
 }
 #spoonClacking {
   position: absolute;
-  top: 355%;
+  top: 445%;
   left: -13%;
   width: 504px;
   height: 358px;
@@ -861,12 +866,13 @@ body.form {
     form {
       margin: 30px 0px 30px;
       label {
-        margin: 20px 10px;
+        margin: 20px 0px;
         font-size: 1.3em;
       }
       input, textarea {
         border: 3px solid #27435E;
         border-radius: 10px;
+        font-size: 1.2em;
       }
       input {
         height: 48px;
@@ -881,13 +887,10 @@ body.form {
         height: 40px;
         margin: auto;
       }
-      #permission:checked ~ .checkbox {
-        background: $tertiaryColor;
-      }
       [for=permission] {
-        margin: 30px 5px;
-        text-align: center;
-        vertical-align: middle;
+        // margin: 30px 5px;
+        // text-align: center;
+        // vertical-align: middle;
       }
       [type=submit] {
         background: #E18D70;

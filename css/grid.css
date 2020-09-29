@@ -199,12 +199,6 @@ body.form div.container form div {
   grid-column: 2;
 }
 
-body.form div.container form [for=permission] {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 7;
-  grid-column: 3/10;
-}
-
 @media screen and (min-width: 750px) {
   .intro {
     -ms-grid-column: 2;
@@ -328,11 +322,6 @@ body.form div.container form [for=permission] {
     -ms-grid-column-span: 7;
     grid-column: 2/9;
   }
-  body.form div.container form [for=permission] {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 6;
-    grid-column: 3/9;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -418,11 +407,6 @@ body.form div.container form [for=permission] {
     -ms-grid-column: 2;
     -ms-grid-column-span: 5;
     grid-column: 2/7;
-  }
-  body.form div.container form [for=permission] {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 4;
-    grid-column: 3/7;
   }
   body.form div.container form [type=submit] {
     -ms-grid-column: 3;

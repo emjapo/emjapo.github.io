@@ -139,9 +139,6 @@ body.form {
       div {
         grid-column: 2;
       }
-      [for=permission] {
-        grid-column: 3/10;
-      }
     }
   }
 }
@@ -241,9 +238,6 @@ body.form {
       input, textarea, label {
         grid-column: 2/9;
       }
-      [for=permission] {
-        grid-column: 3/9;
-      }
     }
   }
 }
@@ -318,9 +312,6 @@ body.form {
     form {
       input, textarea, label {
         grid-column: 2/7;
-      }
-      [for=permission] {
-        grid-column: 3/7;
       }
       [type=submit] {
         grid-column: 3/6;
