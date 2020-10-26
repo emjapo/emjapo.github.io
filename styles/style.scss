@@ -1,8 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import "reset";
 
+$colorOne: #04BF8A;
+$colorTwo: #F2CF1D;
+$colorThree: #FFB199;
+$colorFour: #F29F05;
+$colorFive: #18298C;
+$colorGradient: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
 .block {
     width: 100%;
     height: 100vh;
@@ -13,15 +20,12 @@
 }
 
 .logo {
-    animation: spin 8s linear infinite;
     margin: 40px;
     
 }
 
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
+.spin {
+    animation: spin 8s linear infinite;
 }
 
 #poppins-intro {
@@ -68,21 +72,6 @@
     animation: line-anim 2s ease forwards 2.1s;
 }
 
-@keyframes line-anim {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes fill {
-    from {
-        fill: transparent;
-    }
-    to {
-        fill: #ffffff;
-    }
-}
-
 nav {
     width: 100%;
     height: 100vh;
@@ -91,7 +80,7 @@ nav {
     .left {
         height: 100vh;
         width: 10%;
-        background-color: brown;
+        background-color:brown;
         cursor: url('../images/History.png'), auto;
     }
     .bottom {
@@ -104,5 +93,26 @@ nav {
         height: 100vh;
         width: 10%;
         background-color: yellow;
+    }
+}
+
+//animations
+ @keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #ffffff;
     }
 }

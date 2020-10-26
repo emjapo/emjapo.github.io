@@ -1,6 +1,55 @@
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 .block {
@@ -13,23 +62,12 @@
 }
 
 .logo {
-  -webkit-animation: spin 8s linear infinite;
-          animation: spin 8s linear infinite;
   margin: 40px;
 }
 
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.spin {
+  -webkit-animation: spin 8s linear infinite;
+          animation: spin 8s linear infinite;
 }
 
 #poppins-intro {
@@ -91,6 +129,46 @@
           animation: line-anim 2s ease forwards 2.1s;
 }
 
+nav {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+nav .left {
+  height: 100vh;
+  width: 10%;
+  background-color: brown;
+  cursor: url("../images/History.png"), auto;
+}
+
+nav .bottom {
+  height: 10%;
+  width: 80%;
+  background-color: aqua;
+  float: left;
+}
+
+nav .right {
+  height: 100vh;
+  width: 10%;
+  background-color: yellow;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @-webkit-keyframes line-anim {
   to {
     stroke-dashoffset: 0;
@@ -119,30 +197,4 @@
   to {
     fill: #ffffff;
   }
-}
-
-nav {
-  width: 100%;
-  height: 100vh;
-  background-color: #000000;
-}
-
-nav .left {
-  height: 100vh;
-  width: 10%;
-  background-color: brown;
-  cursor: url("../images/History.png"), auto;
-}
-
-nav .bottom {
-  height: 10%;
-  width: 80%;
-  background-color: aqua;
-  float: left;
-}
-
-nav .right {
-  height: 100vh;
-  width: 10%;
-  background-color: yellow;
 }
