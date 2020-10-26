@@ -15,10 +15,21 @@ body {
     height: 100vh;
 }
 
-.first {
+.black {
     background-color: #000000;
 }
-
+.gradient {
+    background-image: $colorGradient;
+}
+.green {
+    background-color: $colorOne;
+}
+.yellow {
+    background-color: $colorTwo;
+}
+.pink {
+    background-color: $colorThree;
+}
 .logo {
     margin: 40px;
     

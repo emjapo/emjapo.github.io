@@ -57,8 +57,25 @@ body {
   height: 100vh;
 }
 
-.first {
+.black {
   background-color: #000000;
+}
+
+.gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ff0844), to(#ffb199));
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+
+.green {
+  background-color: #04BF8A;
+}
+
+.yellow {
+  background-color: #F2CF1D;
+}
+
+.pink {
+  background-color: #FFB199;
 }
 
 .logo {
