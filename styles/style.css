@@ -87,8 +87,8 @@ body {
 }
 
 .spin {
-  -webkit-animation: spin 8s linear infinite;
-          animation: spin 8s linear infinite;
+  -webkit-animation: spin 15s linear infinite;
+          animation: spin 15s linear infinite;
 }
 
 #poppins-intro {
@@ -148,6 +148,27 @@ body {
   stroke-dashoffset: 1166.832275390625;
   -webkit-animation: line-anim 2s ease forwards 2.1s;
           animation: line-anim 2s ease forwards 2.1s;
+}
+
+.tagline {
+  margin-top: 25%;
+  margin-left: 50%;
+  font-size: 1.5em;
+  opacity: 0;
+  -webkit-animation: intro 1s ease forwards 3.2s;
+          animation: intro 1s ease forwards 3.2s;
+}
+
+h1.gradient {
+  font-size: 20em;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffb199), to(#ff0844));
+  background: linear-gradient(to top, #ffb199 0%, #ff0844 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section {
+  overflow: hidden;
 }
 
 nav {
@@ -243,5 +264,17 @@ nav .top {
   }
   to {
     fill: #ffffff;
+  }
+}
+
+@-webkit-keyframes intro {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes intro {
+  100% {
+    opacity: 1;
   }
 }
