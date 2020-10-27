@@ -156,7 +156,7 @@ nav .left {
   height: 100vh;
   width: 10%;
   background-color: brown;
-  cursor: url("../images/History.png"), auto;
+  cursor: url("../images/in-depth.png"), auto;
 }
 
 nav .bottom {
@@ -164,12 +164,22 @@ nav .bottom {
   width: 80%;
   background-color: aqua;
   float: left;
+  cursor: url("../images/History.png"), auto;
 }
 
 nav .right {
   height: 100vh;
   width: 10%;
   background-color: yellow;
+  cursor: url("../images/variations.png"), auto;
+}
+
+nav .top {
+  height: 10%;
+  width: 80%;
+  background-color: purple;
+  float: left;
+  cursor: url("../images/home.png"), auto;
 }
 
 @-webkit-keyframes spin {
