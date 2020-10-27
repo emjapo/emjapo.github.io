@@ -59,19 +59,23 @@ body {
 
 .black {
   background-color: #000000;
+  color: #ffffff;
 }
 
 .gradient {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ff0844), to(#ffb199));
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  color: #ffffff;
 }
 
 .green {
   background-color: #04BF8A;
+  color: #ffffff;
 }
 
 .yellow {
   background-color: #F2CF1D;
+  color: #ffffff;
 }
 
 .pink {

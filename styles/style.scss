@@ -17,15 +17,19 @@ body {
 
 .black {
     background-color: #000000;
+    color: #ffffff;
 }
 .gradient {
     background-image: $colorGradient;
+    color: #ffffff;
 }
 .green {
     background-color: $colorOne;
+    color: #ffffff;
 }
 .yellow {
     background-color: $colorTwo;
+    color: #ffffff;
 }
 .pink {
     background-color: $colorThree;
