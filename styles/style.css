@@ -154,7 +154,7 @@ nav {
 
 nav .left {
   height: 100vh;
-  width: 10%;
+  width: 10vw;
   background-color: brown;
   cursor: url("../images/in-depth.png"), auto;
 }
@@ -169,7 +169,7 @@ nav .bottom {
 
 nav .right {
   height: 100vh;
-  width: 10%;
+  width: 10vw;
   background-color: yellow;
   cursor: url("../images/variations.png"), auto;
 }
@@ -182,17 +182,33 @@ nav .top {
   cursor: url("../images/home.png"), auto;
 }
 
+.circles {
+  width: 50%;
+  position: relative;
+  top: 30%;
+  -webkit-animation: spin 20s linear infinite;
+          animation: spin 20s linear infinite;
+}
+
+.circles img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 @-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  from {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
 
 @keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  from {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
 
