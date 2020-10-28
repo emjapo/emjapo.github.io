@@ -111,26 +111,26 @@ nav {
     .left {
         height: 100vh;
         width: 10vw;
-        background-color:brown;
+        //background-color:brown;
         cursor: url('../images/in-depth.png'), auto;
     }
     .bottom {
         height: 10%;
         width: 80%;
-        background-color: aqua;
+        //background-color: aqua;
         float: left;
         cursor: url('../images/History.png'), auto;
     }
     .right {
         height: 100vh;
         width: 10vw;
-        background-color: yellow;
+        //background-color: yellow;
         cursor: url('../images/variations.png'), auto;
     }
     .top {
         height: 10%;
         width: 80%;
-        background-color: purple;
+        //background-color: purple;
         float: left;
         cursor: url('../images/home.png'), auto;
     }
@@ -147,6 +147,10 @@ nav {
         left: 50%;
         transform: translate(-50%,-50%);
     }
+}
+
+.pulse path:nth-child(1) {
+    animation: arrowPulse 5s ease-in-out infinite;
 }
 
 
@@ -174,5 +178,20 @@ nav {
 @keyframes intro {
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes arrowPulse {
+    0% {
+        stroke: #777777;
+        stroke-width: 2px;
+    }
+    50% {
+        stroke: #eeeeee;
+        stroke-width: 15px;
+    }
+    100% {
+        stroke: #777777;
+        stroke-width: 2px;
     }
 }

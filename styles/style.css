@@ -180,14 +180,12 @@ nav {
 nav .left {
   height: 100vh;
   width: 10vw;
-  background-color: brown;
   cursor: url("../images/in-depth.png"), auto;
 }
 
 nav .bottom {
   height: 10%;
   width: 80%;
-  background-color: aqua;
   float: left;
   cursor: url("../images/History.png"), auto;
 }
@@ -195,14 +193,12 @@ nav .bottom {
 nav .right {
   height: 100vh;
   width: 10vw;
-  background-color: yellow;
   cursor: url("../images/variations.png"), auto;
 }
 
 nav .top {
   height: 10%;
   width: 80%;
-  background-color: purple;
   float: left;
   cursor: url("../images/home.png"), auto;
 }
@@ -221,6 +217,11 @@ nav .top {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.pulse path:nth-child(1) {
+  -webkit-animation: arrowPulse 5s ease-in-out infinite;
+          animation: arrowPulse 5s ease-in-out infinite;
 }
 
 @-webkit-keyframes spin {
@@ -276,5 +277,35 @@ nav .top {
 @keyframes intro {
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes arrowPulse {
+  0% {
+    stroke: #777777;
+    stroke-width: 2px;
+  }
+  50% {
+    stroke: #eeeeee;
+    stroke-width: 15px;
+  }
+  100% {
+    stroke: #777777;
+    stroke-width: 2px;
+  }
+}
+
+@keyframes arrowPulse {
+  0% {
+    stroke: #777777;
+    stroke-width: 2px;
+  }
+  50% {
+    stroke: #eeeeee;
+    stroke-width: 15px;
+  }
+  100% {
+    stroke: #777777;
+    stroke-width: 2px;
   }
 }
