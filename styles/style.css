@@ -48,6 +48,14 @@ table {
   border-spacing: 0;
 }
 
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+  grid-gap: 15px;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -55,6 +63,7 @@ body {
 .block {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .black {
@@ -167,10 +176,6 @@ h1.gradient {
   -webkit-text-fill-color: transparent;
 }
 
-section {
-  overflow: hidden;
-}
-
 nav {
   width: 100%;
   height: 100vh;
@@ -180,27 +185,43 @@ nav {
 nav .left {
   height: 100vh;
   width: 10vw;
-  cursor: url("../images/in-depth.png"), auto;
 }
 
 nav .bottom {
   height: 10%;
   width: 80%;
   float: left;
-  cursor: url("../images/History.png"), auto;
 }
 
 nav .right {
   height: 100vh;
   width: 10vw;
-  cursor: url("../images/variations.png"), auto;
 }
 
 nav .top {
   height: 10%;
   width: 80%;
   float: left;
-  cursor: url("../images/home.png"), auto;
+}
+
+.home {
+  background: url("../images/Home.svg") no-repeat center;
+}
+
+.variety {
+  background: url("../images/Variety.svg") no-repeat center;
+}
+
+.history {
+  background: url("../images/History.svg") no-repeat center;
+}
+
+.inDepth {
+  background: url("../images/In-Depth.svg") no-repeat center;
+}
+
+div.images img {
+  max-width: 400px;
 }
 
 .circles {
@@ -222,6 +243,15 @@ nav .top {
 .pulse path:nth-child(1) {
   -webkit-animation: arrowPulse 5s ease-in-out infinite;
           animation: arrowPulse 5s ease-in-out infinite;
+}
+
+.cursor {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 @-webkit-keyframes spin {
