@@ -9,6 +9,10 @@ $colorGradient: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+}
+p{
+    line-height: 1.6;
 }
 .block {
     width: 100%;
@@ -16,7 +20,7 @@ body {
     overflow: hidden;
 }
 
-.black {
+section.black, div.black {
     background-color: #000000;
     color: #ffffff;
 }
@@ -24,15 +28,15 @@ body {
     background-image: $colorGradient;
     color: #ffffff;
 }
-.green {
+section.green, div.green {
     background-color: $colorOne;
     color: #ffffff;
 }
-.yellow {
+section.yellow, div.yellow {
     background-color: $colorTwo;
     color: #ffffff;
 }
-.pink {
+section.pink, div.pink {
     background-color: $colorThree;
 }
 .logo {
@@ -96,7 +100,7 @@ body {
     animation: intro 1s ease forwards 3.2s;
 }
  h1.gradient {
-     font-size: 20em;
+     font-size: 15em;
      background: linear-gradient(to top, #ffb199 0%,  #ff0844 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -132,19 +136,36 @@ nav {
 }
 .home {
     background: url("../images/Home.svg") no-repeat center;
+    cursor: none;
 }
 .variety {
     background: url("../images/Variety.svg") no-repeat center;
+    cursor: none;
 }
 .history {
     background: url("../images/History.svg") no-repeat center;
+    cursor: none;
 }
 .inDepth{
     background: url("../images/In-Depth.svg") no-repeat center;
+    cursor: none;
 }
 
 div.images img{
     max-width: 400px;
+}
+
+div.gradient img.spin {
+    width: 40%;
+    margin-top: -5%;
+    margin-left: 5%;
+}
+
+p.para1 {
+    margin-left: 55%;
+    margin-top: 5%;
+    width: 35%;
+    font-size: 1.3em;
 }
 
 
@@ -171,6 +192,15 @@ div.images img{
     position: absolute;
     transform: translate(-50%, -50%);
     pointer-events: none;
+}
+
+.sideways img {
+    margin-top:-1vh;
+    height: 104vh;
+}
+
+.blockText {
+
 }
 
 //animations

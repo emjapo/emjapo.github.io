@@ -1,5 +1,12 @@
-section {
+section, nav {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-gap: 15px;
+}
+
+.sideways img {
+    grid-column: 1/9;
+}
+.sideways div{
+    grid-column: 9/14;
 }

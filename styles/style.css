@@ -48,7 +48,7 @@ table {
   border-spacing: 0;
 }
 
-section {
+section, nav {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[14];
@@ -56,8 +56,25 @@ section {
   grid-gap: 15px;
 }
 
+.sideways img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+}
+
+.sideways div {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 5;
+  grid-column: 9/14;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+
+p {
+  line-height: 1.6;
 }
 
 .block {
@@ -66,7 +83,7 @@ body {
   overflow: hidden;
 }
 
-.black {
+section.black, div.black {
   background-color: #000000;
   color: #ffffff;
 }
@@ -77,17 +94,17 @@ body {
   color: #ffffff;
 }
 
-.green {
+section.green, div.green {
   background-color: #04BF8A;
   color: #ffffff;
 }
 
-.yellow {
+section.yellow, div.yellow {
   background-color: #F2CF1D;
   color: #ffffff;
 }
 
-.pink {
+section.pink, div.pink {
   background-color: #FFB199;
 }
 
@@ -169,7 +186,7 @@ body {
 }
 
 h1.gradient {
-  font-size: 20em;
+  font-size: 15em;
   background: -webkit-gradient(linear, left bottom, left top, from(#ffb199), to(#ff0844));
   background: linear-gradient(to top, #ffb199 0%, #ff0844 100%);
   -webkit-background-clip: text;
@@ -206,22 +223,39 @@ nav .top {
 
 .home {
   background: url("../images/Home.svg") no-repeat center;
+  cursor: none;
 }
 
 .variety {
   background: url("../images/Variety.svg") no-repeat center;
+  cursor: none;
 }
 
 .history {
   background: url("../images/History.svg") no-repeat center;
+  cursor: none;
 }
 
 .inDepth {
   background: url("../images/In-Depth.svg") no-repeat center;
+  cursor: none;
 }
 
 div.images img {
   max-width: 400px;
+}
+
+div.gradient img.spin {
+  width: 40%;
+  margin-top: -5%;
+  margin-left: 5%;
+}
+
+p.para1 {
+  margin-left: 55%;
+  margin-top: 5%;
+  width: 35%;
+  font-size: 1.3em;
 }
 
 .circles {
@@ -252,6 +286,11 @@ div.images img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   pointer-events: none;
+}
+
+.sideways img {
+  margin-top: -1vh;
+  height: 104vh;
 }
 
 @-webkit-keyframes spin {
