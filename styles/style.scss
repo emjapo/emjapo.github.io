@@ -7,6 +7,9 @@ $colorFour: #F29F05;
 $colorFive: #18298C;
 $colorGradient: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 
+
+// This is not designed in the mobile first format which is the but that is because I intend for my primary audience to view the website on their computers anyway, and therefore I wanted that design to be the most finished
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
@@ -110,28 +113,83 @@ nav {
     width: 100%;
     height: 100vh;
     background-color: #000000;
+    color: #ffffff;
 
     .left {
         height: 100vh;
-        width: 10vw;
-        //background-color:brown;
+       div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+             svg {
+                transform: rotate(90deg);
+            }
+        }
     }
     .bottom {
-        height: 10%;
-        width: 80%;
-        //background-color: aqua;
-        float: left;
+        height: 100%;
+        div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
     }
     .right {
         height: 100vh;
-        width: 10vw;
-        //background-color: yellow;
+        div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+             svg {
+                transform: rotate(270deg);
+            }
+        }
     }
     .top {
-        height: 10%;
-        width: 80%;
-        //background-color: purple;
-        float: left;
+        height: 100%;
+        div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+             svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .text {
+        h1 {
+            font-weight: 100;
+            font-size: 6em;
+            margin-top: 7%;
+            text-align: center;
+
+            span {
+                font-weight: 800;
+            }
+        }
+        h2 {
+            font-size: 1.1em;
+            margin: 2% 17% 0% 2%;
+        }
+        h2:nth-child(2) {
+            text-align: right;
+            color: $colorTwo;
+        }
+        h2:nth-child(3) {
+            text-align: right;
+            color: $colorOne;
+            span {
+                font-weight: 700;
+            }
+        }
     }
 }
 .home {
@@ -200,8 +258,37 @@ p.para1 {
 }
 
 .blockText {
-
+    p {
+        margin: 10%;
+    }
+    p:first-child {
+        margin-top: 20%;
+    }
+    li {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    li:nth-child(1) {
+        margin-left: 20%;
+        color: $colorFive;
+        font-size: 4em;
+        font-weight: 900;
+    }
+    li:nth-child(2) {
+        margin-left: 40%;
+        color: $colorOne;
+        font-size: 2em;
+        font-weight: 100;
+    }
+    li:nth-child(3) {
+        margin-left: 60%;
+        color: $colorTwo;
+        font-size: 2.5em;
+        font-weight: 300;
+        font-style: italic;
+    }
 }
+
 
 //animations
  @keyframes spin {
@@ -243,4 +330,30 @@ p.para1 {
         stroke: #777777;
         stroke-width: 2px;
     }
+}
+
+//way to switch the nav out ofr desktop or touch screen
+ .desktop {
+    display: initial;
+}
+.touch {
+    display: none;
+}
+
+@media (hover: none) {
+    .desktop {
+        display: none;
+    }
+    .touch {
+        display: initial;
+    }
+}
+
+//tablet styles
+@media only screens and (max-width: 1024px) {
+
+}
+//mobile styles
+@media only screens and (max-width: 500px) {
+
 }

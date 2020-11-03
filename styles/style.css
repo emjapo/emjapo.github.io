@@ -48,12 +48,22 @@ table {
   border-spacing: 0;
 }
 
-section, nav {
+section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[14];
       grid-template-columns: repeat(14, 1fr);
   grid-gap: 15px;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+  grid-auto-flow: dense;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
 }
 
 .sideways img {
@@ -66,6 +76,42 @@ section, nav {
   -ms-grid-column: 9;
   -ms-grid-column-span: 5;
   grid-column: 9/14;
+}
+
+nav .left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  grid-row: 1/-1;
+}
+
+nav .bottom {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 10;
+  grid-column: 3/13;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+nav .right {
+  grid-column: 13/-1;
+  grid-row: 1/-1;
+}
+
+nav .top {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 10;
+  grid-column: 3/13;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+nav .text {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 10;
+  grid-column: 3/13;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 body {
@@ -197,28 +243,124 @@ nav {
   width: 100%;
   height: 100vh;
   background-color: #000000;
+  color: #ffffff;
 }
 
 nav .left {
   height: 100vh;
-  width: 10vw;
+}
+
+nav .left div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .left div svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 nav .bottom {
-  height: 10%;
-  width: 80%;
-  float: left;
+  height: 100%;
+}
+
+nav .bottom div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .right {
   height: 100vh;
-  width: 10vw;
+}
+
+nav .right div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .right div svg {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 
 nav .top {
-  height: 10%;
-  width: 80%;
-  float: left;
+  height: 100%;
+}
+
+nav .top div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .top div svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+nav .text h1 {
+  font-weight: 100;
+  font-size: 6em;
+  margin-top: 7%;
+  text-align: center;
+}
+
+nav .text h1 span {
+  font-weight: 800;
+}
+
+nav .text h2 {
+  font-size: 1.1em;
+  margin: 2% 17% 0% 2%;
+}
+
+nav .text h2:nth-child(2) {
+  text-align: right;
+  color: #F2CF1D;
+}
+
+nav .text h2:nth-child(3) {
+  text-align: right;
+  color: #04BF8A;
+}
+
+nav .text h2:nth-child(3) span {
+  font-weight: 700;
 }
 
 .home {
@@ -291,6 +433,41 @@ p.para1 {
 .sideways img {
   margin-top: -1vh;
   height: 104vh;
+}
+
+.blockText p {
+  margin: 10%;
+}
+
+.blockText p:first-child {
+  margin-top: 20%;
+}
+
+.blockText li {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.blockText li:nth-child(1) {
+  margin-left: 20%;
+  color: #18298C;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.blockText li:nth-child(2) {
+  margin-left: 40%;
+  color: #04BF8A;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.blockText li:nth-child(3) {
+  margin-left: 60%;
+  color: #F2CF1D;
+  font-size: 2.5em;
+  font-weight: 300;
+  font-style: italic;
 }
 
 @-webkit-keyframes spin {
@@ -376,5 +553,22 @@ p.para1 {
   100% {
     stroke: #777777;
     stroke-width: 2px;
+  }
+}
+
+.desktop {
+  display: initial;
+}
+
+.touch {
+  display: none;
+}
+
+@media (hover: none) {
+  .desktop {
+    display: none;
+  }
+  .touch {
+    display: initial;
   }
 }

@@ -1,7 +1,14 @@
-section, nav {
+section {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-gap: 15px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-auto-flow: dense;
+  grid-template-rows: 1fr 2fr 1fr;
 }
 
 .sideways img {
@@ -9,4 +16,27 @@ section, nav {
 }
 .sideways div{
     grid-column: 9/14;
+}
+
+nav {
+    .left {
+        grid-column: 1/3;
+        grid-row: 1/-1;
+    }
+    .bottom {
+        grid-column: 3/13;
+        grid-row: 3;
+    }
+    .right {
+       grid-column: 13/-1;
+       grid-row: 1/-1;
+    }
+    .top {
+       grid-column: 3/13;
+       grid-row: 1;
+    }
+    .text {
+        grid-column: 3/13;
+        grid-row: 2;
+    }
 }
