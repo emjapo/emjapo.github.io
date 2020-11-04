@@ -236,6 +236,7 @@ p.para1 {
     position: absolute;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    z-index: 5;
 }
 
 .sideways img {
@@ -310,20 +311,22 @@ div.block.yellow {
     }
 }
 .pile {
-    background: url('../images/spikes.svg') top right/60% no-repeat;
+    background: url('../images/spikes.svg') 80% -50%/50% no-repeat;
     img:nth-child(1) {
         margin-top: -17.5%;
         margin-left: -5%;
         transform: scale(.75);
     }
-    img:nth-child(2) {
+     img:nth-child(2) {
         position: relative;
         top: -15%;
         left: 5%;
         transform: scale(.8);
-    }
+   }
     p {
-
+        margin-top: -68%;
+        width: 30%;
+        margin-left: 55%;
     }
 }
 span.green {
@@ -335,11 +338,85 @@ span.orange {
 span.blue {
     background-color: $colorFive;
 }
-// span.yellow {
-//     background-color: $colorTwo;
-//     color: black;
-// }
+.thin {
+ font-weight: 100;
+}
+.extralight {
+font-weight: 200;
+}
+.light {
+font-weight: 300;
+}
+.regular {
+font-weight: 400;
+}
+.medium {
+font-weight: 500;
+}
+.semibold {
+font-weight: 600;
+}
+.bold {
+font-weight: 700;
+}
+.extrabold {
+font-weight: 800;
+}
+.blackbold {
+font-weight: 900;
+}
+.italic {
+    font-style: italic;
+}
+.panel1, .panel2 {
+    font-size: 1.5em;
+    animation: marquee 10s linear infinite;
+    margin-top: -1%;
+}
+
+form {
+    padding-top: 10%;
+    input {
+        background-color: $colorOne;
+        border: #ffffff solid 3px;
+        width: 100%;
+        padding: 24px 40px;
+        margin: 4% 0;
+        box-sizing: border-box;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5em;
+    }
+    select {
+        background-color: $colorOne;
+        border: #ffffff solid 3px;
+        width: 100%;
+        padding: 24px 40px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5em;
+    }
+}
+#sample {
+    color: #ffffff;
+    margin: 5%;
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+
 //animations
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+
  @keyframes spin {
     from {
         transform: rotateZ(360deg);

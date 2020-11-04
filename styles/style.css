@@ -132,6 +132,20 @@ nav .text {
   grid-column: 9/13;
 }
 
+.panel1, .panel2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+}
+
+.form {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9/13;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
@@ -430,6 +444,7 @@ p.para1 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   pointer-events: none;
+  z-index: 5;
 }
 
 .sideways img {
@@ -510,7 +525,7 @@ div.block.yellow p {
 }
 
 .pile {
-  background: url("../images/spikes.svg") top right/60% no-repeat;
+  background: url("../images/spikes.svg") 80% -50%/50% no-repeat;
 }
 
 .pile img:nth-child(1) {
@@ -528,6 +543,12 @@ div.block.yellow p {
           transform: scale(0.8);
 }
 
+.pile p {
+  margin-top: -68%;
+  width: 30%;
+  margin-left: 55%;
+}
+
 span.green {
   background-color: #04BF8A;
 }
@@ -538,6 +559,112 @@ span.orange {
 
 span.blue {
   background-color: #18298C;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.extralight {
+  font-weight: 200;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extrabold {
+  font-weight: 800;
+}
+
+.blackbold {
+  font-weight: 900;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.panel1, .panel2 {
+  font-size: 1.5em;
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+  margin-top: -1%;
+}
+
+form {
+  padding-top: 10%;
+}
+
+form input {
+  background-color: #04BF8A;
+  border: #ffffff solid 3px;
+  width: 100%;
+  padding: 24px 40px;
+  margin: 4% 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+form select {
+  background-color: #04BF8A;
+  border: #ffffff solid 3px;
+  width: 100%;
+  padding: 24px 40px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+#sample {
+  color: #ffffff;
+  margin: 5%;
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
 }
 
 @-webkit-keyframes spin {

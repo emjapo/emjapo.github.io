@@ -48,3 +48,19 @@ variety.addEventListener('mouseleave', () => {
 inDepth.addEventListener('mouseleave', () => {
     mouseCursor.classList.remove("inDepth");
 });
+
+let inputform = document.getElementById('text');
+inputform.addEventListener("input", populate);
+
+let changeFontStyle = document.getElementById("style");
+changeFontStyle.addEventListener("change", weightChange)
+function weightChange() {
+    document.getElementById(
+        "sample").style.fontWeight
+        = font.value;
+} 
+
+function populate() {
+    var x = document.getElementById("text").value;
+    document.getElementById("sample").innerHTML = x;
+}

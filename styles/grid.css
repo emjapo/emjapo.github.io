@@ -81,3 +81,17 @@ nav .text {
   -ms-grid-column-span: 4;
   grid-column: 9/13;
 }
+
+.panel1, .panel2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+}
+
+.form {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9/13;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
