@@ -226,20 +226,6 @@ p.para1 {
     font-size: 1.3em;
 }
 
-
-.circles {
-    width: 50%;
-    position: relative;
-    top:30%;
-    animation: spin 20s linear infinite;
-    img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-}
-
 .pulse path:nth-child(1) {
     animation: arrowPulse 5s ease-in-out infinite;
 }
@@ -290,7 +276,69 @@ p.para1 {
     }
 }
 
+.first {
+    h1 {
+        font-weight: 900;
+        font-size: 11em;
+        margin-top: -5%;
+    }
+}
+.circles {
+    width: 100%;
+    position: relative;
+    top:120%;
+    animation: spin 20s linear infinite;
+    img {
+        position: absolute;
+        width: 55%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+div.block.yellow {
+    h1 {
+        font-size: 8em;
+        overflow-wrap: break-word;
+        margin-top: 3%;
+    }
+    p {
+        width: 40%;
+        margin-left: 55%;
+        margin-top: -9%;
+        font-size: 1.4em;
+    }
+}
+.pile {
+    background: url('../images/spikes.svg') top right/60% no-repeat;
+    img:nth-child(1) {
+        margin-top: -17.5%;
+        margin-left: -5%;
+        transform: scale(.75);
+    }
+    img:nth-child(2) {
+        position: relative;
+        top: -15%;
+        left: 5%;
+        transform: scale(.8);
+    }
+    p {
 
+    }
+}
+span.green {
+    background-color: $colorOne;
+}
+span.orange {
+    background-color: $colorFour;
+}
+span.blue {
+    background-color: $colorFive;
+}
+// span.yellow {
+//     background-color: $colorTwo;
+//     color: black;
+// }
 //animations
  @keyframes spin {
     from {

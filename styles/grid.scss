@@ -40,3 +40,15 @@ nav {
         grid-row: 2;
     }
 }
+
+.first {
+    h1 {
+        grid-column: 5/12;
+    }
+    .circles {
+        grid-column: 1/9;
+    }
+    p {
+        grid-column: 9/13;
+    }
+}

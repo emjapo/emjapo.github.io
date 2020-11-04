@@ -114,6 +114,24 @@ nav .text {
   grid-row: 2;
 }
 
+.first h1 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 7;
+  grid-column: 5/12;
+}
+
+.first .circles {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+}
+
+.first p {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9/13;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
@@ -400,22 +418,6 @@ p.para1 {
   font-size: 1.3em;
 }
 
-.circles {
-  width: 50%;
-  position: relative;
-  top: 30%;
-  -webkit-animation: spin 20s linear infinite;
-          animation: spin 20s linear infinite;
-}
-
-.circles img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .pulse path:nth-child(1) {
   -webkit-animation: arrowPulse 5s ease-in-out infinite;
           animation: arrowPulse 5s ease-in-out infinite;
@@ -469,6 +471,73 @@ p.para1 {
   font-size: 2.5em;
   font-weight: 300;
   font-style: italic;
+}
+
+.first h1 {
+  font-weight: 900;
+  font-size: 11em;
+  margin-top: -5%;
+}
+
+.circles {
+  width: 100%;
+  position: relative;
+  top: 120%;
+  -webkit-animation: spin 20s linear infinite;
+          animation: spin 20s linear infinite;
+}
+
+.circles img {
+  position: absolute;
+  width: 55%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.block.yellow h1 {
+  font-size: 8em;
+  overflow-wrap: break-word;
+  margin-top: 3%;
+}
+
+div.block.yellow p {
+  width: 40%;
+  margin-left: 55%;
+  margin-top: -9%;
+  font-size: 1.4em;
+}
+
+.pile {
+  background: url("../images/spikes.svg") top right/60% no-repeat;
+}
+
+.pile img:nth-child(1) {
+  margin-top: -17.5%;
+  margin-left: -5%;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+
+.pile img:nth-child(2) {
+  position: relative;
+  top: -15%;
+  left: 5%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+span.green {
+  background-color: #04BF8A;
+}
+
+span.orange {
+  background-color: #F29F05;
+}
+
+span.blue {
+  background-color: #18298C;
 }
 
 @-webkit-keyframes spin {
