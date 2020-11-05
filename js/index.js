@@ -54,11 +54,12 @@ inputform.addEventListener("input", populate);
 
 //change font weight
 let changeFontStyle = document.getElementById("style");
-changeFontStyle.addEventListener("change", weightChange)
+changeFontStyle.addEventListener("change", weightChange);
+
 function weightChange() {
     document.getElementById(
-        "sample").style.fontWeight
-        = font.value;
+        "sample").style.font
+        = changeFontStyle.value;
 } 
 
 function populate() {
