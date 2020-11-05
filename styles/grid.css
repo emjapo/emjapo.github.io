@@ -237,4 +237,10 @@ section.pink.block .images {
     -ms-grid-row-span: 2;
     grid-row: 2/4;
   }
+  .first h1 {
+    grid-column: 2/-1;
+  }
+  .first p {
+    grid-column: 1/-1;
+  }
 }

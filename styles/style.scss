@@ -282,7 +282,7 @@ p.para1 {
         font-weight: 900;
         font-size: 11em;
         margin-top: -3%;
-        text-align: rigth;
+        text-align: right;
     }
 }
 .circles {
@@ -750,6 +750,20 @@ section.pink.block {
                 font-size: 1.2em;
                 margin: 2%;
             }
+        }
+    }
+    .first {
+        h1 {
+            transform: rotate(90deg);
+            font-size: 6em;
+            margin-bottom: 0;
+            margin-top: 4%;
+            opacity: .5;
+            z-index: 0;
+        }
+        p {
+            z-index: 1;
+            margin: 0 5%;
         }
     }
 }
