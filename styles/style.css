@@ -212,6 +212,24 @@ nav .text {
   grid-column: 8/-1;
 }
 
+.history div {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 6;
+  grid-column: 8/14;
+}
+
+.long div {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 7;
+  grid-column: 6/13;
+}
+
+.long div.circles {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
@@ -557,7 +575,7 @@ p.para1 {
 .first h1 {
   font-weight: 900;
   font-size: 11em;
-  margin-top: -5%;
+  margin-top: -3%;
   text-align: rigth;
 }
 
@@ -630,6 +648,10 @@ span.blue {
 
 span.yellow {
   background-color: #F2CF1D;
+}
+
+span.pink {
+  background-color: #FFB199;
 }
 
 .thin {
@@ -768,6 +790,72 @@ form select {
 
 .poem img {
   margin: 5% -10% 0% 0%;
+}
+
+.history {
+  background: url("../images/spike-outline.svg") no-repeat 0% 90%/35%, url("../images/orange-dots.svg") no-repeat -50% -50%/80%;
+  cursor: pointer;
+}
+
+.history div {
+  -webkit-transform: rotate(-38deg);
+          transform: rotate(-38deg);
+  margin-top: -35%;
+}
+
+.history div h2 {
+  color: #04BF8A;
+  font-weight: 100;
+  font-size: 4em;
+}
+
+.history div h2 span {
+  display: block;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  margin-top: -3%;
+}
+
+.history div p {
+  margin: 3% 0%;
+}
+
+.long {
+  grid-auto-flow: dense;
+}
+
+.long h2 {
+  color: #F2CF1D;
+  font-weight: 100;
+  font-size: 4em;
+  -webkit-transform: rotate(-38deg);
+          transform: rotate(-38deg);
+  margin-left: 60%;
+  margin-top: 20%;
+  margin-right: -60%;
+  white-space: nowrap;
+}
+
+.long h2 span {
+  display: block;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  margin-top: -1%;
+}
+
+.long div p {
+  margin: 4%;
+  line-height: 1.7;
+}
+
+.long div.circles img:nth-child(1) {
+  width: 90%;
+}
+
+.long div.circles img:nth-child(2) {
+  width: 40%;
 }
 
 @-webkit-keyframes marquee {

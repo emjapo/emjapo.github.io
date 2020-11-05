@@ -101,3 +101,16 @@ nav {
         grid-column: 8/-1;
     }
 }
+.history {
+    div {
+        grid-column: 8/14;
+    }
+}
+.long {
+    div {
+        grid-column: 6/13;
+    }
+    div.circles {
+        grid-column: 1/6;
+    }
+}

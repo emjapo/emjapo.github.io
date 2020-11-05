@@ -161,3 +161,21 @@ nav .text {
 .poem img {
   grid-column: 8/-1;
 }
+
+.history div {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 6;
+  grid-column: 8/14;
+}
+
+.long div {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 7;
+  grid-column: 6/13;
+}
+
+.long div.circles {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
