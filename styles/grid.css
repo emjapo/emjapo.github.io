@@ -162,7 +162,7 @@ nav .text {
   grid-column: 8/-1;
 }
 
-.history div {
+.short div {
   -ms-grid-column: 8;
   -ms-grid-column-span: 6;
   grid-column: 8/14;

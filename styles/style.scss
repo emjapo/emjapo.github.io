@@ -460,7 +460,7 @@ form {
         margin: 5% -10% 0% 0%;
     }
 }
-.history {
+.short {
     background: url("../images/spike-outline.svg") no-repeat 0% 90%/35%, url("../images/orange-dots.svg") no-repeat -50% -50%/80%;
     cursor: pointer;
     div {
@@ -602,7 +602,7 @@ section.pink.block {
 }
 
 //way to switch the nav out ofr desktop or touch screen
- .desktop {
+.desktop {
     display: initial;
 }
 .touch {
