@@ -1030,3 +1030,21 @@ section.pink.block .images img {
     display: initial;
   }
 }
+
+@media screen and (max-width: 1050px) {
+  #poppins-intro {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #poppins-intro {
+    width: 90%;
+  }
+  .tagline {
+    margin-top: 72%;
+    margin-left: 2%;
+    font-size: .75em;
+    text-align: center;
+  }
+}
