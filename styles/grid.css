@@ -65,9 +65,9 @@ nav .text {
 }
 
 .first h1 {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 7;
-  grid-column: 5/12;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 10;
+  grid-column: 4/14;
 }
 
 .first .circles {
@@ -94,4 +94,70 @@ nav .text {
   grid-column: 9/13;
   -ms-grid-row: 1;
   grid-row: 1;
+}
+
+.depth.first p {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+}
+
+.depth.first img:last-child {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
+}
+
+.depth + section img:nth-child(1) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: -20%;
+}
+
+.depth + section p:nth-child(2) {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 6;
+  grid-column: 5/11;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-top: 20%;
+}
+
+.depth + section p:nth-child(3) {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 6;
+  grid-column: 5/11;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-top: -40%;
+}
+
+.depth + section img:nth-child(4) {
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 3;
+  grid-column: 11/14;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: 30%;
+}
+
+.poem h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
+}
+
+.poem div {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-column: 3/8;
+}
+
+.poem img {
+  grid-column: 8/-1;
 }

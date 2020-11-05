@@ -115,9 +115,9 @@ nav .text {
 }
 
 .first h1 {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 7;
-  grid-column: 5/12;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 10;
+  grid-column: 4/14;
 }
 
 .first .circles {
@@ -144,6 +144,72 @@ nav .text {
   grid-column: 9/13;
   -ms-grid-row: 1;
   grid-row: 1;
+}
+
+.depth.first p {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+}
+
+.depth.first img:last-child {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
+}
+
+.depth + section img:nth-child(1) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: -20%;
+}
+
+.depth + section p:nth-child(2) {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 6;
+  grid-column: 5/11;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-top: 20%;
+}
+
+.depth + section p:nth-child(3) {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 6;
+  grid-column: 5/11;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-top: -40%;
+}
+
+.depth + section img:nth-child(4) {
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 3;
+  grid-column: 11/14;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: 30%;
+}
+
+.poem h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
+}
+
+.poem div {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-column: 3/8;
+}
+
+.poem img {
+  grid-column: 8/-1;
 }
 
 body {
@@ -492,6 +558,7 @@ p.para1 {
   font-weight: 900;
   font-size: 11em;
   margin-top: -5%;
+  text-align: rigth;
 }
 
 .circles {
@@ -559,6 +626,10 @@ span.orange {
 
 span.blue {
   background-color: #18298C;
+}
+
+span.yellow {
+  background-color: #F2CF1D;
 }
 
 .thin {
@@ -643,6 +714,60 @@ form select {
   margin: 5%;
   font-size: 1.5em;
   line-height: 1.6;
+}
+
+.white h1 {
+  color: black;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
+}
+
+.depth.first h1 {
+  font-size: 10em;
+  margin-top: -2.5%;
+}
+
+.depth.first img:last-child {
+  margin-top: -24%;
+  margin-left: 10%;
+  width: 90%;
+}
+
+.poem {
+  grid-auto-flow: dense;
+}
+
+.poem h1 {
+  font-size: 5em;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.poem div {
+  margin: 4%;
+}
+
+.poem div h2 {
+  font-size: 3em;
+  font-weight: 800;
+  margin: 2% 0%;
+}
+
+.poem div h3 {
+  font-size: 1em;
+  margin-bottom: 4%;
+}
+
+.poem div p {
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.6;
+}
+
+.poem img {
+  margin: 5% -10% 0% 0%;
 }
 
 @-webkit-keyframes marquee {

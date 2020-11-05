@@ -52,6 +52,7 @@ inDepth.addEventListener('mouseleave', () => {
 let inputform = document.getElementById('text');
 inputform.addEventListener("input", populate);
 
+//change font weight
 let changeFontStyle = document.getElementById("style");
 changeFontStyle.addEventListener("change", weightChange)
 function weightChange() {
