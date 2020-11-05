@@ -179,3 +179,19 @@ nav .text {
   -ms-grid-column-span: 5;
   grid-column: 1/6;
 }
+
+section.pink.block h4, section.pink.block h2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 12;
+  grid-column: 2/14;
+}
+
+section.pink.block .text {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2/10;
+}
+
+section.pink.block .images {
+  grid-column: 11/-1;
+}

@@ -114,3 +114,15 @@ nav {
         grid-column: 1/6;
     }
 }
+
+section.pink.block {
+    h4, h2 {
+        grid-column: 2/14;
+    }
+    .text {
+        grid-column: 2/10;
+    }
+    .images {
+        grid-column: 11/-1;
+    }
+}

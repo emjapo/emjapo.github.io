@@ -518,6 +518,38 @@ form {
         }
     }
 }
+section.pink.block {
+    h4 {
+        font-style: italic;
+        letter-spacing: 3px;
+        text-align: center;
+        margin: 3%;
+        span {
+            color: $colorOne;
+        }
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 1.4em;
+        margin-top: -3%;
+    }
+    .text {
+        p {
+            margin: 3%;
+        }
+    }
+    .images {
+        img {
+            height: 70vh;
+            padding-top: 3%;
+        }
+    }
+}
+.large {
+    font-size: 3em;
+    line-height: .5;
+    color: #ffffff;
+}
 //animations
 @keyframes marquee {
   0% {
