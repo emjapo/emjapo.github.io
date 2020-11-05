@@ -195,3 +195,11 @@ section.pink.block .text {
 section.pink.block .images {
   grid-column: 11/-1;
 }
+
+@media screen and (max-width: 500px) {
+  .sideways div {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+  }
+}

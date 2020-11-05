@@ -657,4 +657,37 @@ section.pink.block {
         margin-top: 30%;
         margin-right: -30%;
     }
+    .sideways {
+        img {
+            width: 112vw;
+            height: auto;
+        }
+    }
+    .blockText {
+        p:first-child {
+            margin-top: 3%;
+        }
+        p {
+            font-size: 1em;
+            margin: 0%;
+        }
+        ul {
+            li {
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+            li:nth-child(1) {
+                font-size: 2.5em;
+            }
+            li:nth-child(2) {
+                font-size: 1.6em;
+                margin-left: 60%;
+            }
+            li:nth-child(3) {
+                letter-spacing: 8px;
+                font-size: 2em;
+                margin-left: 10%;
+            }
+        }
+    }
 }

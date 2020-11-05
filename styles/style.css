@@ -246,6 +246,14 @@ section.pink.block .images {
   grid-column: 11/-1;
 }
 
+@media screen and (max-width: 500px) {
+  .sideways div {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+  }
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
@@ -1070,5 +1078,32 @@ section.pink.block .images img {
     width: 130%;
     margin-top: 30%;
     margin-right: -30%;
+  }
+  .sideways img {
+    width: 112vw;
+    height: auto;
+  }
+  .blockText p:first-child {
+    margin-top: 3%;
+  }
+  .blockText p {
+    font-size: 1em;
+    margin: 0%;
+  }
+  .blockText ul li {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .blockText ul li:nth-child(1) {
+    font-size: 2.5em;
+  }
+  .blockText ul li:nth-child(2) {
+    font-size: 1.6em;
+    margin-left: 60%;
+  }
+  .blockText ul li:nth-child(3) {
+    letter-spacing: 8px;
+    font-size: 2em;
+    margin-left: 10%;
   }
 }

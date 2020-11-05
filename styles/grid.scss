@@ -126,3 +126,8 @@ section.pink.block {
         grid-column: 11/-1;
     }
 }
+@media screen and (max-width: 500px) {
+    .sideways div {
+        grid-column: 2/14;
+    }
+}
