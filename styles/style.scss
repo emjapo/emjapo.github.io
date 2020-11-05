@@ -635,4 +635,26 @@ section.pink.block {
         font-size: .75em;
         text-align: center;
     }
+    p {
+        font-size: 1em;
+    }
+    h1.gradient {
+        background: linear-gradient(to right, #ffb199 0%, #ff0844 100%);
+        -webkit-background-clip: text;
+        font-size: 6em;
+        transform: rotate(-90deg);
+        margin-left: -70%;
+        margin-top: 40%;
+    }
+    p.para1 {
+        margin-top: -20%;
+        margin-left: 35%;
+        width: 60%;
+        font-size: 1em;
+    }
+    div.gradient img.spin {
+        width: 130%;
+        margin-top: 30%;
+        margin-right: -30%;
+    }
 }
