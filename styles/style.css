@@ -576,8 +576,8 @@ p.para1 {
 }
 
 .pulse path:nth-child(1) {
-  -webkit-animation: arrowPulse 5s ease-in-out infinite;
-          animation: arrowPulse 5s ease-in-out infinite;
+  -webkit-animation: arrowPulse 10s ease-in-out infinite;
+          animation: arrowPulse 10s ease-in-out infinite;
 }
 
 .cursor {
@@ -1147,8 +1147,8 @@ section.pink.block .images img {
   nav .left {
     height: auto;
     width: auto;
-    -webkit-animation: spin 15s linear infinite;
-            animation: spin 15s linear infinite;
+    -webkit-animation: spin 25s linear infinite;
+            animation: spin 25s linear infinite;
     margin-top: -10%;
     margin-left: -10%;
   }
@@ -1158,8 +1158,8 @@ section.pink.block .images img {
   nav .top {
     height: auto;
     width: auto;
-    -webkit-animation: spin 15s linear infinite;
-            animation: spin 15s linear infinite;
+    -webkit-animation: spin 25s linear infinite;
+            animation: spin 25s linear infinite;
   }
   nav .top div img {
     width: 70%;
@@ -1167,8 +1167,8 @@ section.pink.block .images img {
   nav .bottom {
     height: auto;
     width: auto;
-    -webkit-animation: spin 15s linear infinite;
-            animation: spin 15s linear infinite;
+    -webkit-animation: spin 25s linear infinite;
+            animation: spin 25s linear infinite;
     margin-bottom: -150%;
     margin-right: -15%;
   }
@@ -1178,8 +1178,8 @@ section.pink.block .images img {
   nav .right {
     height: auto;
     width: auto;
-    -webkit-animation: spin 15s linear infinite;
-            animation: spin 15s linear infinite;
+    -webkit-animation: spin 25s linear infinite;
+            animation: spin 25s linear infinite;
     margin-right: -10%;
   }
   nav .right div img {

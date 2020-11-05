@@ -227,7 +227,7 @@ p.para1 {
 }
 
 .pulse path:nth-child(1) {
-    animation: arrowPulse 5s ease-in-out infinite;
+    animation: arrowPulse 10s ease-in-out infinite;
 }
 
 .cursor {
@@ -695,7 +695,7 @@ section.pink.block {
         .left {
             height: auto;
             width: auto;
-            animation: spin 15s linear infinite;
+            animation: spin 25s linear infinite;
             margin-top: -10%;
             margin-left: -10%;
             div {
@@ -707,7 +707,7 @@ section.pink.block {
         .top {
             height: auto;
             width: auto;
-            animation: spin 15s linear infinite;
+            animation: spin 25s linear infinite;
              div {
                 img {
                     width: 70%;
@@ -718,7 +718,7 @@ section.pink.block {
         .bottom {
             height: auto;
             width: auto;
-            animation: spin 15s linear infinite;
+            animation: spin 25s linear infinite;
             margin-bottom: -150%;
             margin-right: -15%;
              div {
@@ -730,7 +730,7 @@ section.pink.block {
         .right {
             height: auto;
             width: auto;
-            animation: spin 15s linear infinite;
+            animation: spin 25s linear infinite;
             margin-right: -10%;
 
              div {
