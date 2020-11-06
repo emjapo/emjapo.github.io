@@ -796,50 +796,46 @@ section.pink.block {
         margin-right: 3%;
     }
     section.block.first.white.short {
-        background: url('../images/orange-dots.svg') no-repeat 167% -80%/150%;
+        background: url("../images/spike-outline.svg") no-repeat 0% 105%/65%, url('../images/orange-dots.svg') no-repeat 167% -80%/150%;
         h1{
-            margin-top: 32%;
-            font-size: 5em;
+            margin-top: -2.5%;
         }
         div {
-            transform: rotate(0deg);
-            margin: 3%;
-            padding: 3%;
-            h2 {
-                font-size: 3em;
-            }
+           margin-top: -170%;
+            
         }
     }
     section.long {
-        height: 150vh;
+        height: 100vh;
         h2 {
             transform: rotate(0deg);
             margin-left: auto;
             margin-right: auto;
             margin-top: 7%;
-            padding: 5%;
-            font-size: 3em;
+            padding: 20%;
+            font-size: 4em;
             padding-bottom: 0;
         }
         div {
             p {
-                font-size: .9em;
+                font-size: 1.2em;
                 padding: 0 3% 3% 3%;
             }
         }
     }
     section.pink {
-        height: 230vh;
+        height: 100vh;
         .images {
             margin-left: auto;
             margin-right: auto;
         }
         .text {
             p {
-                font-size: .9em;
+                font-size: 1.2em;
                 padding: 0 3% 3% 3%;
             }
         }
+
 
     }
     section.block.first.white.depth {

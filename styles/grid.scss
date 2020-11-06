@@ -169,22 +169,15 @@ section.pink.block {
 div.form {
     grid-column: 8/-1;
 }
-.short div {
-    grid-column: 1/-1;
-}
+
 .long {
-    h2,div {
-        grid-column: 1/-1;
+    div{
+        grid-column: 4/13;
     }
 }
-    section.pink.block {
-        div.text {
-            grid-column: 1/-1;
-        }
-        div.images {
-            grid-column: 1/-1;
-        }
-    }
+section.pink.block .images {
+    grid-column: 10/-1;
+}
     .depth.first p {
         grid-column: 1/9;
     }

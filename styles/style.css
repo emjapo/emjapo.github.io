@@ -298,17 +298,13 @@ section.pink.block .images {
   div.form {
     grid-column: 8/-1;
   }
-  .short div {
-    grid-column: 1/-1;
+  .long div {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 9;
+    grid-column: 4/13;
   }
-  .long h2, .long div {
-    grid-column: 1/-1;
-  }
-  section.pink.block div.text {
-    grid-column: 1/-1;
-  }
-  section.pink.block div.images {
-    grid-column: 1/-1;
+  section.pink.block .images {
+    grid-column: 10/-1;
   }
   .depth.first p {
     -ms-grid-column: 1;
@@ -1396,23 +1392,16 @@ section.pink.block .images img {
     margin-right: 3%;
   }
   section.block.first.white.short {
-    background: url("../images/orange-dots.svg") no-repeat 167% -80%/150%;
+    background: url("../images/spike-outline.svg") no-repeat 0% 105%/65%, url("../images/orange-dots.svg") no-repeat 167% -80%/150%;
   }
   section.block.first.white.short h1 {
-    margin-top: 32%;
-    font-size: 5em;
+    margin-top: -2.5%;
   }
   section.block.first.white.short div {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    margin: 3%;
-    padding: 3%;
-  }
-  section.block.first.white.short div h2 {
-    font-size: 3em;
+    margin-top: -170%;
   }
   section.long {
-    height: 150vh;
+    height: 100vh;
   }
   section.long h2 {
     -webkit-transform: rotate(0deg);
@@ -1420,23 +1409,23 @@ section.pink.block .images img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 7%;
-    padding: 5%;
-    font-size: 3em;
+    padding: 20%;
+    font-size: 4em;
     padding-bottom: 0;
   }
   section.long div p {
-    font-size: .9em;
+    font-size: 1.2em;
     padding: 0 3% 3% 3%;
   }
   section.pink {
-    height: 230vh;
+    height: 100vh;
   }
   section.pink .images {
     margin-left: auto;
     margin-right: auto;
   }
   section.pink .text p {
-    font-size: .9em;
+    font-size: 1.2em;
     padding: 0 3% 3% 3%;
   }
   section.block.first.white.depth h1 {
