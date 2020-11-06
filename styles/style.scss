@@ -874,4 +874,42 @@ section.pink.block {
             margin-bottom: -23%;
         }
     }
+    .depth + section {
+        height: 210vh;
+        img {
+            width: 80%;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            margin: 5%;
+        }
+        p:nth-child(3) {
+            margin-top: 2%;
+
+        }
+        img:nth-child(4) {
+            margin-top: -35%;
+        }
+    }
+    section.gradient.poem {
+        h1.thin {
+            font-size: 2.5em;
+        }
+        div {
+            margin-top: 25%;
+            h2 {
+                font-size: 2em;
+            }
+            p {
+                font-size: .9em;
+                margin: 4% 0;
+            }
+        }
+        img {
+            grid-column: 5/-1;
+        }
+    }
 }

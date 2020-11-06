@@ -316,6 +316,34 @@ section.pink.block .images {
   .depth.first img:last-child {
     grid-column: 1/-1;
   }
+  .depth + section img:nth-child(1) {
+    grid-column: 1/-1;
+    grid-row: auto;
+    margin-top: -20%;
+  }
+  .depth + section p:nth-child(2) {
+    grid-column: 1/-1;
+    grid-row: auto;
+  }
+  .depth + section p:nth-child(3) {
+    grid-column: 1/-1;
+    grid-row: auto;
+  }
+  .depth + section img:nth-child(4) {
+    grid-column: 1/-1;
+    grid-row: auto;
+    margin-top: 30%;
+  }
+  section.gradient.poem h1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+  }
+  section.gradient.poem div {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2/14;
+  }
 }
 
 body {
@@ -1342,5 +1370,40 @@ section.pink.block .images img {
     margin: 0%;
     width: 100%;
     margin-bottom: -23%;
+  }
+  .depth + section {
+    height: 210vh;
+  }
+  .depth + section img {
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .depth + section p {
+    margin: 5%;
+  }
+  .depth + section p:nth-child(3) {
+    margin-top: 2%;
+  }
+  .depth + section img:nth-child(4) {
+    margin-top: -35%;
+  }
+  section.gradient.poem h1.thin {
+    font-size: 2.5em;
+  }
+  section.gradient.poem div {
+    margin-top: 25%;
+  }
+  section.gradient.poem div h2 {
+    font-size: 2em;
+  }
+  section.gradient.poem div p {
+    font-size: .9em;
+    margin: 4% 0;
+  }
+  section.gradient.poem img {
+    grid-column: 5/-1;
   }
 }
