@@ -249,4 +249,13 @@ section.pink.block .images {
   .short div {
     grid-column: 1/-1;
   }
+  .long h2, .long div {
+    grid-column: 1/-1;
+  }
+  section.pink.block div.text {
+    grid-column: 1/-1;
+  }
+  section.pink.block div.images {
+    grid-column: 1/-1;
+  }
 }
