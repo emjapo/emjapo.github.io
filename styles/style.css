@@ -291,7 +291,9 @@ section.pink.block .images {
     grid-column: 2/-1;
   }
   .first p {
-    grid-column: 1/-1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 11;
+    grid-column: 2/13;
   }
   div.form {
     grid-column: 8/-1;
@@ -1231,7 +1233,7 @@ section.pink.block .images img {
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1050px) and (min-width: 499px) {
   #poppins-intro {
     width: 90%;
   }
@@ -1349,67 +1351,49 @@ section.pink.block .images img {
     margin: 2% 17%;
   }
   .first h1 {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    font-size: 6em;
-    margin-bottom: 0;
-    margin-top: 4%;
-    opacity: .5;
-    z-index: 0;
+    font-size: 9em;
   }
   .first p {
-    z-index: 1;
+    font-size: 1.5em;
     margin: 0 5%;
   }
   div.block.yellow h1 {
-    font-size: 4em;
+    font-size: 9em;
   }
   div.block.yellow p {
     width: 60%;
     margin-left: 33%;
     margin-top: -15%;
-    font-size: 1em;
+    font-size: 1.8em;
   }
   .pile {
-    background: url("../images/spikes.svg") -30% -3%/130% no-repeat;
+    background: url("../images/spikes.svg") 195% 10%/90% no-repeat;
   }
   .pile img:nth-child(1) {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-    margin-top: -8%;
-    margin-left: -85%;
+    margin-top: 37%;
+    margin-left: -12%;
   }
   .pile img:nth-child(2) {
-    top: -146%;
-    left: -31%;
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    position: relative;
+    top: -73%;
+    left: 38%;
   }
   .pile p {
-    margin-top: -570%;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: right;
+    margin-left: 50%;
+    margin-top: -240%;
+    font-size: 1.3em;
+    width: 45%;
   }
   .panel2, .panel1 {
     -webkit-animation-duration: 20s;
             animation-duration: 20s;
   }
   .panel2 p, .panel1 p {
-    font-size: .5em;
+    font-size: 1.4em;
   }
   form {
     padding: 2%;
     margin-right: 3%;
-  }
-  form input {
-    padding: 12px 12px;
-    font-size: 1em;
-  }
-  form select {
-    padding: 12px 12px;
-    font-size: 1em;
   }
   section.block.first.white.short {
     background: url("../images/orange-dots.svg") no-repeat 167% -80%/150%;
