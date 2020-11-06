@@ -293,6 +293,9 @@ section.pink.block .images {
   .first p {
     grid-column: 1/-1;
   }
+  div.form {
+    grid-column: 8/-1;
+  }
 }
 
 body {
@@ -1215,5 +1218,55 @@ section.pink.block .images img {
   .first p {
     z-index: 1;
     margin: 0 5%;
+  }
+  div.block.yellow h1 {
+    font-size: 4em;
+  }
+  div.block.yellow p {
+    width: 60%;
+    margin-left: 33%;
+    margin-top: -15%;
+    font-size: 1em;
+  }
+  .pile {
+    background: url("../images/spikes.svg") -30% -3%/130% no-repeat;
+  }
+  .pile img:nth-child(1) {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    margin-top: -8%;
+    margin-left: -85%;
+  }
+  .pile img:nth-child(2) {
+    top: -146%;
+    left: -31%;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  .pile p {
+    margin-top: -570%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+  }
+  .panel2, .panel1 {
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+  }
+  .panel2 p, .panel1 p {
+    font-size: .5em;
+  }
+  form {
+    padding: 2%;
+    margin-right: 3%;
+  }
+  form input {
+    padding: 12px 12px;
+    font-size: 1em;
+  }
+  form select {
+    padding: 12px 12px;
+    font-size: 1em;
   }
 }

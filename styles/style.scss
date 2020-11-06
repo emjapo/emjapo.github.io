@@ -766,4 +766,53 @@ section.pink.block {
             margin: 0 5%;
         }
     }
+    div.block.yellow {
+        h1 {
+            font-size: 4em;
+        }
+        p {
+            width: 60%;
+            margin-left: 33%;
+            margin-top: -15%;
+            font-size: 1em;
+        }
+    }
+    .pile {
+        background: url("../images/spikes.svg")  -30% -3%/130% no-repeat;
+        img:nth-child(1) {
+            transform: scale(.4);
+            margin-top: -8%;
+            margin-left: -85%;
+        }
+        img:nth-child(2) {
+            top:-146%;
+            left: -31%;
+            transform: scale(.4);
+        }
+        p {
+            margin-top: -570%;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: right;
+        }
+    }
+    .panel2, .panel1 {
+        animation-duration: 20s;
+        p {
+            font-size: .5em;
+        }
+    }
+    form {
+        padding: 2%;
+        margin-right: 3%;
+        input {
+            padding: 12px 12px;
+            font-size: 1em;
+        }
+        select {
+            padding: 12px 12px;
+            font-size: 1em;
+        }
+    }
 }
