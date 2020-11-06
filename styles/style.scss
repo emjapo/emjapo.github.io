@@ -623,6 +623,290 @@ section.pink.block {
     #poppins-intro {
         width:90%;
     }
+    #poppins-intro {
+        width:90%;
+    }
+    .tagline {
+        margin-top: 72%;
+        margin-left: 2%;
+        text-align: center;
+    }
+    p {
+        font-size: 1em;
+    }
+    h1.gradient {
+       font-size: 11em;
+       margin: 3%;
+    }
+    p.para1 {
+        margin-top: 5%;
+        margin-left: 35%;
+        width: 60%;
+        font-size: 1.5em;
+    }
+    div.gradient img.spin {
+        width: 130%;
+        margin-top: 10%;
+        margin-right: -30%;
+    }
+    .sideways {
+        img {
+            width: 112vw;
+            height: auto;
+        }
+    }
+    .blockText {
+        p:first-child {
+            margin-top: -1%;
+            width: 70%;
+        }
+        p {
+            font-size: 1em;
+            margin: 0%;
+        }
+        ul {
+            li {
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+            li:nth-child(1) {
+                font-size: 2.7em;
+                margin-left: 45%;
+            }
+            li:nth-child(2) {
+                font-size: 2em;
+                margin-left: 80%;
+            }
+            li:nth-child(3) {
+                letter-spacing: 8px;
+                font-size: 2.5em;
+                margin-left: 10%;
+            }
+        }
+    }
+    nav {
+        overflow: hidden;
+        .left {
+            height: auto;
+            width: auto;
+            animation: spin 25s linear infinite;
+            margin-top: -30%;
+            margin-left: -5%;
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .top {
+            height: auto;
+            width: auto;
+            margin-left: -5%;
+            margin-bottom: -20%;
+            animation: spin 25s linear infinite;
+             div {
+                img {
+                    width: 70%;
+                }
+            }
+
+        }
+        .bottom {
+            height: auto;
+            width: auto;
+            animation: spin 25s linear infinite;
+            margin-bottom: -80%;
+            margin-right: -25%;
+             div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .right {
+            height: auto;
+            width: auto;
+            animation: spin 25s linear infinite;
+            margin-right: -10%;
+            margin-left: 20%;
+             div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        div.text {
+            margin: 3%;
+            h1 {
+                margin-bottom: 0%;
+                font-size: 5em;
+            }
+            h2 {
+                font-size: 1.2em;
+                margin: 2% 17%;
+            }
+        }
+    }
+    .first {
+        h1 {
+            transform: rotate(90deg);
+            font-size: 6em;
+            margin-bottom: 0;
+            margin-top: 4%;
+            opacity: .5;
+            z-index: 0;
+        }
+        p {
+            z-index: 1;
+            margin: 0 5%;
+        }
+    }
+    div.block.yellow {
+        h1 {
+            font-size: 4em;
+        }
+        p {
+            width: 60%;
+            margin-left: 33%;
+            margin-top: -15%;
+            font-size: 1em;
+        }
+    }
+    .pile {
+        background: url("../images/spikes.svg")  -30% -3%/130% no-repeat;
+        img:nth-child(1) {
+            transform: scale(.4);
+            margin-top: -8%;
+            margin-left: -85%;
+        }
+        img:nth-child(2) {
+            top:-146%;
+            left: -31%;
+            transform: scale(.4);
+        }
+        p {
+            margin-top: -570%;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: right;
+        }
+    }
+    .panel2, .panel1 {
+        animation-duration: 20s;
+        p {
+            font-size: .5em;
+        }
+    }
+    form {
+        padding: 2%;
+        margin-right: 3%;
+        input {
+            padding: 12px 12px;
+            font-size: 1em;
+        }
+        select {
+            padding: 12px 12px;
+            font-size: 1em;
+        }
+    }
+    section.block.first.white.short {
+        background: url('../images/orange-dots.svg') no-repeat 167% -80%/150%;
+        h1{
+            margin-top: 32%;
+            font-size: 5em;
+        }
+        div {
+            transform: rotate(0deg);
+            margin: 3%;
+            padding: 3%;
+            h2 {
+                font-size: 3em;
+            }
+        }
+    }
+    section.long {
+        height: 150vh;
+        h2 {
+            transform: rotate(0deg);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 7%;
+            padding: 5%;
+            font-size: 3em;
+            padding-bottom: 0;
+        }
+        div {
+            p {
+                font-size: .9em;
+                padding: 0 3% 3% 3%;
+            }
+        }
+    }
+    section.pink {
+        height: 230vh;
+        .images {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .text {
+            p {
+                font-size: .9em;
+                padding: 0 3% 3% 3%;
+            }
+        }
+
+    }
+    section.block.first.white.depth {
+        h1 {
+            font-size: 6em;
+            white-space: nowrap;
+            margin-top: 18%;
+        }
+        img:last-child {
+            margin: 0%;
+            width: 100%;
+            margin-bottom: -23%;
+        }
+    }
+    .depth + section {
+        height: 210vh;
+        img {
+            width: 80%;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            margin: 5%;
+        }
+        p:nth-child(3) {
+            margin-top: 2%;
+
+        }
+        img:nth-child(4) {
+            margin-top: -35%;
+        }
+    }
+    section.gradient.poem {
+        h1.thin {
+            font-size: 2.5em;
+        }
+        div {
+            margin-top: 25%;
+            h2 {
+                font-size: 2em;
+            }
+            p {
+                font-size: .9em;
+                margin: 4% 0;
+            }
+        }
+        img {
+            grid-column: 5/-1;
+        }
+    }
 }
 //mobile styles iphoneX because thats what I have
 @media screen and (max-width: 500px) {
