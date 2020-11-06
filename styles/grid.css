@@ -246,4 +246,7 @@ section.pink.block .images {
   div.form {
     grid-column: 8/-1;
   }
+  .short div {
+    grid-column: 1/-1;
+  }
 }

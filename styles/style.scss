@@ -815,4 +815,19 @@ section.pink.block {
             font-size: 1em;
         }
     }
+    section.block.first.white.short {
+        background: url('../images/orange-dots.svg') no-repeat 299% 1%/130%;
+        h1{
+            margin-top: 32%;
+            font-size: 5em;
+        }
+        div {
+            transform: rotate(0deg);
+            margin: 3%;
+            padding: 3%;
+            h2 {
+                font-size: 3em;
+            }
+        }
+    }
 }

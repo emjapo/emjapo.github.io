@@ -296,6 +296,9 @@ section.pink.block .images {
   div.form {
     grid-column: 8/-1;
   }
+  .short div {
+    grid-column: 1/-1;
+  }
 }
 
 body {
@@ -1268,5 +1271,21 @@ section.pink.block .images img {
   form select {
     padding: 12px 12px;
     font-size: 1em;
+  }
+  section.block.first.white.short {
+    background: url("../images/orange-dots.svg") no-repeat 299% 1%/130%;
+  }
+  section.block.first.white.short h1 {
+    margin-top: 32%;
+    font-size: 5em;
+  }
+  section.block.first.white.short div {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin: 3%;
+    padding: 3%;
+  }
+  section.block.first.white.short div h2 {
+    font-size: 3em;
   }
 }
