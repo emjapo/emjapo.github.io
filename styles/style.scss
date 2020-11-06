@@ -840,18 +840,18 @@ section.pink.block {
     }
     section.block.first.white.depth {
         h1 {
-            font-size: 6em;
+            font-size: 8em;
             white-space: nowrap;
-            margin-top: 18%;
+            margin-top: -2.5%;
         }
         img:last-child {
             margin: 0%;
             width: 100%;
-            margin-bottom: -23%;
+            margin-bottom: -21%;
         }
     }
     .depth + section {
-        height: 210vh;
+        height: 150vh;
         img {
             width: 80%;
             margin-top: auto;
@@ -861,34 +861,38 @@ section.pink.block {
         }
         p {
             margin: 5%;
+            font-size: 1.5em;
+        }
+        p:nth-child(2) {
+            margin-top: 2%;
+
         }
         p:nth-child(3) {
             margin-top: 2%;
 
         }
         img:nth-child(4) {
-            margin-top: -35%;
+            margin-top: -25%;
         }
     }
     section.gradient.poem {
         h1.thin {
-            font-size: 2.5em;
+            font-size: 6em;
         }
         div {
-            margin-top: 25%;
-            h2 {
-                font-size: 2em;
-            }
+            margin-top: 5%;
             p {
-                font-size: .9em;
                 margin: 4% 0;
             }
         }
         img {
             grid-column: 5/-1;
+            margin-top: -20%;
+            margin-left: 5%;
         }
     }
 }
+
 //mobile styles iphoneX because thats what I have
 @media screen and (max-width: 500px) {
     #poppins-intro {
