@@ -308,6 +308,14 @@ section.pink.block .images {
   section.pink.block div.images {
     grid-column: 1/-1;
   }
+  .depth.first p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+  .depth.first img:last-child {
+    grid-column: 1/-1;
+  }
 }
 
 body {
@@ -1324,5 +1332,15 @@ section.pink.block .images img {
   section.pink .text p {
     font-size: .9em;
     padding: 0 3% 3% 3%;
+  }
+  section.block.first.white.depth h1 {
+    font-size: 6em;
+    white-space: nowrap;
+    margin-top: 18%;
+  }
+  section.block.first.white.depth img:last-child {
+    margin: 0%;
+    width: 100%;
+    margin-bottom: -23%;
   }
 }

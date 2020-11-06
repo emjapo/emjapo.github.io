@@ -185,4 +185,10 @@ div.form {
             grid-column: 1/-1;
         }
     }
+    .depth.first p {
+        grid-column: 1/9;
+    }
+    .depth.first img:last-child {
+        grid-column: 1/-1;
+    }
 }

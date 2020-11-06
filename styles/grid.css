@@ -258,4 +258,12 @@ section.pink.block .images {
   section.pink.block div.images {
     grid-column: 1/-1;
   }
+  .depth.first p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+  .depth.first img:last-child {
+    grid-column: 1/-1;
+  }
 }
