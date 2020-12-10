@@ -11,7 +11,7 @@
 <body onload="myFunction()">
     <div id="loader"></div>
     <div class="container" id="content">
-        <nav>
+        <nav class="home">
             <ul>
                 <li class="cta"><a href="buy.html">Buy Now</a></li>
                 <li><a href="forums.html">Forums</a></li>
@@ -20,10 +20,10 @@
                 <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
-        <img src="#" alt="A harvester on a field">
-        <img src="images/logo.png" alt="Farming Simulator logo">
-        <h1><span>Experience the farming lifestyle</span><span>Experience the farming lifestyle</span></h1>
-        <img src="images/on-the-horse.jpg" alt="woman on a horse">
+        <img src="images/harvester-at-sunrise1.png" alt="A harvester on a field">
+        <img src="images/logo.png" alt="Farming Simulator logo" class="homelogo">
+        <h1><span>Experience the farming lifestyle</span></h1>
+        <img class="left" src="images/on-the-horse.jpg" alt="woman on a horse">
         <p>Become a modern farmer and develop your farm on two huge American and European environments, filled with exciting new
         farming activities, crops to harvest and animals to tend to.</p>
         <p>Drive over 300 authentic vehicles and machines now including John Deere - but also Case IH, New Holland, Challenger,
@@ -57,10 +57,9 @@
         <img src="images/animal-cow2.png" alt="Cows">
         <img src="images/animal-pig1.png" alt="Pig">
         <img src="images/animal-sheep2.png" alt="Sheep">
-        <h1><span>Create your dream farm today</span>
-        <span>Create your dream farm today</span></h1>
+        <h1><span>Create your dream farm today</span></h1>
         <video src=""></video>
-        <h1><span>Buy Now</span><span>Buy Now</span></h1>
+        <h1><span>Buy Now</span></h1>
         <footer>
             <img src="images/giants-software-logo.png" alt="Giants Software Logo">
             <ul>
@@ -75,6 +74,8 @@
             <p>All other trademarks are properties of their respective owners.</p>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
         var myVar;
 
@@ -84,7 +85,7 @@
 
             function showPage() {
                 document.getElementById("loader").style.display = "none";
-                document.getElementById("content").style.display = "block";
+                document.getElementById("content").style.display = "grid";
             }
     </script>
 </body>
