@@ -119,9 +119,29 @@ img {
     position: absolute;
     top: 10%;
     left: 15%;
-    animation: dropDown 1.5s ease-out;
+    animation: dropDown 2s ease-out;
 }
 #content {
     display: none;
     animation: fadeIn .7s ease;
+}
+
+#loader {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    img:nth-child(1){
+        margin-left: 10%;
+        margin-bottom: -3%;
+    }
+    img:nth-child(2){
+        opacity: 0;
+    }
+    img:nth-child(3){
+        opacity: 0;
+    }
 }
