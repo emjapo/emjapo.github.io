@@ -48,6 +48,188 @@ table {
   border-spacing: 0;
 }
 
+.container img {
+  width: 100%;
+}
+
+h1 > span, li.cta a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#eaeaea), color-stop(#B4BECA), to(#eaeaea));
+  background: linear-gradient(#ffffff, #eaeaea, #B4BECA, #eaeaea);
+  -webkit-background-clip: text;
+  color: transparent;
+  font: italic 700 3em "Roboto Condensed", sans-serif;
+  letter-spacing: -1.5px;
+  -webkit-text-stroke: 1px #2E3135;
+}
+
+li.cta a {
+  font-size: 1.7em;
+}
+
+@-webkit-keyframes dropDown {
+  from {
+    top: -40%;
+  }
+  to {
+    top: 10%;
+  }
+}
+
+@keyframes dropDown {
+  from {
+    top: -40%;
+  }
+  to {
+    top: 10%;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container, footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 15px;
+}
+
+#content h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-column: 2/9;
+}
+
+#content img.landingimg {
+  grid-column: 1/-1;
+}
+
+#content h2 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4/10;
+}
+
+#content p {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 4;
+  grid-column: 8/12;
+  padding: 7% 3% 3% 3%;
+  line-height: 150%;
+}
+
+#content ul {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+}
+
+#content img {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 6;
+  grid-column: 6/12;
+}
+
+#content img.left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  grid-row: span 2;
+}
+
+p {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4/10;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEDC88), to(#FFFFFF));
+  background: linear-gradient(180deg, #EEDC88 0%, #FFFFFF 100%);
+}
+
+p {
+  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul li {
+  font-size: 1.4em;
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container img.homelogo {
+  width: 25vw;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  -webkit-animation: dropDown 2s ease-out;
+          animation: dropDown 2s ease-out;
+}
+
+#content {
+  display: none;
+  -webkit-animation: fadeIn .7s ease;
+          animation: fadeIn .7s ease;
+}
+
+#loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#loader img:nth-child(1) {
+  margin-left: 10%;
+  margin-bottom: -3%;
+}
+
+#loader img:nth-child(2) {
+  opacity: 0;
+}
+
+#loader img:nth-child(3) {
+  opacity: 0;
+}
+
 nav {
   -webkit-transform-origin: 0 bottom;
           transform-origin: 0 bottom;
@@ -110,132 +292,50 @@ li a:hover {
   color: #5C520D;
 }
 
-h1 > span, li.cta a {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#eaeaea), color-stop(#B4BECA), to(#eaeaea));
-  background: linear-gradient(#ffffff, #eaeaea, #B4BECA, #eaeaea);
-  -webkit-background-clip: text;
-  color: transparent;
-  font: italic 700 2em "Roboto Condensed", sans-serif;
-  letter-spacing: -1.5px;
-  -webkit-text-stroke: 1px #2E3135;
+footer {
+  grid-column: 1/-1;
+  height: 60vh;
+  background: url("../images/footer1.svg") 0 -20%/100vw no-repeat, url("../images/footer2.svg") 0 -20%/100vw no-repeat;
 }
 
-@-webkit-keyframes dropDown {
-  from {
-    top: -40%;
-  }
-  to {
-    top: 10%;
-  }
+footer > img#giants {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+  margin-left: 15%;
+  width: 50%;
+  margin-top: 25%;
 }
 
-@keyframes dropDown {
-  from {
-    top: -40%;
-  }
-  to {
-    top: 10%;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[14];
-      grid-template-columns: repeat(14, 1fr);
-  grid-gap: 15px;
-}
-
-#content h1 {
+footer ul {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 7;
-  grid-column: 2/9;
-}
-
-.left {
-  grid-column: -1/8;
-}
-
-p {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 6;
-  grid-column: 4/10;
-}
-
-body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEDC88), to(#FFFFFF));
-  background: linear-gradient(180deg, #EEDC88 0%, #FFFFFF 100%);
-}
-
-img {
-  max-width: 100vw;
-}
-
-.homelogo {
-  width: 25vw;
-  position: absolute;
-  top: 10%;
-  left: 15%;
-  -webkit-animation: dropDown 2s ease-out;
-          animation: dropDown 2s ease-out;
-}
-
-#content {
-  display: none;
-  -webkit-animation: fadeIn .7s ease;
-          animation: fadeIn .7s ease;
-}
-
-#loader {
-  width: 100vw;
-  height: 100vh;
-  background-color: #ffffff;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  grid-row: span 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 210px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#loader img:nth-child(1) {
-  margin-left: 10%;
-  margin-bottom: -3%;
+footer ul li {
+  width: 60px;
 }
 
-#loader img:nth-child(2) {
-  opacity: 0;
+footer ul li a img {
+  width: 60px;
 }
 
-#loader img:nth-child(3) {
-  opacity: 0;
+footer p {
+  -ms-grid-column: 9 !important;
+  -ms-grid-column-span: 3 !important;
+  grid-column: 9/12 !important;
+  font-size: .9em;
+  margin-top: 27%;
+  padding: 7% 7% 7% 7%;
 }
