@@ -346,6 +346,20 @@ ul.platforms li {
   border-radius: 3px;
 }
 
+ul.platforms li:hover {
+  color: #EEDC88;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: rgba(46, 49, 53, 0.5);
+}
+
+.option:hover {
+  color: #EEDC88;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: rgba(46, 49, 53, 0.5);
+}
+
 .option {
   width: 80%;
   background-color: rgba(255, 255, 255, 0.5);

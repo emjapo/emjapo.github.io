@@ -222,6 +222,16 @@ ul.platforms {
         backdrop-filter: blur(15px);
         border-radius: 3px;
     }
+    li:hover {
+        color: $color5;
+        backdrop-filter: blur(15px);
+        background-color: rgba($color: $black, $alpha: 0.5);
+    }
+}
+.option:hover {
+    color: $color5;
+        backdrop-filter: blur(15px);
+        background-color: rgba($color: $black, $alpha: 0.5);
 }
 .option {
     //grid-column: span 4;
