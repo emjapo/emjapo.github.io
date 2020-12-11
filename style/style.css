@@ -275,6 +275,68 @@ h2 {
   opacity: 0;
 }
 
+.forums {
+  background: url("../images/cloud2.png") 40vw 4vh/85% no-repeat, url("../images/cloud1.png") -15vw 110vh/85% no-repeat, url("../images/cut-out-tractor.png") -20vw 4vh/85% no-repeat, url("../images/cloud2.png") 60vw 300vh/85% no-repeat;
+}
+
+div.forum {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+  margin-top: 15%;
+}
+
+div.forum .response.right {
+  background-color: rgba(202, 182, 47, 0.7);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+div.forum .response.left {
+  background-color: rgba(175, 158, 76, 0.7);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+div.forum .response, div.forum textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  padding: 5%;
+  margin: 7%;
+}
+
+div.forum .response div.profile, div.forum textarea div.profile {
+  width: 20%;
+}
+
+div.forum .response div.profile img, div.forum textarea div.profile img {
+  max-width: 90px;
+  margin: 2%;
+}
+
+div.forum .response div.comment, div.forum textarea div.comment {
+  margin: 0% 5%;
+}
+
+div.forum .response div.comment p.caption, div.forum textarea div.comment p.caption {
+  font-size: .9em;
+}
+
+div.forum .response div.comment h2, div.forum textarea div.comment h2 {
+  margin-bottom: 3%;
+}
+
+div.forum textarea {
+  width: 75%;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-color: rgba(238, 220, 136, 0.7);
+  border: none;
+  font: 1em "Open Sans", sans-serif;
+}
+
 #myVideo {
   grid-column: 1/-1;
   width: 100vw;

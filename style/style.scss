@@ -169,6 +169,50 @@ h2 {
         opacity: 0;
     }
 }
+.forums {
+    background: url("../images/cloud2.png") 40vw 4vh/85% no-repeat,  url("../images/cloud1.png") -15vw 110vh/85% no-repeat, url("../images/cut-out-tractor.png") -20vw 4vh/85% no-repeat, url("../images/cloud2.png") 60vw 300vh/85% no-repeat,;
+}
+div.forum {
+    grid-column: 2/12;
+    margin-top: 15%;
+    .response.right {
+        background-color: rgba($color: $color4, $alpha: 0.7);
+        backdrop-filter: blur(15px);
+    }
+    .response.left {
+        background-color: rgba($color: $color3, $alpha: 0.7);
+        backdrop-filter: blur(15px);
+    }
+    .response, textarea {
+        display: flex;
+        border-radius: 15px;
+        padding: 5%;
+        margin: 7%;
+        div.profile {
+            width: 20%;
+            img {
+                max-width:90px;
+                margin: 2%;
+            }
+        }
+        div.comment {
+            margin: 0% 5%;
+            p.caption {
+                font-size: .9em;
+            }
+            h2 {
+                margin-bottom: 3%;
+            }
+        }
+    }
+    textarea {
+        width: 75%;
+        backdrop-filter: blur(15px);
+        background-color: rgba($color: $color5, $alpha: 0.7);
+        border: none;
+        font: 1em $bodyCopy;
+    }
+}
 
 #myVideo {
   grid-column: 1/-1;
