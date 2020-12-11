@@ -234,13 +234,13 @@ ul.platforms {
         font-size: 1em;
     }
 }
-.option:nth-child(6) {
+.option:nth-child(7) {
     grid-column: 3/6;
 }
-.option:nth-child(7) {
+.option:nth-child(8) {
     grid-column: 6/9;
 }
-.option:nth-child(8) {
+.option:nth-child(9) {
     grid-column: 9/12;
 }
 .buy {
@@ -358,13 +358,85 @@ section {
   border-radius: 30px;
   font-weight: bolder;
 }
-button.active {
-  background: #585858;
-  color: white;
+
+
+//blog 
+
+article {
+    grid-column: 3/11;
+    margin: 5%;
+    padding-bottom: 8%;
+    border-bottom: 3px solid $black;
+}
+.more{
+    grid-column: 5/9;
+    background-color: $color1;
+    color: #ffffff;
+    border-radius: 15px;
+    h2 {
+        text-align: center;
+        padding: 24px;
+    }
+}
+.blogFeed {
+     background: url("../images/cloud2.png") 40vw 4vh/85% no-repeat,  url("../images/cloud1.png") -15vw 110vh/85% no-repeat;
 }
 
+.post {
+    .text {
+        margin-top: 60vh;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        grid-column: 3/11;
+        padding: 4% 8% 5%;
+        P {
+            margin: 5% 0;
+        }
+        h4 {
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 2.5em;
+        }
+        .caption {
+            font-size: .9em;
+        }
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            margin-bottom: 5%;
+            li {
+                margin: 2% 0;
+            }
+        }
+        a {
+            color: $color1;
+            text-decoration: none;
+        }
+        strong {
+            font-weight: 700;
+        }
+    }
+}
+.post.one{
+    background: url("../images/season3.png") no-repeat;
+        background-size: 100vw;
+}
+.post.two {
+background: url("../images/farming-sim-1.png") no-repeat;
+        background-size: 100vw;
+}
 
-
+img.logo {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    width: 7vw;
+}
 // nav
 nav {
     transform-origin: 0 bottom;
@@ -443,4 +515,10 @@ footer {
         margin-top: 27%;
         padding: 7% 7% 7% 7%;
     }
+}
+
+body.mods {
+    nav {
+        top: -7%;
+    };
 }

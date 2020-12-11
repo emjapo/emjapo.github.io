@@ -359,19 +359,19 @@ ul.platforms li {
   font-size: 1em;
 }
 
-.option:nth-child(6) {
+.option:nth-child(7) {
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-column: 3/6;
 }
 
-.option:nth-child(7) {
+.option:nth-child(8) {
   -ms-grid-column: 6;
   -ms-grid-column-span: 3;
   grid-column: 6/9;
 }
 
-.option:nth-child(8) {
+.option:nth-child(9) {
   -ms-grid-column: 9;
   -ms-grid-column-span: 3;
   grid-column: 9/12;
@@ -532,9 +532,99 @@ section {
   font-weight: bolder;
 }
 
-button.active {
-  background: #585858;
-  color: white;
+article {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3/11;
+  margin: 5%;
+  padding-bottom: 8%;
+  border-bottom: 3px solid #2E3135;
+}
+
+.more {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+  background-color: #5C520D;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.more h2 {
+  text-align: center;
+  padding: 24px;
+}
+
+.blogFeed {
+  background: url("../images/cloud2.png") 40vw 4vh/85% no-repeat, url("../images/cloud1.png") -15vw 110vh/85% no-repeat;
+}
+
+.post .text {
+  margin-top: 60vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 15px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3/11;
+  padding: 4% 8% 5%;
+}
+
+.post .text P {
+  margin: 5% 0;
+}
+
+.post .text h4 {
+  font-size: 1.5em;
+}
+
+.post .text h3 {
+  font-size: 2em;
+}
+
+.post .text h2 {
+  font-size: 2.5em;
+}
+
+.post .text .caption {
+  font-size: .9em;
+}
+
+.post .text ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 5%;
+}
+
+.post .text ul li {
+  margin: 2% 0;
+}
+
+.post .text a {
+  color: #5C520D;
+  text-decoration: none;
+}
+
+.post .text strong {
+  font-weight: 700;
+}
+
+.post.one {
+  background: url("../images/season3.png") no-repeat;
+  background-size: 100vw;
+}
+
+.post.two {
+  background: url("../images/farming-sim-1.png") no-repeat;
+  background-size: 100vw;
+}
+
+img.logo {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  width: 7vw;
 }
 
 nav {
@@ -646,4 +736,8 @@ footer p {
   font-size: .9em;
   margin-top: 27%;
   padding: 7% 7% 7% 7%;
+}
+
+body.mods nav {
+  top: -7%;
 }
