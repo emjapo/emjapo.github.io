@@ -230,6 +230,141 @@ h2 {
   opacity: 0;
 }
 
+body.mods {
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
+}
+
+body.mods div.container {
+  background: url("../images/red-in-cotton1.png") no-repeat;
+  background-size: 100vw;
+}
+
+body.mods h1.headline {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  text-align: center;
+  font: italic 700 3em "Roboto Condensed", sans-serif;
+  font-size: 2em;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 5;
+  grid-column: 5/10;
+  color: #2E3135;
+}
+
+div.box {
+  grid-column: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5vh 5vw 5vh 10vw;
+}
+
+section {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background-color: #f0e9cd;
+  height: 80vh;
+  width: 15rem;
+  border-radius: 15px;
+  padding: 0rem 5rem;
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0.4);
+}
+
+.mod {
+  min-height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mod img {
+  width: 10rem;
+  z-index: 2;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 12rem;
+  height: 12rem;
+  background: -webkit-gradient(linear, left top, right top, from(#5C520D), color-stop(#AF9E4C), to(#EEDC88));
+  background: linear-gradient(to right, #5C520D, #AF9E4C, #EEDC88);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font: italic 700 3em "Roboto Condensed", sans-serif;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+  color: #2E3135;
+}
+
+.info h3 {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem 0rem;
+  color: #2E3135;
+  opacity: .9;
+  font-weight: lighter;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.download {
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+  font: italic 700 3em "Roboto Condensed", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.download button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #5C520D;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+button.active {
+  background: #585858;
+  color: white;
+}
+
 nav {
   -webkit-transform-origin: 0 bottom;
           transform-origin: 0 bottom;

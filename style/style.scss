@@ -138,6 +138,107 @@ h2 {
     }
 }
 
+// Mods cards
+body.mods {
+    perspective: 2000px;
+    div.container {
+        background: url("../images/red-in-cotton1.png") no-repeat;
+        background-size: 100vw;
+    }
+    h1.headline{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        text-align: center;
+        font: $headerFont;
+        font-size: 2em;
+        grid-column: 5/10;
+        color: $black;
+    }
+}
+div.box {
+    grid-column: 1/-1;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:5vh 5vw 5vh 10vw;
+}
+section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  transform-style: preserve-3d;
+  background-color: #f0e9cd;
+  height: 80vh;
+  width: 15rem;
+  border-radius: 15px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4), 0px 0px 50px rgba(0, 0, 0, 0.4);
+}
+
+.mod {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mod img {
+  width: 10rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle {
+  width: 12rem;
+  height: 12rem;
+  background: linear-gradient(
+    to right,
+    $color1, $color3, $color5
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font: $headerFont;
+  transition: all 0.75s ease-out;
+  color: $black;
+}
+.info h3 {
+  font-size: 1rem;
+  font-family: $bodyCopy;
+  padding: 1rem 0rem;
+  color: $black;
+  opacity: .9;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.download {
+  transition: all 0.75s ease-out;
+  font: $headerFont;
+  margin-bottom: 1rem;
+}
+.download button {
+   width: 100%;
+  padding: 1rem 0rem;
+  background: $color1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+button.active {
+  background: #585858;
+  color: white;
+}
+
+
+
 // nav
 nav {
     transform-origin: 0 bottom;

@@ -5,3 +5,4 @@ tl.to("#portCity", { scale:-1/3, duration: .2 });
 tl.to("#smile", { scale: 1, rotation:0, duration: 1, ease: 'bounce' });
 tl.to("#portCity", { opacity: 1, scale:1, duration: 1 });
 tl.to("#studios", { y:30, opacity: 1, duration: 1.5, ease: 'sine' });
+
