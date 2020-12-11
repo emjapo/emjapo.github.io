@@ -14,7 +14,10 @@ $black: #2E3135;
 .container img {
     width: 100%;
 }
-
+body{
+    overflow-x: hidden;
+    color: $black;
+}
 // header effect
 h1>span, li.cta a{
     margin: 0;
@@ -137,6 +140,39 @@ h2 {
         opacity: 0;
     }
 }
+
+#myVideo {
+  grid-column: 1/-1;
+  width: 100vw;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.overlay {
+  position: relative;
+  grid-column: span 3;
+  bottom: 150%;
+  left: 37vw;
+  backdrop-filter: blur(25px);
+  width: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  a {
+      text-decoration: none;
+  }
+  a:visited {
+      text-decoration: none;
+  }
+  h1 {
+      text-align: center;
+      grid-column: 1/-1 !important;
+      font-size: 1.7em;
+      span {
+          text-align: center;
+      }
+  }
+}
+
 
 // Mods cards
 body.mods {
