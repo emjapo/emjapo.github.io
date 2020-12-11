@@ -2,6 +2,7 @@
 
 // variables
 $headerFont: italic 700 3em 'Roboto Condensed', sans-serif;
+$headerSmaller: italic 700 2em 'Roboto Condensed', sans-serif;
 $bodyCopy: 'Open Sans', sans-serif;
 
 $color1: #5C520D;
@@ -69,19 +70,44 @@ li.cta a {
     grid-column: 1/-1;
 }
 #content {
+    background: url("../images/cloud2.png") 30vw 110vh/85% no-repeat,  url("../images/cloud1.png") -15vw 220vh/85% no-repeat;
     h2 {
-        grid-column:4/10;
+        grid-column:2/10;
+        margin-top: 3%;
+    }
+    h1 {
+        margin: 3% 0;
+    }
+    h2.livestock {
+        grid-column: 5/9;
+        padding-left: 3%;
+    }
+    p.livestock {
+        grid-column: 5/10;
+        padding-right: 10%;
     }
     p {
         grid-column: 8/12;
         padding: 7% 3% 3% 3%;
         line-height: 150%;
     }
-    ul {
-        grid-column: 2/6;
+    ul.fruits {
+        grid-column: 2/5;
+        list-style-type: disc;
+        grid-row: span 3;
+        li {
+            margin: 6%;
+        }
     }
     img{
-        grid-column: 6/12;
+        grid-column: span 4;
+    }
+    .small {
+        grid-column: span 2;
+    }
+    .big {
+        grid-column: span 5;
+        grid-row: span 2;
     }
 }
 #content img.left {
@@ -106,8 +132,8 @@ ul li {
     font-family: $bodyCopy;
 }
 h2 {
+    font: $headerSmaller;
     font-size: 1.6em;
-    font-family: $bodyCopy;
 }
 .container img.homelogo {
     width: 25vw;
