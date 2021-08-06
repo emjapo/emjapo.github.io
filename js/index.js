@@ -1,8 +1,68 @@
-var tl = gsap.timeline();
-tl.to("#smile", { scale: 10, rotation:30, duration: .7, ease: 'elastic' });
-tl.to("#smile", { scale: 7, rotation:-30, duration: .6, ease: 'elastic'});
-tl.to("#portCity", { scale:-1/3, duration: .2 });
-tl.to("#smile", { scale: 1, rotation:0, duration: 1, ease: 'bounce' });
-tl.to("#portCity", { opacity: 1, scale:1, duration: 1 });
-tl.to("#studios", { y:30, opacity: 1, duration: 1.5, ease: 'sine' });
+const poppinsIntro = document.querySelectorAll('#poppins-intro path');
 
+for(let i = 0; i < poppinsIntro.length; i++){
+    console.log(`Letter ${i} is ${poppinsIntro[i].getTotalLength()}`);
+}
+
+let mouseCursor = document.querySelector('.cursor');
+let home = document.querySelector('.top');
+let history = document.querySelector('.bottom');
+let variety = document.querySelector('.right');
+let inDepth = document.querySelector('.left');
+
+window.addEventListener("mousemove", cursor);
+
+function cursor(e) {
+    mouseCursor.style.top = e.pageY + 'px';
+    mouseCursor.style.left = e.pageX + 'px';
+}
+
+home.addEventListener('mouseover', () => {
+    mouseCursor.classList.add("home");
+});
+
+history.addEventListener('mouseover', () => {
+    mouseCursor.classList.add("history");
+});
+
+variety.addEventListener('mouseover', () => {
+    mouseCursor.classList.add("variety");
+});
+
+inDepth.addEventListener('mouseover', () => {
+    mouseCursor.classList.add("inDepth");
+});
+
+home.addEventListener('mouseleave', () => {
+    mouseCursor.classList.remove("home");
+});
+
+history.addEventListener('mouseleave', () => {
+    mouseCursor.classList.remove("history");
+});
+
+variety.addEventListener('mouseleave', () => {
+    mouseCursor.classList.remove("variety");
+});
+
+inDepth.addEventListener('mouseleave', () => {
+    mouseCursor.classList.remove("inDepth");
+});
+
+let inputform = document.getElementById('text');
+inputform.addEventListener("input", populate);
+
+//change font weight
+let changeFontStyle = document.getElementById("style");
+changeFontStyle.addEventListener("change", weightChange);
+
+function weightChange() {
+    document.getElementById(
+        "sample").style.font
+        = changeFontStyle.value;
+} 
+
+function populate() {
+    var x = document.getElementById("text").value;
+    document.getElementById("sample").innerHTML = x;
+}
