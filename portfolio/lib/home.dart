@@ -5,16 +5,26 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Emily Port',
-          style: Theme.of(context).textTheme.headline1,
+    return Stack(
+      alignment: AlignmentDirectional.topStart,
+      fit: StackFit.expand,
+      children: <Widget>[
+        Container(
+          child: Image.asset('assets/images/Oreti.png'),
         ),
-        centerTitle: true,
-        backgroundColor: Theme.of(context).primaryColor,
-      ),
-      body: Image.asset('assets/images/Oreti.png'),
+        Container(
+          child: Text(
+            'Emily Port',
+            style: Theme.of(context).textTheme.headline1,
+          ),
+        ),
+      ],
     );
   }
 }
+
+// child: Text(
+//         'Emily Port',
+//         style: Theme.of(context).textTheme.headline1,
+//       ),
+//       color: Theme.of(context).primaryColor,
