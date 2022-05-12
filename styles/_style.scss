@@ -171,3 +171,30 @@ div.photos {
     top: 15%;
     width: 20vw;
 }
+
+.sidewaysDecor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+}
+
+// iframe stuff for research part
+iframe {
+    width: 80vw;
+    height: 90vh;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5%;
+}
+
+div#research {
+    margin-top: -80vh;
+    h2 {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5%;
+        text-align: center;
+    }
+}
