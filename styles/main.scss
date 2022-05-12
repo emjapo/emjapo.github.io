@@ -42,6 +42,8 @@ body {
     position: relative;
 }
 
-
+#projects, #research, #photos {
+    display: none;
+}
 @import 'grid';
 @import 'style';

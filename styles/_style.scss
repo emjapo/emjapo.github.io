@@ -127,6 +127,10 @@ nav {
     }
 }
 
+h1:hover {
+    color: #FA7E5C;
+}
+
 .topImg {
     position: absolute;
     top: 0;
@@ -144,4 +148,16 @@ nav {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+div.photos {
+    height: 350vh;
+    background: url(../imgs/Oreti-reverse.svg) -2% 20%/20% no-repeat;
+}
+
+.topDecor {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 20vw;
 }
