@@ -43,24 +43,64 @@ div.researchXP {
 }
 
 // SVG animations
-#floatingDots {
+@keyframes rotateAround {
+    0% {
+        transform: rotate(0deg);
+    }
 
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes bounceReverse {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(50px);
+    }
+}
+
+#floatingDots {
+    animation: bounce 3s linear infinite alternate-reverse;
 }
 
 #slidingBar {
-
+    animation: bounce 3s linear infinite alternate-reverse;
 }
 
-#Dots {
-
+#Dots { 
+    @for $i from 1 through 72 {
+        :nth-child(#{$i}) {
+            animation: bounce 2.5s linear (($i/100) * 1s) infinite alternate-reverse;
+        }
+    }
 }
 
 #Dots2 {
-
+    animation: bounceReverse 5s linear infinite alternate-reverse;
 }
 
 #rotatingEye {
-
+    transform-origin: center;
+    animation: rotateAround 7s alternate-reverse linear infinite;
 }
 
 nav {
@@ -70,11 +110,18 @@ nav {
         justify-content: space-between;
         list-style-type: none;
         li{
+            margin: 0;
+            padding: 3% 0;
+            box-sizing: border-box;
+            height: 45px;
             a {
                 color: black;
+                transition: all 0.5s ease
             }
             a:hover {
-                color: #333333;
+                color: #FA7E5C;
+                font-size: 1.2em;
+                transition: all 0.5s ease;
             }
         }
     }
