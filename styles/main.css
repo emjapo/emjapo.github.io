@@ -285,6 +285,10 @@ div.researchXP {
   margin-bottom: 20vh;
 }
 
+svg {
+  width: 100%;
+}
+
 @-webkit-keyframes rotateAround {
   0% {
     -webkit-transform: rotate(0deg);
@@ -715,12 +719,14 @@ h1:hover {
   position: absolute;
   top: 35%;
   left: 5%;
+  width: 40vw;
 }
 
 .bottomImg {
   position: absolute;
   bottom: 0;
   right: 0;
+  width: 30vw;
 }
 
 div.photos {
