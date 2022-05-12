@@ -282,6 +282,10 @@ ul li ul li {
   padding-left: 7%;
 }
 
+li {
+  line-height: 150.2%;
+}
+
 div.researchXP {
   margin-bottom: 20vh;
 }
@@ -718,7 +722,7 @@ h1:hover {
 
 .midImg {
   position: absolute;
-  top: 35%;
+  top: 32%;
   left: 5%;
   width: 40vw;
 }
