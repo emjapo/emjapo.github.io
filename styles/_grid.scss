@@ -1,0 +1,46 @@
+section, div.resume {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 15px;
+  margin: 0 5%;
+}
+
+section.intro {
+  padding-top: 10%;
+  margin-bottom: 100vh;
+  nav, h1 {
+    grid-column: 1/4;
+    align-self: start;
+  }
+  h1 span {
+    display: block;
+  }
+}
+
+div.resume {
+  margin-top: 20vh;
+  grid-column: 1/-1;
+  h2 {
+    grid-column: 7/13;
+  }
+}
+
+div.about, div.researchXP, div.professional {
+  grid-column: 7/13;
+}
+
+
+div.campus {
+  grid-column: 1/7;
+  margin-bottom: 10%;
+  margin-right: 10%;
+}
+
+
+@media screen and (max-width: 1050px) and (min-width:499px) {
+
+}
+
+@media screen and (max-width: 500px) {
+    
+}

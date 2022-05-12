@@ -1,0 +1,100 @@
+h1, h2, h3 {
+    font-family: trapBold;
+}
+h1 {
+ font-size: 5em;
+ span {
+     font-family: trapLight;
+     font-size: .5em;
+ }
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 5% 0;
+}
+
+p {
+    margin: 5% 0;
+    line-height: 150.2%;
+    width: 80%;
+}
+
+
+ul {
+    list-style-type: disc;
+    li {
+        padding-left: 5%;
+        margin: 3% 0;
+        ul{
+            li{
+                padding-left: 7%;
+            }
+        }
+    }
+}
+
+div.researchXP {
+    margin-bottom: 20vh;
+}
+
+// SVG animations
+#floatingDots {
+
+}
+
+#slidingBar {
+
+}
+
+#Dots {
+
+}
+
+#Dots2 {
+
+}
+
+#rotatingEye {
+
+}
+
+nav {
+    margin-bottom: 5%;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        li{
+            a {
+                color: black;
+            }
+            a:hover {
+                color: #333333;
+            }
+        }
+    }
+}
+
+.topImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+}
+
+.midImg {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.bottomImg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
