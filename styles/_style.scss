@@ -198,3 +198,23 @@ div#research {
         text-align: center;
     }
 }
+
+div#projects {
+    margin-top: -80vh;
+    div {
+        margin-bottom: 10%;
+    
+        video {
+            width: 80vw;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            margin-left: 10vw;
+        }
+    }
+}

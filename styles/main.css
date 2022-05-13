@@ -772,3 +772,26 @@ div#research h2 {
   padding: 5%;
   text-align: center;
 }
+
+div#projects {
+  margin-top: -80vh;
+}
+
+div#projects div {
+  margin-bottom: 10%;
+}
+
+div#projects div video {
+  width: 80vw;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div#projects div h2 {
+  text-align: center;
+}
+
+div#projects div p {
+  margin-left: 10vw;
+}
