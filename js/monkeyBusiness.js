@@ -334,12 +334,6 @@ function render(FriendList, theta) {
 
     for (let FriendIdx = 0; FriendIdx < FriendList.length; FriendIdx++) {
         FriendList[FriendIdx].ResetMatrix();
-        FriendList[0].Translate(0.0, 0.0, 0.0);
-        FriendList[1].Translate(-2.4, -0.2, 0.0);
-        FriendList[1].Scale(0.6, 0.6, 0.6);
-        FriendList[2].Scale(0.02, 0.02, 0.02);
-        FriendList[2].RotateY(180);
-        FriendList[2].Translate(1.5, -1.0, 0.0);
         FriendList[FriendIdx].DrawFriend();
     }
 
@@ -452,7 +446,7 @@ async function main() {
 
 
     //possibly will cause issues if my path isn't right 
-    const modelURL = "https://raw.githubusercontent.com/WinthropUniversity/csci440-fa21-project3-emjapo/main/Monkey.obj?token=AM6SBYWEZKLBWPDGLIOVBCDBW23DA"; // this changes but I don't know what caused it to change so hopefully it doesn't happen again
+    const modelURL = "https://raw.githubusercontent.com/emjapo/emjapo.github.io/master/js/magnetboy1.obj"; // this changes but I don't know what caused it to change so hopefully it doesn't happen again
 
 
     const objFileContents = await FetchWrapper(modelURL);
