@@ -166,8 +166,8 @@ function GetPerspectiveProjectionMatrix(fovy, near, far) {
 }
 
 function handleCameraPosition() {
-    var rotateZ = parseFloat(document.getElementById("rotatez").value);
-    var rotateY = parseFloat(document.getElementById("rotatey").value);
+    var rotateZ = 0.0;
+    var rotateY = 0.0;
 
     var eye = vec4(0.1, 0.2, -2.0, 1.0);
 
@@ -320,7 +320,7 @@ function setupShaders(gl) {
 function render(FriendList, theta) {
     ggl.clear(ggl.COLOR_BUFFER_BIT | ggl.DEPTH_BUFFER_BIT);
 
-    theta += rotation * 0.01;
+    theta += rotation * 0.005;
 
     var cs = Math.cos(theta);
     var sn = Math.sin(theta);
@@ -334,6 +334,8 @@ function render(FriendList, theta) {
 
     for (let FriendIdx = 0; FriendIdx < FriendList.length; FriendIdx++) {
         FriendList[FriendIdx].ResetMatrix();
+        FriendList[FriendIdx].Translate(0, -3, 1);
+        FriendList[FriendIdx].Scale(.8, .8, .8);
         FriendList[FriendIdx].DrawFriend();
     }
 
@@ -351,27 +353,27 @@ function SetEnvironmentMapping(gl, shaderProgram) {
     const faceInfos = [
         {
             target: gl.TEXTURE_CUBE_MAP_POSITIVE_X,
-            url: 'https://raw.githubusercontent.com/WinthropUniversity/csci440-fa21-project3-emjapo/EnviroMapping/px.png?token=AM6SBYSYQTF4IM5QRL3DPIDBWGSAI',
+            url: 'https://raw.githubusercontent.com/emjapo/emjapo.github.io/master/js/px.png',
         },
         {
             target: gl.TEXTURE_CUBE_MAP_NEGATIVE_X,
-            url: 'https://raw.githubusercontent.com/WinthropUniversity/csci440-fa21-project3-emjapo/EnviroMapping/nx.png?token=AM6SBYXOGKRLL3DJ5ZGX7YDBWGRDS',
+            url: 'https://raw.githubusercontent.com/emjapo/emjapo.github.io/master/js/nx.png',
         },
         {
             target: gl.TEXTURE_CUBE_MAP_POSITIVE_Y,
-            url: 'https://raw.githubusercontent.com/WinthropUniversity/csci440-fa21-project3-emjapo/EnviroMapping/py.png?token=AM6SBYRGSFU3ZH7CBY5IJR3BWGSCQ',
+            url: 'https://raw.githubusercontent.com/emjapo/emjapo.github.io/master/js/py.png',
         },
         {
             target: gl.TEXTURE_CUBE_MAP_NEGATIVE_Y,
-            url: 'https://raw.githubusercontent.com/WinthropUniversity/csci440-fa21-project3-emjapo/EnviroMapping/ny.png?token=AM6SBYSU7WWAPCCFXYQMQGDBWGR2Q',
+            url: 'https://raw.githubusercontent.com/emjapo/emjapo.github.io/master/js/ny.png',
         },
         {
             target: gl.TEXTURE_CUBE_MAP_POSITIVE_Z,
-            url: 'https://raw.githubusercontent.com/WinthropUniversity/csci440-fa21-project3-emjapo/EnviroMapping/pz.png?token=AM6SBYXWWFHGSZ6UVJNAJADBWGSFQ',
+            url: 'https://raw.githubusercontent.com/emjapo/emjapo.github.io/master/js/pz.png',
         },
         {
             target: gl.TEXTURE_CUBE_MAP_NEGATIVE_Z,
-            url: 'https://raw.githubusercontent.com/WinthropUniversity/csci440-fa21-project3-emjapo/EnviroMapping/nz.png?token=AM6SBYTM47K3CQ2JHZNR4TDBWGR5Q', // need to change this once I push
+            url: 'https://raw.githubusercontent.com/emjapo/emjapo.github.io/master/js/nz.png', // need to change this once I push
         },
     ];
     faceInfos.forEach((faceInfo) => {
@@ -431,8 +433,8 @@ async function main() {
     SetEnvironmentMapping(gl, shaderProgram);
 
 
-    var zposition = parseFloat(document.getElementById("rotatez").value);
-    var thetacam = parseFloat(document.getElementById("rotatey").value); // wrong
+    var zposition = 0.0;
+    var thetacam = 0.0; // wrong
     var xpos = zposition * Math.cos(thetacam);
     var zpos = zposition * Math.sin(thetacam);
     var cameraMatrix = lookAt(vec3(xpos, 0, zpos), // do affine transformation on the eye to move the camera
@@ -454,8 +456,8 @@ async function main() {
     var MagnetBoy = new Friend(gl, shaderProgram, objFileContents);
    
 
-    // CuriousGeorge.SetMaterialProperties(vec4(1.0, 0.0, 0.0, 1.0), 10000.0, 1.0);
-    MagnetBoy.SetMaterialProperties(vec4(1.0, 0.9, 0.0, 1.0), 10000.0, 0.0);
+    MagnetBoy.SetMaterialProperties(vec4(1.0, 0.0, 0.0, 1.0), 10000.0, 1.0);
+    // MagnetBoy.SetMaterialProperties(vec4(1.0, 0.9, 0.0, 1.0), 10000.0, 0.0);
     MagnetBoy.SetMotion(1.0);
     
 
@@ -464,15 +466,6 @@ async function main() {
     handleCameraPosition();
     
     var theta = 0.0;
-
-    document.getElementById("rotatez").oninput = function(event) {
-        handleCameraPosition();
-        render([MagnetBoy], theta);
-    };
-    document.getElementById("rotatey").oninput = function (event) {
-        handleCameraPosition();
-        render([MagnetBoy], theta);
-    };
 
     render([MagnetBoy], theta);
 }

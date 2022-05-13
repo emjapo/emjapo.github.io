@@ -795,3 +795,9 @@ div#projects div h2 {
 div#projects div p {
   margin-left: 10vw;
 }
+
+canvas {
+  position: absolute;
+  top: 0;
+  right: 20%;
+}
