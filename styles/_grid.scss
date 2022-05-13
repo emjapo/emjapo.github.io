@@ -29,6 +29,10 @@ div.about, div.researchXP, div.professional {
   grid-column: 7/13;
 }
 
+div.about {
+  margin-top: 10%;
+}
+
 
 div.campus {
   grid-column: 1/7;
@@ -110,6 +114,13 @@ div.campus {
 
 
 @media screen and (max-width: 1050px) and (min-width:499px) {
+  body {
+    font-size: .9em;
+  }
+
+  div.about {
+    margin-top: 0;
+  }
 
 }
 
