@@ -154,18 +154,145 @@ div.campus {
 }
 
 
-@media screen and (max-width: 1050px) and (min-width:499px) {
+@media screen and (max-width: 1050px) and (min-width:699px) {
   body {
     font-size: .9em;
+  }
+
+  div#landing div {
+    margin: 5% 5% 0% 5%;
   }
 
   div.about {
     margin-top: 0;
   }
 
+  svg {
+    width: 80%
+  }
+  section.intro {
+    margin-bottom: 45%;
+  }
+  .bottomImg {
+    text-align: end;
+  }
 }
 
-@media screen and (max-width: 500px) {
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  // for all smaller devices
+  section.intro {
+    margin-bottom: 130%;
+  }
+
+    .topImg, .midImg, .bottomImg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 100%;
+      width: 100vw;
+      transform: rotate(90deg);
+    }
+
+  section,
+  div.resume, div.gallerypics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin: 0 5%;
+  }
+
+  div.gallerypics {
+    margin-top: 110%;
+    background-image: none;
+  }
+  div.photos {
+    margin-right: auto;
+    margin-left: auto;
+  }
+      nav,
+      h1 {
+        grid-column: 1/4;
+        align-self: start;
+      }
+  
+      h1 span {
+        display: block;
+      }
     
+  
+    div.resume {
+      margin-top: 20vh;
+      grid-column: 1/-1;
+  
+      h2 {
+        grid-column: 1/4;
+      }
+    }
+  
+    div.about,
+    div.researchXP,
+    div.professional {
+      grid-column: 1/4;
+    }
+  
+    div.about {
+      margin-top: 10%;
+    }
+  
+  
+    div.campus {
+      grid-column: 1/4;
+      margin-bottom: 10%;
+      margin-right: 10%;
+    }
+    div.photos {
+      height: fit-content !important;
+    }
+  
+    #pic1, #pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8, #pic9, #pic10, #pic11 {
+      grid-column: 1/4;
+      margin-top: auto;
+      margin-left: auto;
+    
+    }
+    div:has(svg) {
+      z-index: -10;
+    }
+
+    .topDecor {
+      position: absolute;
+      left: -65px;
+      top: 122%;
+      width: 75vw;
+    }
+
+        .midImg {
+          position: absolute;
+          top: 21%;
+          left: 5%;
+          height: 100vw;
+          width: 48vw;
+        }
+        .sidewaysDecor {
+          margin-top: 100%;
+          width: 100vw
+        }
+        div#research {
+          margin-top: -25vh;
+        }
+
+                div#projects {
+                  margin-top: -50vh;
+                  h2{
+                    font-size: 1.8em;
+                    padding: 5%;
+                  }
+                }
+  
 }
 
