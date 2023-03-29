@@ -627,6 +627,10 @@ div#research h2 {
   text-align: center;
 }
 
+div#research p {
+  margin-left: 10vw;
+}
+
 div#projects {
   margin-top: -80vh;
 }
@@ -810,7 +814,7 @@ div.campus {
   .professional {
     margin-bottom: 120%;
   }
-  div#research h2 {
+  div#research h2:first-of-type {
     margin-top: 60%;
   }
   .researchXP {
@@ -834,7 +838,7 @@ div.campus {
   .professional {
     margin-bottom: 120%;
   }
-  div#research h2 {
+  div#research h2:first-of-type {
     margin-top: 60%;
   }
 }
