@@ -4,13 +4,16 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-        <script src="" async defer></script>
-    </body>
+	{{- partial "head.html" . -}}
+
+	<body>
+		{{- partial "header.html" . -}}
+		<div id="content">{{- block "main" . }}{{- end }}</div>
+		{{- partial "footer.html" . -}}
+		<script
+			src=""
+			async
+			defer
+		></script>
+	</body>
 </html>

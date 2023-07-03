@@ -1,7 +1,6 @@
 ---
 title: "Making This Site With Hugo"
 date: 2023-06-30T00:59:46-04:00
-draft: true
 ---
 
 It felt like it was time for a change on my personal site, and I wanted to integrate a blog feature on my site so I could document some of my PhD journey. I also wanted to do it as cheap as possible in true computer scientist fashion. That led me to static site generators (SSG) so that I could continue using my Github Pages site. I have always done my sites in either vanilla html and css or using React, so learning how to use a SSG was a new challenge for me.

@@ -1,15 +1,13 @@
 {{ define "main" }}
-  <article>
-    <section >
-      <h2>Blog</h2>
-    </section>
-    <section>
-      {{ range .Paginator.Pages }}
-        <div>
-          {{ .Render "summary" }}
-        </div>
-      {{ end }}
-    </section>
-    {{- template "_internal/pagination.html" . -}}
-  </article>
+<article>
+	<section>
+		<h2>Blog</h2>
+	</section>
+	<section>
+		{{ range .Paginator.Pages }}
+		<div>{{ .Render "summary" }}</div>
+		{{ end }}
+	</section>
+	{{- template "_internal/pagination.html" . -}}
+</article>
 {{ end }}
