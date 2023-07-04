@@ -1,5 +1,14 @@
 {{ define "main"}}
 <div class="about">
+	{{ partial "svg" "Emily-Port"}}
+	<script>
+		const poppinsIntro = document.querySelectorAll('#Emily-Port');
+
+		for(let i = 0; i < poppinsIntro.length; i++){
+			console.log(`Letter ${i} is ${poppinsIntro[i].getTotalLength()}`);
+		}
+</script>
+	{{ partial "svg" "about-graphic-1" }}
 	<h2>About Me</h2>
 	<p>
 		I am a Ph.D. student in the Modeling and Simulation program at the University of Central
