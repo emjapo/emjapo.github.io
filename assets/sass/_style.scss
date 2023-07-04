@@ -1,8 +1,55 @@
 // svgs 
 #about-graphic-1 {
     transform-origin: center;
-    filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 0.4));
-    animation: spin 40s linear infinite;
+    filter: drop-shadow(0px 0px 5px rgb(0 0 0 / 0.4));
+    animation: spin 50s linear infinite;
+    overflow: visible;
+    position: absolute;
+    top: -12%;
+    left: 45%;
+    z-index: -1;
+}
+
+#about-graphic-2 {
+    position: absolute;
+    top: 8%;
+    right: 50%;
+    #about-star-1 {
+        transform-box: fill-box;
+        transform-origin: center center;
+        animation: spin 50s linear infinite;    
+        filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 0.6));
+
+    }
+    #about-star-2 {
+        transform-box: fill-box;
+        transform-origin: center center;
+        animation: spin 50s linear infinite reverse;
+            filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 0.4));
+
+    }
+    #about-star-3 {
+        transform-box: fill-box;
+        transform-origin: center center;
+        animation: spin 60s linear infinite;
+            filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 0.4));
+
+    }
+}
+
+#about-graphic-3 {
+    transform-origin: center;
+    filter: drop-shadow(0px 0px 10px rgb(0 0 0 / 0.4));
+    animation: spin 50s linear infinite reverse;
+    position: absolute;
+    left: 60%
+}
+
+#about-graphic-4{
+    transform-origin: center;
+    filter: drop-shadow(0px 0px 10px rgb(0 0 0 / 0.6));
+    animation: spin 50s linear infinite;
+    position: absolute;
 }
 
 #Emily-Port {
@@ -14,20 +61,26 @@
 }
 
 header{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    h1 {
+        font-size: 2em;
+    }
     nav {
-        margin-bottom: 5%;
-
+        margin-left: 10%;
         ul {
             display: flex;
             justify-content: space-between;
             list-style-type: none;
             flex-direction: column;
+            height: 100%;
             li {
                 margin: 0;
                 padding: 3% 0;
                 box-sizing: border-box;
                 height: 45px;
-
+                display: flex;
+                align-items: center;
                 a {
                     color: $text-color;
                     text-decoration: none !important;
@@ -77,4 +130,40 @@ footer {
                 }
             }
         }
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 5% 0;
+}
+
+p {
+    margin: 5% 0;
+    line-height: 150.2%;
+    width: 80%;
+}
+
+
+ul {
+    list-style-type: disc;
+
+    li {
+        padding-left: 5%;
+        margin: 3% 0;
+
+        ul {
+            li {
+                padding-left: 7%;
+            }
+        }
+    }
+}
+
+li {
+    line-height: 150.2%;
+    ;
 }

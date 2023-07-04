@@ -1,4 +1,6 @@
-div#content, header, footer {
+div#content,
+header,
+footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
@@ -8,5 +10,28 @@ div#content, header, footer {
 footer {
     nav {
         grid-column: 1/-1;
+    }
+}
+
+div.about {
+    grid-column: 2;
+    margin-top: 10%;
+}
+
+div.resume {
+    margin-top: 10%;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+
+    div.researchXP {
+        grid-column: 1;
+    }
+    div.campus {
+        grid-column: 1;
+    }
+    div.professional {
+        grid-column: 2;
     }
 }

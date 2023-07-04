@@ -5,19 +5,26 @@
 }
 
 @keyframes line-anim {
-    0% {
-        stroke-dasharray: 4957.9873046875px;
-        stroke-dashoffset: 4957.9873046875px;
-        // fill: transparent;
+    // 0% {
+    //     stroke-dasharray: 4957.9873046875px;
+    //     stroke-dashoffset: 4957.9873046875px;
+    //     // fill: transparent;
+    // }
+    // 25% {
+    //     fill: transparent
+    // }
+    // 75% {
+    //     stroke-dashoffset: 0;
+    // }
+    // 100% {
+    //     fill: $text-color;
+    // }
+    from{
+        fill: transparent;
     }
-    25% {
-        fill: transparent
-    }
-    75% {
-        stroke-dashoffset: 0;
-    }
-    100% {
+    to {
         fill: $text-color;
+        stroke-dashoffset: 0;
     }
 }
 
