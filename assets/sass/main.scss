@@ -64,6 +64,14 @@ a:hover {
     color: $text-accent-bright;
 }
 
+video, iframe {
+    width: 100%;
+}
+
+img { 
+    width: 100%;
+}
+
 // imports
 @import "animate";
 @import "grid";
