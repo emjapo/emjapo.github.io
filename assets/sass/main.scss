@@ -6,6 +6,7 @@ $footer-color: #182B39;
 $text-color: #EBDECB;
 $text-accent-dark: #DD7649;
 $text-accent-bright: #F4A24C;
+$text-accent-light: #C1DBD0;
 
 // fonts
 @font-face {
@@ -48,13 +49,15 @@ $text-accent-bright: #F4A24C;
 body {
     background-color: $background-color;
     color: $text-color;
-    font-family: trapRegular;
+    font-family: trapRegular, trap, "Josefin Sans", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    position: relative;
+    overflow-x: hidden;
 }
 
 a {
-    color: $text-color;
+    color: $text-accent-light;
     text-decoration: none;
-    border-bottom: $text-color 1px solid;
 }
 
 a:hover {

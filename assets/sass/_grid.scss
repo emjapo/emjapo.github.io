@@ -1,0 +1,12 @@
+div#content, header, footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin: 0 15%;
+}
+
+footer {
+    nav {
+        grid-column: 1/-1;
+    }
+}

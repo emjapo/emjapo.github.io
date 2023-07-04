@@ -1,14 +1,25 @@
 <header>
-    <div>
-        <h1>I am <span>Emily Port</span></h1>
-    </div>
-    <nav class="header-nav">
-        <ul>
-            <a href = "/">Home</a>
-            <a href = "{{ `projects` | relURL }}">Projects</a>
-            <a href = "{{ `research` | relURL }}">Research</a>
-            <a href = "{{ `photos` | relURL }}">Photos</a>
-            <a href = "{{ `blog` | relURL }}">Blog</a>
-        </ul>
-    </nav>
+	<div>
+		<h1>I am</h1>
+		{{ partial "svg" "Emily-Port"}}
+	</div>
+	<nav class="header-nav">
+		<ul>
+			<li>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="{{ `projects` | relURL }}">Projects</a>
+			</li>
+			<li>
+				<a href="{{ `research` | relURL }}">Research</a>
+			</li>
+			<li>
+				<a href="{{ `photos` | relURL }}">Photos</a>
+			</li>
+			<li>
+				<a href="{{ `blog` | relURL }}">Blog</a>
+			</li>
+		</ul>
+	</nav>
 </header>
