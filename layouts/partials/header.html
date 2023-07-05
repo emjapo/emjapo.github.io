@@ -3,8 +3,15 @@
 		<h1>I am</h1>
 		{{ partial "svg" "Emily-Port"}}
 	</div>
-	<nav class="header-nav">
-		<ul>
+
+	<!-- The overlay -->
+	<nav id="myNav" class="header-nav overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn btn" onclick="closeNav()">&times;</a>
+
+		<!-- Overlay content -->
+		<ul class="overlay-content">
 			<li>
 				<a href="/">Home</a>
 			</li>
@@ -22,4 +29,7 @@
 			</li>
 		</ul>
 	</nav>
+
+	<!-- Use any element to open/show the overlay navigation menu -->
+	<span class="btn" onclick="openNav()">&#9776;</span>
 </header>
