@@ -39,3 +39,22 @@ div.resume {
         grid-column: 2;
     }
 }
+
+div.gallery {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    grid-auto-flow: dense;
+    img.long {
+        grid-column: span 2;
+    }
+    img.tall {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    img.short {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
