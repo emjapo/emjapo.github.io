@@ -1,13 +1,20 @@
 {{ define "main" }}
-<article>
+<article class="list">
 	<section>
 		<h2>Blog</h2>
 	</section>
-	<section>
-		{{ range .Paginator.Pages }}
-		<div>{{ .Render "summary" }}</div>
-		{{ end }}
-	</section>
-	{{- template "_internal/pagination.html" . -}}
+	{{ range .Paginator.Pages }}
+	<a href="{{ .RelPermalink }}" class="summary">
+		<section>
+			{{ if not .Date.IsZero }}
+			<time {{ printf `datetime="%s" ` (.Date.Format "2006-01-02T15:04:05Z07:00" ) | safeHTMLAttr }}>
+				{{- .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) -}}
+			</time>
+			{{end}}
+			<div>{{ .Render "summary" | truncate 300 }}</div>
+			{{ end }}
+		</section>
+	</a>
+	{{/* {{- template "_internal/pagination.html" . -}} */}}
 </article>
 {{ end }}
