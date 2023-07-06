@@ -3,3 +3,8 @@ languageCode = 'en-us'
 title = 'About Me'
 sectionPagesMenu = 'main'
 pluralizeListTitles = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
