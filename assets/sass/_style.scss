@@ -242,6 +242,13 @@ iframe {
 	height: 90vh;
 }
 
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: $footer-color;
+    padding: 3px;
+    border-radius: 5px;
+}
+
 body:has(article.list) {
     background: $background-color url("../images/blog-graphic.svg") top right no-repeat;;
 }
