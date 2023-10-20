@@ -258,32 +258,37 @@ body:has(article.single) {
 }
 
 article.list {
-	section:first-child {
+	margin-bottom: 5%;
 	    h2 {
             text-align: center;
+			margin-bottom: 5%;
         }
-	}
+	
 	a.summary {
+		display: flex;
+		line-height: 150.2%;
 		section {
-			background-color: $text-color;
-			backdrop-filter: blur(15px);
-			color: $footer-color;
+			background-color: $footer-color;
+			color: $text-color;
 			border-radius: 1em;
-			padding: 3%;
+			padding: 5%;
 			margin: 2%;
+			transition: all 0.5s ease;
 			h3 {
                 color: $text-accent-dark;
 				margin: 2% 0;
+				line-height: 1em;
 			}
 		}
 	}
 	a.summary:hover {
         section {
-            color: $text-accent-bright;
-            background-color: $footer-color;
-            h3 {
-                color: $text-accent-bright; 
-            }
+			filter: drop-shadow(0px 0px 8px rgb(0 0 0 / 0.4));
+            // color: $footer-color;
+            // background-color: $text-accent-light;
+            // h3 {
+            //     color: $footer-color; 
+            // }
         }
 	}
 }

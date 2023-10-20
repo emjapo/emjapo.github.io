@@ -14,8 +14,14 @@ footer {
 	}
 }
 
-section,
-article {
+section.blog {
+	grid-column: span 1;
+}
+article.list{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+section, article {
 	grid-column: span 2;
 }
 
@@ -119,6 +125,18 @@ div.gallery {
 
 	.btn {
 		display: block;
+			div.btn-hamburger {
+				height: 0.2em;
+				width: 0.2em;
+				border-radius: 100%;
+				background-color: $text-color;
+				margin: 15%;
+			}
+	}
+	.btn:hover {
+		div.btn-hamburger {
+			background-color: $text-accent-bright;;
+		}
 	}
 	.overlay {
 		margin-left: 0;
@@ -191,6 +209,9 @@ div.gallery {
     top: 15px;
     right: 35px;
   }
+  body {
+	font-size: 80%;
+  }
 }
 
 
@@ -198,6 +219,7 @@ div.gallery {
 	// for all smaller devices
 	body {
 		// background-color: darkcyan;
+		font-size: 85%;
 	}
 
 	div#content,
@@ -232,6 +254,18 @@ div.gallery {
 
     	.btn {
 		display: block;
+			div.btn-hamburger {
+				height: 0.2em;
+				width: 0.2em;
+				border-radius: 100%;
+				background-color: $text-color;
+				margin: 15%;
+			}
+	}
+	.btn:hover {
+		div.btn-hamburger {
+			background-color: $text-accent-bright;
+		}
 	}
 	.overlay {
 		margin-left: 0;
