@@ -1,10 +1,15 @@
 {{define "main" }}
 <article class="single">
-    <ul id="breadcrumbs">
+    {{/*  <ul id="breadcrumbs">
     {{- range .Ancestors.Reverse }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> |</li>
-    {{- end }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{- end }}  */}}
+    {{/*  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    </ul>  */}}
+    <ul id="breadcrumbs">
+      <li>
+        <a href="{{ `blog` | relURL }}">&#11164; Back</a>
+      </li>
     </ul>
     <h2>{{.Title}}</h2>
     {{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}

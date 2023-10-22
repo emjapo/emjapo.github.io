@@ -17,11 +17,12 @@ footer {
 section.blog {
 	grid-column: span 1;
 }
-article.list{
+article.list {
 	display: grid;
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
-section, article {
+section,
+article {
 	grid-column: span 2;
 }
 
@@ -125,142 +126,9 @@ div.gallery {
 
 	.btn {
 		display: block;
-			div.btn-hamburger {
-				height: 0.2em;
-				width: 0.2em;
-				border-radius: 100%;
-				background-color: $text-color;
-				margin: 15%;
-			}
-	}
-	.btn:hover {
-		div.btn-hamburger {
-			background-color: $text-accent-bright;;
-		}
-	}
-	.overlay {
-		margin-left: 0;
-		/* Height & width depends on how you want to reveal the overlay (see JS below) */
-		height: 100%;
-		width: 0;
-		position: fixed; /* Stay in place */
-		z-index: 1; /* Sit on top */
-		left: 0;
-		top: 0;
-		background-color: $footer-color; /* Black fallback color */
-		background-color: $opacity-color; /* Black w/opacity */
-		overflow-x: hidden; /* Disable horizontal scroll */
-		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-	}
-
-	/* Position the content inside the overlay */
-	.overlay-content {
-		position: relative;
-		top: 25%; /* 25% from the top */
-		width: 100%; /* 100% width */
-		height: fit-content;
-		align-items: center;
-		margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-	}
-
-    .overlay li {
-        margin: 2% 0;
-    }
-
-	/* The navigation links inside the overlay */
-	.overlay li a {
-		padding: 8px;
-		text-decoration: none;
-		font-size: 36px;
-		color: $text-accent-light;
-		border-color: $text-accent-light;
-		display: block; /* Display block instead of inline */
-		transition: 0.3s; /* Transition effects on hover (color) */
-	}
-
-	/* When you mouse over the navigation links, change their color */
-	.overlay li a:hover,
-	.overlay li a:focus {
-		color: $text-accent-bright;
-		font-size: 3em;
-	}
-
-	/* Position the close button (top right corner) */
-	.overlay .closebtn {
 		position: absolute;
-		top: 20px;
-		right: 45px;
-		font-size: 60px;
-	}
-
-    .btn {
-        font-size: 5em;
-        margin-top: auto;
-        margin-bottom: auto;
-        height: fit-content;
-    }
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-  body {
-	font-size: 80%;
-  }
-}
-
-
-@media screen and (max-width: 700px) {
-	// for all smaller devices
-	body {
-		// background-color: darkcyan;
-		font-size: 85%;
-	}
-
-	div#content,
-	header,
-	footer {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		margin-left: 15%;
-		margin-right: 15%;
-	}
-	svg {
-		width: 100%;
-		height: fit-content;
-	}
-	div.about {
-		grid-column: 1/-1;
-	}
-	* {
-		grid-column: span 2;
-	}
-	footer {
-		min-width: 0;
-		min-height: 50vh;
-		max-width: 100vw !important;
-		background-size: contain;
-		nav {
-			ul {
-				flex-direction: column;
-			}
-		}
-	}
-
-    	.btn {
-		display: block;
-			div.btn-hamburger {
-				height: 0.2em;
-				width: 0.2em;
-				border-radius: 100%;
-				background-color: $text-color;
-				margin: 15%;
-			}
+		top: 3%;
+		right: 8%;
 	}
 	.btn:hover {
 		div.btn-hamburger {
@@ -290,12 +158,193 @@ div.gallery {
 		height: fit-content;
 		align-items: center;
 		margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-        justify-content: space-between;
 	}
 
-    .overlay li {
-        margin: 2% 0;
-    }
+	.overlay li {
+		margin: 2% 0;
+	}
+
+	/* The navigation links inside the overlay */
+	.overlay li a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 36px;
+		color: $text-accent-light;
+		border-color: $text-accent-light;
+		display: block; /* Display block instead of inline */
+		transition: 0.3s; /* Transition effects on hover (color) */
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.overlay li a:hover,
+	.overlay li a:focus {
+		color: $text-accent-bright;
+		font-size: 3em;
+	}
+
+	/* Position the close button (top right corner) */
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+	}
+
+	.btn {
+		font-size: 5em;
+		margin-top: auto;
+		margin-bottom: auto;
+		height: fit-content;
+	}
+	.btn.open {
+		filter: drop-shadow(0px 0px 10px rgb(0 0 0 / 0.4));
+		position: absolute;
+		top: -55px;
+		right: -15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 3em;
+		width: 100px;
+		border-radius: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #c1dbd0;
+		height: 100px;
+		div.btn-hamburger {
+			height: 0.3em;
+			width: 0.3em;
+			border-radius: 100%;
+			background-color: $background-color;
+			margin: 3%;
+		}
+	}
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px;
+	}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+	body {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	// for all smaller devices
+	body {
+		// background-color: darkcyan;
+		font-size: 85%;
+	}
+
+	div#content,
+	header,
+	footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	svg {
+		width: 100%;
+		height: fit-content;
+	}
+	div.about {
+		grid-column: 1/-1;
+	}
+	* {
+		grid-column: span 2;
+	}
+	footer {
+		min-width: 0;
+		min-height: 50vh;
+		max-width: 100vw !important;
+		background-size: contain;
+		nav {
+			ul {
+				// flex-direction: column;
+			}
+		}
+	}
+	.logo {
+		width: 80%;
+	}
+	.btn {
+		display: block;
+		position: absolute;
+		top: -30px;
+		right: -15px;
+		font-size: 3em;
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.btn.open {
+		filter: drop-shadow(0px 0px 10px rgb(0 0 0 / 0.4));
+		position: absolute;
+		top: -30px;
+		right: -15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 3em;
+		width: 80px;
+		border-radius: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #c1dbd0;
+		height: 80px;
+		div.btn-hamburger {
+			height: 0.2em;
+			width: 0.2em;
+			border-radius: 100%;
+			background-color: $background-color;
+			margin: 3%;
+		}
+	}
+	.btn:hover {
+		div.btn-hamburger {
+			background-color: $text-accent-bright;
+		}
+	}
+	.overlay {
+		margin-left: 0;
+		/* Height & width depends on how you want to reveal the overlay (see JS below) */
+		height: 100%;
+		width: 0;
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 0;
+		background-color: $footer-color; /* Black fallback color */
+		background-color: $opacity-color; /* Black w/opacity */
+		overflow-x: hidden; /* Disable horizontal scroll */
+		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	}
+
+	/* Position the content inside the overlay */
+	.overlay-content {
+		position: relative;
+		top: 25%; /* 25% from the top */
+		width: 100%; /* 100% width */
+		height: fit-content;
+		align-items: center;
+		margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+		justify-content: space-between;
+	}
+
+	.overlay li {
+		margin: 2% 0;
+	}
 
 	/* The navigation links inside the overlay */
 	.overlay li a {
@@ -323,22 +372,28 @@ div.gallery {
 		font-size: 60px;
 	}
 
-    .btn {
-        font-size: 3em;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.footer-nav {
+		display: flex;
+		// justify-content: center;
+		align-items: flex-end;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			list-style-type: none;
+			li {
+				margin: 1% 0 0 0;
+				padding: 0 3%;
+				box-sizing: border-box;
+				height: fit-content;
+			}
+		}
+	}
 
-    .footer-nav {
-        display:none;
-    }
-}
-
-@media screen and (max-width: 700px) { 
-    .gallery {
-        img.short, img.tall, img.long {
-            grid-column: 1/-1 !important;
-        }
-    }
+	.gallery {
+		img.short,
+		img.tall,
+		img.long {
+			grid-column: 1/-1 !important;
+		}
+	}
 }
