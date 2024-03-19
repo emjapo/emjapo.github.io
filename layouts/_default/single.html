@@ -12,6 +12,9 @@
       </li>
     </ul>
     <h2>{{.Title}}</h2>
+    {{ if .Params.subtitle }}
+      <h4>{{ .Params.subtitle }}</h4>
+    {{end}}
     {{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}
       {{ if not .Date.IsZero }}
       <time {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
