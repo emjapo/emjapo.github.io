@@ -1,6 +1,6 @@
 ---
 title: "Playing With Web Scrapers and Neural Nets"
-date: 2024-02-08T01:26:09-05:00
+date: 2023-12-08T01:26:09-05:00
 draft: true
 ---
 

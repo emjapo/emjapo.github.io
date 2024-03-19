@@ -13,7 +13,7 @@
     </ul>
     <h2>{{.Title}}</h2>
     {{ if .Params.subtitle }}
-      <h4>{{ .Params.subtitle }}</h4>
+      <h4 class="slant">{{ .Params.subtitle }}</h4>
     {{end}}
     {{/* Hugo uses Go's date formatting is set by example. Here are two formats */}}
       {{ if not .Date.IsZero }}
