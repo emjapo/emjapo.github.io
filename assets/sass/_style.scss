@@ -256,6 +256,9 @@ code {
 	background-color: $background-color;
 	padding: 3px;
 	border-radius: 5px;
+	white-space : pre-wrap !important;
+    word-break: break-word;
+	display: inline-block;
 }
 
 body:has(article.list) {
