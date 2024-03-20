@@ -268,7 +268,7 @@ My configurations are:
                 <li>activation linear</li>
             </ul>
         </li>
-        <li>DEEP
+        <li>DEEP:
             <ul>
                 <li>x1, x2 input</li>
                 <li>sigmoid activation</li>
