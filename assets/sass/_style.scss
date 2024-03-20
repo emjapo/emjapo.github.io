@@ -196,6 +196,7 @@ footer {
 
 h2 {
 	font-size: 3.5em;
+	margin-bottom: 1%;
 }
 
 h3 {
@@ -208,7 +209,8 @@ h4 {
 	margin: 1% 0;
 }
 
-.slant, em {
+.slant,
+em {
 	font-style: italic;
 }
 
@@ -256,8 +258,8 @@ code {
 	background-color: $background-color;
 	padding: 1em;
 	border-radius: 5px;
-	white-space : pre-wrap !important;
-    word-break: break-word;
+	white-space: pre-wrap !important;
+	word-break: break-word;
 	display: inline-block;
 }
 
@@ -356,5 +358,32 @@ ul.playlists {
 	list-style-type: disclosure-closed;
 	li {
 		width: 100%;
+	}
+}
+
+// table styling
+table {
+	width: 100%;
+	td {
+		text-align: center;
+		white-space: nowrap;
+	}
+	th,
+	td {
+		border-bottom: 1px solid #ddd;
+		padding: 1%;
+	}
+	th {
+		font-family: trapExtra;
+		letter-spacing: 1px;
+		border-bottom: 2px solid #ddd;
+		vertical-align: bottom;
+	}
+	// tr:nth-child(even) {
+	// 	background-color: $background-color;
+	// }
+	tr:hover {
+		background-color: $text-accent-dark;
+		color: $footer-color;
 	}
 }

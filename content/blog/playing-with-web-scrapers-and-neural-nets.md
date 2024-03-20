@@ -260,30 +260,30 @@ Now here comes the part of the code that is more customized to my specifications
 My configurations are:
 
 <div class="nested-lists">
-<ul>
-<li>MYENG:
-<ul>
-<li>x2, x1x2, sin(x1), sin(x2)</li>
-<li>5, 2, 2</li>
-<li>activation linear</li>
-</ul>
-</li>
-<li>DEEP
-<ul>
-<li>x1, x2 input</li>
-<li>sigmoid activation</li>
-<li>3, 3</li>
-</ul>
-</li>
-<li>MYBEST
-<ul>
-<li>x1, x2 input</li>
-<li>sigmoid activation</li>
-<li>5, 3</li>
-<li>batch size 12</li>
-</ul>
-</li>
-</ul>
+    <ul>
+        <li>MYENG:
+            <ul>
+                <li>x2, x1x2, sin(x1), sin(x2)</li>
+                <li>5, 2, 2</li>
+                <li>activation linear</li>
+            </ul>
+        </li>
+        <li>DEEP
+            <ul>
+                <li>x1, x2 input</li>
+                <li>sigmoid activation</li>
+                <li>3, 3</li>
+            </ul>
+        </li>
+        <li>MYBEST:
+            <ul>
+                <li>x1, x2 input</li>
+                <li>sigmoid activation</li>
+                <li>5, 3</li>
+                <li>batch size 12</li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
 I looped through the problems, model configurations, and the qualities to have one trial for each combination.
