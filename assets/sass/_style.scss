@@ -254,11 +254,26 @@ iframe {
 code {
 	font-family: "Courier New", Courier, monospace;
 	background-color: $background-color;
-	padding: 3px;
+	padding: 1em;
 	border-radius: 5px;
 	white-space : pre-wrap !important;
     word-break: break-word;
 	display: inline-block;
+}
+
+p {
+	code {
+		padding: 3px;
+	}
+}
+
+.nested-lists {
+	ul {
+		margin-left: 5%;
+		li {
+			margin: 1%;
+		}
+	}
 }
 
 body:has(article.list) {
