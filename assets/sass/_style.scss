@@ -204,6 +204,14 @@ h3 {
 	margin: 5% 0;
 }
 
+h3.course-description {
+	margin: 0;
+	text-align: center;
+	font-size: 1.4em;
+	font-style: italic;
+	font-family: traplight;
+}
+
 h4 {
 	font-size: 1.8em;
 	margin: 1% 0;
@@ -251,6 +259,10 @@ section {
 
 iframe {
 	height: 90vh;
+}
+
+.model {
+	margin-bottom: 2%;
 }
 
 code {
@@ -387,3 +399,24 @@ table {
 		color: $footer-color;
 	}
 }
+
+hr {
+	//   border: 0;
+	//   margin: 1.35em auto;
+	//   max-width: 100%;
+	//   background-position: 50%;
+	//   box-sizing: border-box;
+	width: 25%;
+	border: 2px solid $text-accent-light;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+// .dots {
+// 	  $color: papayawhip;
+// 	  color: $color;
+// 	  // height: 8px;
+// 	  border-width: 0 0 8px;
+// 	  border-style: solid;
+// 	  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="#{$color}" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
+// 	   width: 216px;
+// }
