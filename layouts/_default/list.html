@@ -1,9 +1,10 @@
 {{ define "main" }}
+{{ $paginator := .Paginator }}
 <article class="list">
 	<section>
 		<h2>Blog</h2>
 	</section>
-	{{ range .Paginator.Pages }}
+	{{ range $paginator.Pages }}
 	<a href="{{ .RelPermalink }}" class="summary">
 		<section class="blog">
 			{{ if not .Date.IsZero }}
@@ -15,6 +16,8 @@
 			</section>
 			{{ end }}
 	</a>
-	{{/* {{- template "_internal/pagination.html" . -}} */}}
+	{{ if gt $paginator.TotalPages 1 }}
+		{{- template "_internal/pagination.html" . -}}
+	{{ end }}
 </article>
 {{ end }}

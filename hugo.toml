@@ -8,3 +8,8 @@ pluralizeListTitles = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[pagination]
+  disableAliases = false
+  pagerSize = 100
+  path = 'page'

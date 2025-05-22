@@ -410,6 +410,13 @@ div.gallery {
 		}
 	}
 
+	.portfolio {
+		flex-direction: column;
+		.portfolio-item {
+			width: 100%;
+		}
+	}
+
 	div.resume {
 		div.professional {
 			grid-column: span 2;

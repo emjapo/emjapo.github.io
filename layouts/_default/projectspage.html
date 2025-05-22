@@ -3,136 +3,106 @@
 	{{ partial "svg" "projects-graphic-2" }}
 	{{ partial "svg" "projects-graphic-1" }}
 	<div class="phone-background">
-		<h2>Mixed Reality Projects</h2>
+        <h2>Mixed Reality</h2>
 		<p>
-			As part of my graduate certificate in Mixed Reality Engineering, I have taken courses on augmented reality, virtual reality, and rapid prototyping mixed reality applications, and I have created demos to demonstrate the principles I learned in the class.
+			As part of my graduate certificate in Mixed Reality Engineering, I have taken courses on augmented reality, virtual reality, and rapid prototyping of mixed reality applications.
 		</p>
-		<hr>
-	</div>
-	<div class="phone-background">
-		{{/*  <iframe width="480" height="270" src="https://www.youtube.com/embed/70p3yBoMdrQ?si=MOGgQ5S1ryiSH8Uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  */}}
-		<h2>BEAMvr</h2>
-		<p>
-			BEAMvr is a virtual reality rapid architectural modeling application that simulates different lighting conditions. This project is a joint effort with two other teammates with each of us working on a key feature. My main contributions were to developing the lighting controls and texture painting. A more detailed description of the project pitch can be found <a href="{{ `blog/beamvr` | relURL }}">in my blog post</a>.
-		</p>
-		<img src="../images/BEAMvr.png" alt="" style="margin-bottom:2%" />
-	</div>
-	<div class="phone-background">
-		<h2>Poly Lands</h2>
-		<p>
-			For my Virtual Reality Engineering class, I created a small adventure story set in the fictional Poly Lands to help connect the different demos. The story first implements wayfinding to guide the player to the market. Then the story utilizes interactions by providing the player with some weapons to chose from at the market place so that they will be able to defend themselves at night. The player is then led to a cabin to display physics in Unity before enemies attack the player. The last update sees the player teleporting to a safe location in the mountains to sleep for the night.
-		</p>
-		<img src="../images/vre.png" alt="" style="margin-bottom:2%" />
-	</div>
-	<div class="phone-background">
-		<h2>Video Demos</h2>
-		<p>
-			A full list of demos of my augmented and virtual reality projects can be found using the following links. These examples are built using Unity, Vuforia, and the Oculus Integration SDK.
-			<div class="playlists">
-				<ul class="playlists">
-					<li><a href="https://www.youtube.com/playlist?list=PLoMe3X7YF4tFr0sIjUCdz8Bf1kBk2JaBw">Augmented Reality</a></li>
-					<li><a href="https://www.youtube.com/playlist?list=PLoMe3X7YF4tFem1jzC7-SWjxieiI0SH9z">Virtual Reality</a></li> 
-					<li><a href="https://www.youtube.com/playlist?list=PLoMe3X7YF4tEMv7MknpgYQEAI3ZAWuvhM">Mixed Reality</a></li>
-				</ul>
-			</div>
-		</p> 
-	</div>
-	<div class="phone-background">
-		<h2>Modeling and Simulation Projects</h2>
-		<hr>
-		</div>
-	<div class="phone-background">
-		<h2>Facilitator Intervention Cognitive Model for Cooperative Activities</h2>
-		<h3 class="course-description">IDS 6267: Understanding Humans for Modeling and Simulation</h3>
-		<p>
-			Understanding Humans for Modeling and Simulation acted as my foundational course for the psychology side of modeling and simulation. I learned about different cognitive architectures and practiced applying these psychological concepts to create my own cognitive model. The model takes inspiration from existing models but instead depicts the cognitive process of a facilitator facilitating a team-building activity and determining when or if they should intervene in a situation.
-		</p> 
-		<img src="../images/humanModel.drawio.png" alt="" class="model" />
-	</div>
-	<div class="phone-background">
-		<h2>Evaluating impact of Berth Crane Capacity and Speed on Port Models</h2>
-		<h3 class="course-description">IDS 6145: Simulation Techniques</h3>
-		<img src="../images/teaserimage.PNG" alt="" style="margin-top:2%;" />
-		<p>For the final project for SimTech, my group compared the performance of three different port models created in AnyLogic under different conditions. This project evaluated the impact of quay cranes speed on in-port transportation and storage networks by comparing container throughput at three US shipping ports. The goal was to model varying quay cranes speeds to identify the most efficient operation of berth side cranes while maintaining safe and cost-efficient operations. Because the process of unloading and loading shipping containers involves a series of interdependent processes, this model focused on measures directly linked to crane operations, which includes crane speed, number of cranes and container throughput (i.e., rate of unloading cranes and the number leaving port). These variables were compared across the Tampa, Savannah and Los Angeles ports.</p>
-		<img src="../images/ports.png" alt="" />
-		<p>One of our findings was that the containers in storage and containers serviced are complementary metrics that correlate with the time to unload a ship. The number of containers in storage increased as the time to unload a ship decreased. Conversely, the number of containers serviced decreased as the time to unload a ship decreased.</p>
-		<img src="../images/servicedbytrucks.png" alt="" style="margin-bottom:2%;width:50%;margin-left:auto;margin-right:auto;display:block;" />
-	<div class="phone-background">
+    </div>
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <a href="{{ `blog/beamvr` | relURL }}">
+                <img src="../images/point_light.png" alt="" style="margin-bottom:2%" class="portfolio-image" />
+                <div class="portfolio-overlay">
+                    <div class="text-overlay">BEAMvr</div>
+                </div>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="{{ `blog/poly-lands` | relURL }}">
+                <img src="../images/fire_ui.png" alt="" style="margin-bottom:2%" class="portfolio-image" />
+                <div class="portfolio-overlay">
+                    <div class="text-overlay">Poly Lands</div>
+                </div>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="{{ `blog/vuforia-demos` | relURL }}">
+                <img src="../images/ar-cards.png" alt="" style="margin-bottom:2%" class="portfolio-image" />
+                <div class="portfolio-overlay">
+                    <div class="text-overlay">Vuforia Demos</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="phone-background">
+		<h2>Modeling and Simulation</h2>
+        <p>
+            My master's in Modeling and Simulation allowed me to develop skills in research design, simulation techniques, and human subjects studies. 
+        </p>
+    </div>
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <a href="{{ `blog/modeling-humans` | relURL }}">
+                <img src="../images/human-model.png" alt="" style="margin-bottom:2%" class="portfolio-image" />
+                <div class="portfolio-overlay">
+                    <div class="text-overlay">Facilitator Intervention Cognitive Model for Cooperative Activities</div>
+                </div>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="{{ `blog/modeling-ports` | relURL }}">
+                <img src="../images/teaser-image.PNG" alt="" style="margin-bottom:2%" class="portfolio-image" />
+                <div class="portfolio-overlay">
+                    <div class="text-overlay">Evaluating impact of Berth Crane Capacity and Speed on Port Models</div>
+                </div>
+            </a>
+        </div>
+       
+    </div>
+    <hr>
+    <div class="phone-background">
 		<h2>Design Projects</h2>
 		<p>
 			My undergraduate degree in digital information design provided me with the skills and knowledge to use visual communication to communicate ideas and information effectively. This skill set continues to aid me in my research despite my departure from website design. This section provides some examples of past design projects I have done. The code for most of these examples can be found in the <a href="https://github.com/emjapo/emjapo.github.io">GitHub repo for this project</a> in the branches.
 		</p>
-		<hr class="dots">
-		</div>
-		<div class="phone-background">
-		<h2>Typography Site Design</h2>
-		<p>
-			For a visual communication class, we were challenged with designing a site around one
-			font and having the content about the font. I choose the font Poppins. For the design, I
-			used pop art elements and lots of circles to emulate the geometric design of the font.
-		</p>
-		<video controls>
-			<source
-				src="{{ `videos/poppinsSite.mp4` | relURL}}"
-				type="video/mp4"
-			/>
-			Your browser does not support the video tag.
-		</video>
-	</div>
-	<div class="phone-background">
-		<h2>The Whisk It Shoppe</h2>
-		<p>
-			The capstone class of the Digital Information Design program combines all four
-			disciplines to create a product for a real business. My group's project was to build a
-			site and ordering system for a local bakery in Rock Hill, SC. As a web application
-			design person, I was responsible for the backend of the site. I created a login flow,
-			set up routing for the menu, made dynamic order forms, and built a cart system. The live
-			site can be found at
-			<a href="https://www.thewhiskitshoppe.com/">www.thewhiskitshoppe.com</a>.
-		</p>
-		<video controls>
-			<source
-				src="{{ `videos/whiskitOrdering.mp4` | relURL}}"
-				type="video/mp4"
-			/>
-			Your browser does not support the video tag.
-		</video>
-	</div>
-	<div class="phone-background">
-		<h2>Object Site Design</h2>
-		<p>
-			For a visual communication class, we were challenged with designing a site around an
-			object and targeting a demographic that would be interested in the object. I choose
-			spoons and targeted children and parents of young children by making content that would
-			make spoons appealing to them. For the design, I kept everything round and fun to make
-			the site feel childlike, inviting, and playful.
-		</p>
-		<video controls>
-			<source
-				src="{{ `videos/spoonsSite.mp4` | relURL}}"
-				type="video/mp4"
-			/>
-			Your browser does not support the video tag.
-		</video>
-	</div>
-	<div class="phone-background">
-		<h2>Game Site Redesign</h2>
-		<p>
-			For a visual communication class, we were challenged with redesigning a site for a video
-			game. I choose Farming Simulator because I felt the existing site did not fully display
-			the beauty of the game. For the design, I featured visuals from the game so that way
-			they were the focus of the site. I also used earthy tones and metallic effects to
-			reference the farm and the equipment which is such a large part of the game.
-		</p>
-		<video controls>
-			<source
-				src="{{ `videos/farmingSimSite.mp4` | relURL}}"
-				type="video/mp4"
-			/>
-			Your browser does not support the video tag.
-		</video>
-	</div>
-	<div class="phone-background">
+    </div>
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <a href="{{ `blog/poppins` | relURL }}">
+                <img src="../images/poppins.png" alt="" style="margin-bottom:2%" class="portfolio-image" />
+                <div class="portfolio-overlay">
+                    <div class="text-overlay">Typography Site Design</div>
+                </div>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="{{ `blog/whisk-it-shoppe` | relURL }}">
+                <img src="../images/whiskit.png" alt="" style="margin-bottom:2%" class="portfolio-image" />
+                <div class="portfolio-overlay">
+                    <div class="text-overlay">The Whisk It Shoppe</div>
+                </div>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="{{ `blog/spoonful-of-sugar` | relURL }}">
+                <img src="../images/spoons.png" alt="" style="margin-bottom:2%" class="portfolio-image" />
+                <div class="portfolio-overlay">
+                    <div class="text-overlay">Object Site Design</div>
+                </div>
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="{{ `blog/farmingsim` | relURL }}">
+                <img src="../images/farmingsim.png" alt="" style="margin-bottom:2%" class="portfolio-image" />
+                <div class="portfolio-overlay">
+                    <div class="text-overlay">Game Site Redesign</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="phone-background">
 		<h2>Code and Contact</h2>
 		<p>
 			Code examples and projects I am working on can be found on my GitHub at

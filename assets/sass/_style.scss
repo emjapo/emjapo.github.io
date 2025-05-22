@@ -426,3 +426,67 @@ hr {
 // 	  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="#{$color}" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
 // 	   width: 216px;
 // }
+
+// projects portfolio gallery
+.portfolio {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.portfolio-item {
+	position: relative;
+	width: 50%;	
+	margin: 0% 1% 2% 1%;
+}
+
+.portfolio-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $opacity-color-accent;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+	border-radius: 1em;
+  }
+
+.portfolio-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 1em;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+	width: 100%;
+}
+
+.text-overlay {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+// white-space: nowrap;
+text-align: center;
+}
+
+// Pagination styling
+ul.pagination {
+	display: flex;
+	list-style-type: none;
+	grid-column: span 2;
+	justify-content: center;
+
+	li.active {
+		a {
+			color: $text-accent-dark;
+		}
+	}
+}
