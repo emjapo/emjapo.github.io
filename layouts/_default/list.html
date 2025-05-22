@@ -3,7 +3,7 @@
 	<section>
 		<h2>Blog</h2>
 	</section>
-	{{ range Paginator.Pages }}
+	{{ range .Paginator.Pages }}
 	<a href="{{ .RelPermalink }}" class="summary">
 		<section class="blog">
 			{{ if not .Date.IsZero }}
