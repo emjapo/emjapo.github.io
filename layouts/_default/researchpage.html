@@ -1,38 +1,58 @@
 {{define "main"}} {{ partial "svg" "research-graphic-1" }} {{ partial "svg" "research-graphic-2" }}
 <section class="phone-background">
 	<div>
-		<h2>Present</h2>
+		<h2>
+			Publications
+		</h2>
 		<p>
-			Currently, I am working on developing a smart room to detect and monitor team processes
-			with the use of unobtrusive sensors. My main focus has been on using IR cameras for this
-			purpose and exploring other uses of IR in the built environment. Additionally, I work
-			with Azure Kinects and various other sensors to maximize our understanding of team
-			interactions within the built environment.
-		</p>
-		<p>
-			This project is currently in the data collection phase with plans for secondary
-			experiments to be conducted in the future. This research study is being funded by the
-			United States Department of Defense.
+			<b>
+				<a href="">(NEW!) Reading Between the Colors: Enhancing Feature Perception in Colormaps Through Perceptual Transformations</a>
+			</b>
+			<br>
+			<b>Emily Port</b> and Joseph T. Kider Jr.
+			<br>
+			Accepted to ACM Symposium on Applied Perception (SAP), 2025 
+			<br>
+			<br>
 		</p>
 	</div>
 	<div>
-		<h2>2023</h2>
-		<iframe
-			title="Measuring the Impact of Indoor Environmental Quality Data on Perceived Comfort"
-			src="{{ `pdfs/measuring-IEQ-percieved-comfort.pdf` | relURL}}"
-			style="margin-bottom:2%;"
-		></iframe>
-	</div>
-	<div>
-		<h2>2021</h2>
-		<iframe
-			title="research poster"
-			src="{{ `pdfs/Port_EnergyandQualityTrade-offs.pdf` | relURL}}"
-		></iframe>
-		<iframe
-			title="research report"
-			src="{{ `pdfs/Emily_Port_Report_2021.pdf` | relURL}}"
-		></iframe>
+		<h2>
+			Research Projects
+		</h2>
+		<p>
+			<b>
+				<a href="https://web.archive.org/web/20250207143904/https://minerva.defense.gov/Research/Funded-Projects/Article/2960407/cognition-in-support-of-future-space-missions/">Cognition in Support of Future Space Missions</a>
+			</b>
+			<br>
+			Sponsor: Minerva Research Initiative (PI: Stephen M. Fiore)
+			<br>
+			Activity Period: August 2022 - December 2024
+			<br>
+			<span class="grant-description">I worked as a technical lead on this project by developing and managing a sensor suite that was used for human subject studies. The sensor suite includes FLIR Boson infrared cameras, Microsoft Azure Kinects, Garmin Fenix 7 watches, Empatica E4 watches, Rode Wireless Go II, and various environmental sensors. Publications from this work are in progress.</span>
+		</p>
+		<p>
+			<b>
+				<a href="https://www.expertkg.com/grant/?grant_id=nsf_2038406">Using Coevolutionary Algorithms to Identify Distractor Answers for Multiple Choice Questions Used for Peer Instruction</a>
+			</b>
+			<br>
+			Sponsor: NSF (PI: Rudolf Wiegand)
+			<br>
+			Activity Period: October 2020 - May 2022
+			<br>
+			<span class="grant-description">My work involved developing a dashboard that connects with an intelligent tutoring system in partnership with a team from the University of South Florida.</span>
+		</p>
+		<p>
+			<b>
+				<a href="https://web.archive.org/web/20210403070532/https://web.asu.edu/imaging-lyceum/visual-media-reu">NSF Visual Media REU at Arizona State University</a>
+			</b>
+			<br>
+			Sponsor: NSF CNS-1950534
+			<br>
+			Activity Period: June 2021 - August 2021
+			<br>
+			<span class="grant-description">For my work during this REU, I explored energy and quality trade-offs for an illumination estimation system for mobile augmented reality systems. My full write-up of my work can be found <a href="{{ `pdfs/Emily_Port_Report_2021.pdf` | relURL}}">here</a> and the poster for my work can be found <a href="{{ `pdfs/Port_EnergyandQualityTrade-offs.pdf` | relURL}}">here</a>.</span>
+		</p>
 	</div>
 </section>
 {{end}}
