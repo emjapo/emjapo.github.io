@@ -1,7 +1,6 @@
 ---
 title: "Volumetric Rendering Wedges"
 date: 2025-03-19T13:41:21-04:00
-draft: true
 ---
 <figure>
 <img src="/images/0008-wispWedge.jpg" alt="a slice of a wisp wedge that shows millions of little dots in a cluster" style="padding-top: 2%;" />
@@ -12,19 +11,29 @@ For my spring 2025 CPSC8190: Physically Based Effects class with Dr. Jerry Tesse
 
 ### Code
 
-Dr. Tessendorf provided us with a starter kit that I was able to build on to to create a wide toolset for volumetric rendering. The starter code and the  
+Dr. Tessendorf provided us with a starter kit that I was able to build on to to create a wide toolset for volumetric rendering. The starter code included classes for foundational concepts needed for further implementation such as vectors, scalar fields, and shared pointers. From there I was responsible for implementing a ray marching renderer and classes for all of the concepts taught in the class.
+
+The full code can be found on my <a href="https://github.com/emjapo/physically-based-effects">github repo</a>.
 
 
+### Pyroclastic Displacement
 
 <video controls> <source
         src="/videos/pyroSphere.mp4"
         type="video/mp4"
     /> Your browser does not support the video tag. </video>
 
+
+### Wisps
+
 <video controls> <source
         src="/videos/wispWedge.mp4"
         type="video/mp4"
     /> Your browser does not support the video tag. </video>
+
+
+
+### Stamped Noise
 
 <video controls> <source
         src="/videos/noiseWedge.mp4"
@@ -36,8 +45,8 @@ Dr. Tessendorf provided us with a starter kit that I was able to build on to to 
 
 <img src="/images/0056-wispWedge.jpg" alt="a slice of a wisp wedge that shows millions of little dots in a cluster" style="transform-origin: center;  width:50%; translate: 50%;" /> -->
 
-<img src="/images/0063-wispWedge.jpg" alt="a slice of a wisp wedge that shows millions of little dots in a cluster" style="transform-origin: center;  width:50%; translate: 50%;" />
+<!-- <img src="/images/0063-wispWedge.jpg" alt="a slice of a wisp wedge that shows millions of little dots in a cluster" style="transform-origin: center;  width:50%; translate: 50%;" />
 
 <img src="/images/0130-wispWedge.jpg" alt="a slice of a wisp wedge that shows millions of little dots in a cluster" style="transform-origin: center;  width:50%; translate: 50%;" />
 
-<img src="/images/0136-pyroSphere.jpg" alt="a slice of a wedge showing a pyroclastically displaced sphere" style="transform-origin: center;  width:50%; translate: 50%;" />
+<img src="/images/0136-pyroSphere.jpg" alt="a slice of a wedge showing a pyroclastically displaced sphere" style="transform-origin: center;  width:50%; translate: 50%;" /> -->

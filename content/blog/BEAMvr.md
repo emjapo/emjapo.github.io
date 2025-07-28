@@ -43,7 +43,7 @@ This will act as an alternative way to travel throughout the created model by en
 
 Updates of our application will be posted to to our YouTube playlist - [BEAMvr Team](https://www.youtube.com/playlist?list=PLoMe3X7YF4tEMv7MknpgYQEAI3ZAWuvhM).
 
-I'll also post written updates here on my blog. I also want to acknowledge the hard work and dedication of my teammates. This project would not be possible without the amazing efforts of David and Chris. I look forward to the application that we will build together.
+I also want to acknowledge the hard work and dedication of my teammates. This project would not be possible without the amazing efforts of David and Chris. I look forward to the application that we will build together.
 
 #### References
 
