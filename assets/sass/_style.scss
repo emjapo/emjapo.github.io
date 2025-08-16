@@ -516,6 +516,8 @@ span.grant-description {
 	font-size: smaller;
 }
 
+
+// about page 
 div.skills {
 	ul {
 		display: flex;
@@ -530,4 +532,32 @@ div.skills {
 		}
 	}
 
+}
+
+div.blog-preview {
+	display: flex;
+	grid-column: 1/-1;
+	flex-wrap: wrap;
+	align-items: center;
+	.portfolio-item {
+		width: 30%;
+		img {
+			height: 30vh;
+			object-fit: cover;
+		}
+	}
+	h4 {
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	div.blog-preview h4 {
+		width: 100%;
+		text-align: center;
+    margin-bottom: 5%;
+	}
+  div.blog-preview .portfolio-item {
+    width: 100%;
+  }
 }
