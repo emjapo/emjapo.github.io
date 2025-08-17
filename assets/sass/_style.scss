@@ -121,14 +121,19 @@
 		filter: drop-shadow(0px 0px 10px $opacity-color);
 	}
 
-	#about-graphic-1, #about-graphic-2, #research-graphic-1, #research-graphic-2, #projects-graphic-1, #projects-graphic-2, #photos-graphics {
+	#about-graphic-1,
+	#about-graphic-2,
+	#research-graphic-1,
+	#research-graphic-2,
+	#projects-graphic-1,
+	#projects-graphic-2,
+	#photos-graphics {
 		display: none;
 	}
 
 	body {
 		background: $background-color url("../images/blog-graphic.svg") top right no-repeat;
 	}
-	
 }
 
 #photos-graphics {
@@ -194,7 +199,7 @@ footer {
 	min-height: 405px;
 	min-width: 810px;
 	nav {
-		margin-top: 35%;
+		margin-top: 25%;
 		margin-bottom: 5%;
 		ul {
 			display: flex;
@@ -525,9 +530,11 @@ span.grant-description {
 	font-size: smaller;
 }
 
-
-// about page 
+// about page
 div.skills {
+	h3 {
+		text-align: center;
+	}
 	ul {
 		display: flex;
 		flex-wrap: wrap;
@@ -536,11 +543,10 @@ div.skills {
 		list-style: none;
 		border-image: conic-gradient($opacity-color 0 0) fill 0/0/0 100vw;
 		li:hover {
-			filter: drop-shadow(0 0 10px rgba(0,0,0,.7));
-			transition: all .5s ease;
+			filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+			transition: all 0.5s ease;
 		}
 	}
-
 }
 
 div.blog-preview {
@@ -564,9 +570,13 @@ div.blog-preview {
 	div.blog-preview h4 {
 		width: 100%;
 		text-align: center;
-    margin-bottom: 5%;
+		margin-bottom: 5%;
 	}
-  div.blog-preview .portfolio-item {
-    width: 100%;
-  }
+	div.blog-preview .portfolio-item {
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 3.2em;
+	}
 }
