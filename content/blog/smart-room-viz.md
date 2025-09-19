@@ -6,6 +6,8 @@ date: 2025-09-12T01:19:38-04:00
 
 *A more detailed account of the full study and sensor suite is currently being drafted for publication.*
 
+*The code for this visualization exploration can be found at [emjapo/sensorsational](https://github.com/emjapo/sensorsational/blob/main/Analysis/sensor-visualization.Rmd) on Github which contains additional insights into the design and development of the experiment and case study.*
+
 ### Background
 
 Humanity has made it to the moon. The next step is Mars. In the mission to Mars there is much more to consider to accomplish this goal due to the increased demands resulting from the increased distance. Before attempting this harrowing journey, it is important to fully study and understand all aspects of the mission from the technicalities of the rocket to the intricacies of the team.
@@ -46,13 +48,13 @@ To help distinguish different data types more easily, certain data is color-code
 
 Session 2 is the real group. The grey dashed lines indicate the start and end times of the experimental task.
 
-![all-session-2](/images/time-all-env-session2.png)
-![all-session-2-avg](/images/avg-time-all-env-session2.png)
+![all-session-2](/images/time-all-env-session2.png#graph)
+![all-session-2-avg](/images/avg-time-all-env-session2.png#graph)
 
 Session 12 is the nominal group. 
 
-![all-session-12](/images/time-all-env-session12.png)
-![all-session-12-avg](/images/avg-time-all-env-session12.png)
+![all-session-12](/images/time-all-env-session12.png#graph)
+![all-session-12-avg](/images/avg-time-all-env-session12.png#graph)
 
 Sensors in the experimental room follow similar patterns that differ visibly from the baseline. 
 
@@ -64,11 +66,11 @@ CO2 is of particular interest to long duration space mission since it impairs co
 The purple line is the average trend line of all of the experimental sensors.
 There is a potential lag effect as both session end on an increase in CO2.
 
-![cd-avg-2](/images/carbon-dioxide-2.png) ![cd-avg-10](/images/carbon-dioxide-10.png)
+![cd-avg-2](/images/carbon-dioxide-2.png#graph) ![cd-avg-10](/images/carbon-dioxide-10.png#graph)
 
 Both nominal group sessions end on a slight decrease in CO2
 
-![cd-avg-11](/images/carbon-dioxide-11.png) ![cd-avg-12](/images/carbon-dioxide-12.png)
+![cd-avg-11](/images/carbon-dioxide-11.png#graph) ![cd-avg-12](/images/carbon-dioxide-12.png#graph)
 
 However, from just these four sessions there are no obvious patterns to suggest that we can identify a specific behavior.
 
@@ -88,11 +90,11 @@ EDA averages are represented using dark orange.
 
 For this there are two types of plots. The first has all 3 members overlayed so that it is easier to compare between members. The second type has each individual trestled to allow for analysis on the individual level.
 
-![eda-2](/images/eda-2.png)
-![eda-2-tressle](/images/eda-2-tressle.png)
+![eda-2](/images/eda-2.png#graph)
+![eda-2-tressle](/images/eda-2-tressle.png#graph)
 
-![eda-10](/images/eda-10.png)
-![eda-10-tressle](/images/eda-10-tressle.png)
+![eda-10](/images/eda-10.png#graph)
+![eda-10-tressle](/images/eda-10-tressle.png#graph)
 
 
 #### Heart Rate
@@ -101,15 +103,15 @@ HR averages are represented using pink.
 
 For these the focus is on the team average since the individuals do not have as much variation as they did with the EDA data.
 
-![bpm-2](/images/bpm-2.png)
-![bpm-2-tressle](/images/bpm-2-tressle.png)
+![bpm-2](/images/bpm-2.png#graph)
+![bpm-2-tressle](/images/bpm-2-tressle.png#graph)
 
-![bpm-10](/images/bpm-10.png)
-![bpm-10-tressle](/images/bpm-10-tressle.png)
+![bpm-10](/images/bpm-10.png#graph)
+![bpm-10-tressle](/images/bpm-10-tressle.png#graph)
 
 By comparing the team averages on the same plot, we are able to see that the high social and aggressive dominance group has a higher heart rate on average. 
 
-![bpm-difference](/images/bpm-teams-comparison.png)
+![bpm-difference](/images/bpm-teams-comparison.png#graph)
 
 
 ### Conclusion

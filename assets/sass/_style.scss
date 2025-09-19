@@ -566,6 +566,14 @@ div.blog-preview {
 	}
 }
 
+img[src$='#graph'] {
+  display: block;
+  margin: 1.0rem auto;
+  width: 95%;
+  border: 3vmin solid #fff;
+  height: auto;
+}
+
 @media screen and (max-width: 700px) {
 	div.blog-preview h4 {
 		width: 100%;
