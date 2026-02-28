@@ -30,6 +30,8 @@ For the nominal groups, we will examine nominal groups from sessions 11 and 12. 
 
 ![room layout](/images/sensor-layout.png)
 
+![Sensor node](/images/IMG_7327.jpg)
+
 Each of the 10 total sensor nodes placed around the space consist of 4 separate sensors to measure CO2 and air quality. Additionally each participant wore an Empatica E4 watch which measured heart rate and electrodermal activity. These are the main sensors that the following visualizations will focus on.
 
 ### Design Plan
